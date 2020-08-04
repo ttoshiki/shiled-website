@@ -51,7 +51,7 @@ if (! function_exists('shield_setup')) :
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(
             array(
-                'menu-1' => esc_html__('Primary', 'shield'),
+                'primary' => esc_html__('Main Menu', 'shield'),
             )
         );
 
@@ -162,3 +162,14 @@ function shield_scripts()
     }
 }
 add_action('wp_enqueue_scripts', 'shield_scripts');
+
+/* 投稿アーカイブを有効にしてスラッグを指定する */
+function post_has_archive($args, $post_type)
+{
+    if ('post' == $post_type) {
+        $args['rewrite'] = true;
+        $args['has_archive'] = 'news'; // スラッグ名
+    }
+    return $args;
+}
+add_filter('register_post_type_args', 'post_has_archive', 10, 2);
