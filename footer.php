@@ -13,17 +13,21 @@
 
 	<footer class="site-footer">
 		<div class="footer__links">
-			<div>
-				<h3>フォームからお問い合わせ</h3>
-				<a href="<?php echo home_url('/contact/'); ?>">お問い合わせはこちら</a>
+			<div class="footer__linksBlock">
+				<div class="footer__linksBlockInner">
+					<h3 class="footer__linkHeading">フォームからお問い合わせ</h3>
+					<a href="<?php echo home_url('/contact/'); ?>" class="footer__linkButton">お問い合わせはこちら</a>
+				</div>
 			</div>
-			<div>
-				<h3>電話でのお問い合わせ</h3>
-				<small>営業時間 ／ 9:00〜18:00</small>
-				<address>TEL 03-0000-0000</address>
+			<div class="footer__linksBlock">
+				<div class="footer__linksBlockInner">
+					<h3 class="footer__linkHeading">電話でのお問い合わせ</h3>
+					<small class="footer__businessHours">営業時間 ／ 9:00〜18:00</small>
+					<address class="footer__address">TEL 03-0000-0000</address>
+				</div>
 			</div>
 		</div>
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_dark.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo_dark.png, <?php echo get_template_directory_uri(); ?>/assets/img/logo_dark@2x.png 2x" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_dark.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo_dark.png, <?php echo get_template_directory_uri(); ?>/assets/img/logo_dark@2x.png 2x" alt="" class="footer__logo">
 		<nav class="footer__nav">
 			<?php
         wp_nav_menu(array(
@@ -34,12 +38,12 @@
 		<div class="footer__companyInfo">
 			<div class="footer__companyOverview">
 				<span class="footer__companyName">株式会社&SHIELD</span>
-				<address class="footer__companyAddress">〒000-0000 東京都港区南青山1-1-1</address>
+				<address class="footer__companyAddress">〒000-0000　東京都港区南青山1-1-1</address>
 			</div>
 			<p class="footer__companyText">私たちは新しい公衆衛生の視点でさまざまな角度からモノやコトを創造していきます。あなたの大切な人を守るために。&SHIELDの製品やサービスについてのお問い合わせは、お気軽にご連絡ください。</p>
 		</div>
-		<div class="footer__compnayCopyright">
-			<small>© &SHIELD All Rights Reserved</small>
+		<div class="footer__companyCopyrightWrapper">
+			<small class="footer__companyCopyright">© &SHIELD All Rights Reserved</small>
 		</div>
 	</footer>
 </div><!-- #page -->

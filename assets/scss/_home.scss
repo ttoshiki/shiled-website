@@ -1,0 +1,130 @@
+@import "_variables";
+
+.home {
+  &__leadContents {
+    display: flex;
+    justify-content: center;
+    max-width: $--content-width-md;
+    margin: 80px auto 0;
+  }
+
+  &__leadContentsHeading {
+    font-size: 40px;
+    color: $--color-primary;
+  }
+
+  &__leadContentsText {
+    margin-right: 56px;
+  }
+
+  &__leadContentsParagraph {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: $black;
+
+    &:not(:first-of-type) {
+      margin-top: 24px;
+    }
+  }
+
+  &__leadContentsButton {
+    margin-top: 64px;
+  }
+
+  &__leadContentsPhotos {
+    &.-lower {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 16px;
+
+      img:nth-of-type(2) {
+        margin-left: 22px;
+      }
+    }
+  }
+
+  &__news {
+    max-width: $--content-width-sm;
+    margin: 0 auto;
+  }
+
+  &__newsHeading {
+    font-size: 50px;
+    color: $--color-primary;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+
+  &__newsList {
+  }
+
+  &__newsItem {
+    border-top: 1px solid rgba(4, 40, 126, 0.15);
+
+    &:last-child {
+      border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+    }
+  }
+
+  &__newsLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+
+    &::after {
+      position: absolute;
+      top: 18px;
+      right: 24px;
+      width: 24px;
+      height: 17px;
+      content: "";
+      background-image: url(assets/img/icons/icon_arrow-right.png);
+      background-repeat: no-repeat;
+      transition: all 0.2s;
+    }
+  }
+
+  &__newsDate {
+    font-size: 15px;
+    font-weight: 600;
+    color: $--color-primary;
+  }
+
+  &__newsLink {
+    color: $black;
+  }
+
+  &__newsItemHeading {
+    margin: 0 0 0 56px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  &__newsButton {
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  &__footerVisual {
+    position: relative;
+    margin-top: 80px;
+  }
+
+  &__footerVisualImage {
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  &__footerVisualHeading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    color: $white;
+    letter-spacing: 8px;
+    transform: translate(-50%, -100%);
+  }
+}

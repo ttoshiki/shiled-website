@@ -1,0 +1,35 @@
+@import "_variables";
+
+.c-btn {
+  position: relative;
+  display: inline-block;
+  padding: 20px 64px 20px 24px;
+  font-size: 14px;
+  color: $--color-primary;
+  letter-spacing: 2px;
+  border: 1px solid $--color-primary;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 24px;
+    width: 24px;
+    height: 17px;
+    content: "";
+    background-image: url(assets/img/icons/icon_arrow-right.png);
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $--color-primary;
+
+    &::after {
+      filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+        brightness(107%) contrast(101%);
+    }
+  }
+}

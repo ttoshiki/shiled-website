@@ -1,5 +1,3 @@
-@charset "UTF-8";
-@import url(_variables.css);
 *,
 *::after,
 *::before {
@@ -11,14 +9,498 @@ html {
 }
 
 body {
-  background-color: #fff;
-  line-height: 1.5;
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   font-size: 14px;
+  line-height: 1.5;
   color: #333;
+  background-color: #fff;
 }
 
-p {
-  font-size: 20px;
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.c-btn {
+  position: relative;
+  display: inline-block;
+  padding: 20px 64px 20px 24px;
+  font-size: 14px;
+  color: #04287e;
+  letter-spacing: 2px;
+  border: 1px solid #04287e;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.c-btn::after {
+  position: absolute;
+  top: 15px;
+  right: 24px;
+  width: 24px;
+  height: 17px;
+  content: "";
+  background-image: url(assets/img/icons/icon_arrow-right.png);
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+}
+
+.c-btn:hover {
+  color: #ffffff;
+  background-color: #04287e;
+}
+
+.c-btn:hover::after {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+
+.header {
+  position: relative;
+}
+
+.header__nav div {
+  position: absolute;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+
+.header__nav .menu {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+  font-size: 17px;
+}
+
+.header__nav .menu a {
+  color: #ffffff;
+}
+
+.header__nav .menu-item {
+  margin: 0 32px;
+  letter-spacing: 1px;
+}
+
+.fixedMenu {
+  position: fixed;
+  top: 120px;
+  right: 13px;
+  z-index: 100;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.fixedMenu__link {
+  padding: 32px 16px;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.fixedMenu__link:first-child {
+  background-color: #3983c8;
+}
+
+.fixedMenu__link:nth-child(2) {
+  background-color: #58a2c4;
+}
+
+.fixedMenu__icon {
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  display: flex;
+}
+
+.footer__linksBlock {
+  position: relative;
+  width: 50%;
+  height: 140px;
+  letter-spacing: 1px;
+}
+
+.footer__linksBlock:first-of-type {
+  background-color: #4c8fcd;
+}
+
+.footer__linksBlock:first-of-type .footer__linksBlockInner {
+  right: 20%;
+}
+
+.footer__linksBlock:nth-of-type(2) {
+  background-color: #8abed6;
+}
+
+.footer__linksBlock:nth-of-type(2) .footer__linksBlockInner {
+  left: 20%;
+}
+
+.footer__linksBlockInner {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+}
+
+.footer__linkHeading {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__linkButton {
+  display: block;
+  padding: 10px 48px;
+  font-weight: 600;
+  color: #4c8fcd;
+  background-color: #ffffff;
+}
+
+.footer__businessHours {
+  display: block;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__address {
+  display: block;
+  font-size: 22px;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__logo {
+  display: block;
+  width: 300px;
+  margin: 48px auto 0;
+}
+
+.footer__nav .menu {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  padding: 16px 0;
+  margin: 48px auto 0;
+  border-top: 1px solid rgba(4, 40, 126, 0.15);
+  border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+}
+
+.footer__nav .menu-item:not(:first-child) {
+  margin-left: 64px;
+}
+
+.footer__nav .menu-item a {
+  font-size: 17px;
+  font-weight: 600;
+  color: #04287e;
+}
+
+.footer__companyInfo {
+  display: flex;
+  max-width: 1000px;
+  margin: 48px auto;
+}
+
+.footer__companyOverview {
+  width: 100%;
+  font-weight: 600;
+  color: #04287e;
+  letter-spacing: 1px;
+}
+
+.footer__companyName {
+  font-size: 18px;
+}
+
+.footer__companyAddress {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.footer__companyText {
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #04287e;
+  letter-spacing: 1px;
+}
+
+.footer__companyCopyrightWrapper {
+  padding: 4px 0;
+  text-align: center;
+  background-color: #04287e;
+}
+
+.footer__companyCopyright {
+  font-size: 11px;
+  color: #ffffff;
+}
+
+.home__leadContents {
+  display: flex;
+  justify-content: center;
+  max-width: 1150px;
+  margin: 80px auto 0;
+}
+
+.home__leadContentsHeading {
+  font-size: 40px;
+  color: #04287e;
+}
+
+.home__leadContentsText {
+  margin-right: 56px;
+}
+
+.home__leadContentsParagraph {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333333;
+}
+
+.home__leadContentsParagraph:not(:first-of-type) {
+  margin-top: 24px;
+}
+
+.home__leadContentsButton {
+  margin-top: 64px;
+}
+
+.home__leadContentsPhotos.-lower {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.home__leadContentsPhotos.-lower img:nth-of-type(2) {
+  margin-left: 22px;
+}
+
+.home__news {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home__newsHeading {
+  font-size: 50px;
+  color: #04287e;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.home__newsItem {
+  border-top: 1px solid rgba(4, 40, 126, 0.15);
+}
+
+.home__newsItem:last-child {
+  border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+}
+
+.home__newsLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.home__newsLink::after {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  width: 24px;
+  height: 17px;
+  content: "";
+  background-image: url(assets/img/icons/icon_arrow-right.png);
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+}
+
+.home__newsDate {
+  font-size: 15px;
+  font-weight: 600;
+  color: #04287e;
+}
+
+.home__newsLink {
+  color: #333333;
+}
+
+.home__newsItemHeading {
+  margin: 0 0 0 56px;
+  font-size: 15px;
   font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.home__newsButton {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.home__footerVisual {
+  position: relative;
+  margin-top: 80px;
+}
+
+.home__footerVisualImage {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.home__footerVisualHeading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: 8px;
+  transform: translate(-50%, -100%);
+}
+
+.footer__links {
+  display: flex;
+}
+
+.footer__linksBlock {
+  position: relative;
+  width: 50%;
+  height: 140px;
+  letter-spacing: 1px;
+}
+
+.footer__linksBlock:first-of-type {
+  background-color: #4c8fcd;
+}
+
+.footer__linksBlock:first-of-type .footer__linksBlockInner {
+  right: 20%;
+}
+
+.footer__linksBlock:nth-of-type(2) {
+  background-color: #8abed6;
+}
+
+.footer__linksBlock:nth-of-type(2) .footer__linksBlockInner {
+  left: 20%;
+}
+
+.footer__linksBlockInner {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+}
+
+.footer__linkHeading {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__linkButton {
+  display: block;
+  padding: 10px 48px;
+  font-weight: 600;
+  color: #4c8fcd;
+  background-color: #ffffff;
+}
+
+.footer__businessHours {
+  display: block;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__address {
+  display: block;
+  font-size: 22px;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__logo {
+  display: block;
+  width: 300px;
+  margin: 48px auto 0;
+}
+
+.footer__nav .menu {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  padding: 16px 0;
+  margin: 48px auto 0;
+  border-top: 1px solid rgba(4, 40, 126, 0.15);
+  border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+}
+
+.footer__nav .menu-item:not(:first-child) {
+  margin-left: 64px;
+}
+
+.footer__nav .menu-item a {
+  font-size: 17px;
+  font-weight: 600;
+  color: #04287e;
+}
+
+.footer__companyInfo {
+  display: flex;
+  max-width: 1000px;
+  margin: 48px auto;
+}
+
+.footer__companyOverview {
+  width: 100%;
+  font-weight: 600;
+  color: #04287e;
+  letter-spacing: 1px;
+}
+
+.footer__companyName {
+  font-size: 18px;
+}
+
+.footer__companyAddress {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.footer__companyText {
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #04287e;
+  letter-spacing: 1px;
+}
+
+.footer__companyCopyrightWrapper {
+  padding: 4px 0;
+  text-align: center;
+  background-color: #04287e;
+}
+
+.footer__companyCopyright {
+  font-size: 11px;
+  color: #ffffff;
 }

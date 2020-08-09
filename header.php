@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<header id="header" class="header">
+	<header id="header" class="header roboto">
 		<nav class="header__nav">
 			<?php
         wp_nav_menu(array(
@@ -33,11 +33,11 @@
 	</header><!-- #page -->
 	<aside class="fixedMenu">
 		<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble@2x.png 2x" alt="吹き出し">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble@2x.png 2x" alt="吹き出し" class="fixedMenu__icon">
 			お問い合わせ
 		</a>
 		<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download@2x.png 2x" alt="ダウンロード">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download@2x.png 2x" alt="ダウンロード" class="fixedMenu__icon">
 			資料ダウンロード
 		</a>
 	</aside>

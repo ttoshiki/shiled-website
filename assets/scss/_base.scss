@@ -9,10 +9,24 @@ html {
 }
 
 body {
-  background-color: #fff;
-  line-height: 1.5;
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka,
-    'MS PGothic', arial, helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+    "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic",
+    Verdana, Meiryo, sans-serif;
   font-size: 14px;
+  line-height: 1.5;
   color: #333;
+  background-color: #fff;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
