@@ -11,10 +11,16 @@
       transform: translateX(-50%);
     }
 
+    &.-hasLogo {
+      div {
+        left: 700px;
+      }
+    }
+
     .menu {
       display: flex;
       justify-content: center;
-      margin: 24px 0;
+      margin: 32px 0 0;
       font-size: 17px;
 
       a {
@@ -24,7 +30,7 @@
 
     .menu-item {
       margin: 0 32px;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
     }
   }
 }
@@ -54,5 +60,17 @@
 
   &__icon {
     margin-bottom: 20px;
+  }
+}
+
+.custom-logo-link {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 100;
+
+  img {
+    width: 50%;
+    height: 50%;
   }
 }

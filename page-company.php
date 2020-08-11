@@ -18,51 +18,85 @@ get_header();
 	<main class="site-main">
 		<div class="company">
       <section class="company__mainVisual">
-        <h1 class="company__mainVisualHeading">COMPANY</h1>
+        <h1 class="company__mainVisualHeading roboto">COMPANY</h1>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/mv@2x.jpg 2x" alt="" class="company__mainVisualBg">
       </section>
       <section class="company__lead">
-        <h2 class="company__leadHeading">暮らしに、安堵を。</h2>
-        <p class="copmany__leadParagraph">
-          ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
-          ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
-        </p>
-        <p class="copmany__leadParagraph">
-          ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。
-        </p>
+        <div class="company__leadInner">
+          <h2 class="company__leadHeading">暮らしに、安堵を。</h2>
+          <p class="company__leadParagraph">
+            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
+            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
+          </p>
+          <p class="company__leadParagraph">
+            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。
+          </p>
+        </div>
       </section>
-      <section class="company__mesasge">
-        <h2 class="company__messageHeading">MESSAGE</h2>
-        <h3 class="company__messageSubHeading">ダミーテキスト<br>ダミーテキストダミー。</h3>
-        <p class="comapny__messageParagraph">
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-        </p>
-        <p class="comapny__messageParagraph">
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-        </p>
-        <p class="comapny__messageParagraph">
-          代表　お名前
-        </p>
+      <section class="company__message">
+        <div class="company__messageInner">
+          <h2 class="company__messageHeading roboto">MESSAGE</h2>
+          <div class="company__messageContents">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/president@2x.jpg 2x" alt="" class="">
+            <div class="company__messageText">
+              <h3 class="company__messageSubHeading">ダミーテキスト<br>ダミーテキストダミー。</h3>
+              <p class="company__messageParagraph">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              </p>
+              <p class="company__messageParagraph">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              </p>
+              <p class="company__messagePresidentName">
+                代表　お名前
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="company__overview">
-        <h3 class="company__overviewHeading">COMPANY</h3>
+        <h2 class="company__overviewHeading roboto">COMPANY</h2>
         <dl>
-          <dt>会社名</dt>
-          <dd>&SHIELD</dd>
-          <dt>代表者</dt>
-          <dd>代表者お名前</dd>
-          <dt>所在地</dt>
-          <dd>◯◯県◯◯◯市◯◯◯◯◯◯◯◯◯◯</dd>
-          <dt>事業内容</dt>
-          <dd>ダミーテキストダミーテキストダミーテキスト</dd>
-          <dt>設立</dt>
-          <dd>0000年00月</dd>
+          <div class="company__overviewRow">
+            <dt>会社名</dt>
+            <dd>&SHIELD</dd>
+          </div>
+          <div class="company__overviewRow">
+            <dt>代表者</dt>
+            <dd>代表者お名前</dd>
+          </div>
+          <div class="company__overviewRow">
+            <dt>所在地</dt>
+            <dd>◯◯県◯◯◯市◯◯◯◯◯◯◯◯◯◯</dd>
+          </div>
+          <div class="company__overviewRow">
+            <dt>事業内容</dt>
+            <dd>ダミーテキストダミーテキストダミーテキスト</dd>
+          </div>
+          <div class="company__overviewRow">
+            <dt>設立</dt>
+            <dd>0000年00月</dd>
+          </div>
         </dl>
       </section>
       <section class="c-banners">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/banner01.jpg" alt="" class="c-banner">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/banner02.jpg" alt="" class="c-banner">
+        <div>
+          <a href="<?php echo home_url('/product/') ?>" class="c-banner__link">
+            <div class="c-banner">
+                <h2 class="c-banner__heading">PRODUCTS</h2>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/banner01.jpg" alt="" class="c-banner">
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="<?php echo home_url('/service/') ?>" class="c-banner__link">
+            <div class="c-banner">
+              <h2 class="c-banner__heading">SERVICE</h2>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/banner02.jpg" alt="" class="c-banner">
+            </div>
+          </a>
+        </div>
       </section>
 		</div>
 	</main><!-- #main -->

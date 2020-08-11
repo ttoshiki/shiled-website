@@ -33,3 +33,77 @@
     }
   }
 }
+
+.c-banners {
+  display: flex;
+  justify-content: space-between;
+  max-width: $--content-width-md;
+  margin: 100px auto;
+}
+
+.c-banner {
+  position: relative;
+  $this: &;
+
+  &__link:hover {
+    & #{$this}::before,
+    & #{$this}::after {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    z-index: 100;
+    margin: 24px 0 0 24px;
+    font-size: 40px;
+    color: $white;
+    letter-spacing: 4px;
+
+    &::after {
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 44px;
+      height: 22px;
+      content: "";
+      background-image: url(assets/img/icons/icon_arrow-right.png);
+      filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+        brightness(107%) contrast(101%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  img {
+    box-shadow: 0px 0px 15.3px 2.7px rgba(0, 0, 0, 0.15);
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    width: 65%;
+    height: 220px;
+    content: "";
+    background-color: $--color-primary-tint-light;
+    mix-blend-mode: multiply;
+    transition: all 0.2s;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    width: 65%;
+    height: 220px;
+    content: "";
+    background-color: $--color-primary-tint-light;
+    mix-blend-mode: multiply;
+    transition: all 0.2s;
+  }
+}

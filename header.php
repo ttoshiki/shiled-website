@@ -23,12 +23,17 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="header" class="header roboto">
-		<nav class="header__nav">
+		<nav class="header__nav <?php
+		 if (!is_front_page()) { echo '-hasLogo'; } ?>">
 			<?php
-        wp_nav_menu(array(
-          'theme_location' => 'primary'
-        ));
-      ?>
+				if (!is_front_page()) {
+					the_custom_logo();
+				} ?>
+				<?php
+					wp_nav_menu(array(
+						'theme_location' => 'primary'
+					));
+				?>
 		</nav>
 	</header><!-- #page -->
 	<aside class="fixedMenu">
