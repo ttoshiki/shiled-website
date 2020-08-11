@@ -13,6 +13,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #333;
+  counter-reset: ranking 0;
   background-color: #fff;
 }
 
@@ -31,6 +32,10 @@ img {
 
 .roboto {
   font-family: "Roboto", sans-serif;
+}
+
+.screen-reader-text {
+  display: none;
 }
 
 .c-btn {
@@ -134,6 +139,142 @@ img {
   background-color: #8abed6;
   mix-blend-mode: multiply;
   transition: all 0.2s;
+}
+
+.wpp-list {
+  margin: 0;
+}
+
+.wpp-list li {
+  position: relative;
+  padding: 20px 0;
+  margin: 0;
+  border-bottom: 1px solid #d7e6f4;
+}
+
+.wpp-list li::before {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  content: counter(ranking) " ";
+  counter-increment: ranking 1;
+  background-color: #3983c8;
+}
+
+.l-mainVisual {
+  position: relative;
+}
+
+.l-mainVisualHeading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: #ffffff;
+  letter-spacing: 8px;
+  transform: translate(-50%, -100%);
+}
+
+.widget-title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #3983c8;
+  letter-spacing: 2px;
+}
+
+.widget-title::after {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 4px;
+  content: "";
+  background-color: #3983c8;
+}
+
+.wpp-post-title {
+  font-size: 14px;
+  color: #000000;
+}
+
+.wpp-date {
+  display: block;
+  margin-top: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #3983c8;
+}
+
+.widget:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+.widget .cat-item {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d7e6f4;
+}
+
+.widget .cat-item:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+.widget .cat-item a {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+.widget select {
+  position: relative;
+  width: 100%;
+  padding: 10px 0px 10px 12px;
+  margin-top: 24px;
+  border: 1px solid #ebf3f9;
+}
+
+.sidebar-banner {
+  margin-top: 32px;
+}
+
+.l-pagination {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: rgba(57, 131, 200, 0.5);
+  box-shadow: 0px 0px 12.22px 0.78px rgba(54, 54, 54, 0.21);
+}
+
+.page-numbers:not(:first-child) {
+  margin-left: 8px;
+}
+
+.page-numbers.current {
+  background-color: #3983c8;
+}
+
+.page-numbers.next, .page-numbers.prev {
+  color: #3983c8;
+  background-color: #ffffff;
+  border: 1px solid #3983c8;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 }
 
 .header {
@@ -463,20 +604,6 @@ img {
   transform: translate(-50%, -100%);
 }
 
-.company__mainVisual {
-  position: relative;
-}
-
-.company__mainVisualHeading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: #ffffff;
-  letter-spacing: 8px;
-  transform: translate(-50%, -100%);
-}
-
 .company__leadInner {
   width: 50%;
   max-width: 1150px;
@@ -624,4 +751,57 @@ img {
 
 .company__overviewRow:last-child {
   border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+}
+
+.archive__contents {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 100px auto;
+}
+
+.archive__list {
+  margin: 0;
+}
+
+.archive__item {
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(57, 131, 200, 0.2);
+}
+
+.archive__article {
+  display: flex;
+}
+
+.archive__meta {
+  width: 72%;
+  margin-left: 24px;
+}
+
+.archive__cat a {
+  color: #3983c8;
+}
+
+.archive__date {
+  margin-left: 24px;
+  color: #3983c8;
+}
+
+.archive__title {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.archive__title a {
+  color: #000000;
+}
+
+.archive__content {
+  font-size: 15px;
+  color: #000000;
+}
+
+.archive__aside {
+  width: 59%;
+  margin-left: 48px;
 }

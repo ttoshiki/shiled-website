@@ -1,20 +1,6 @@
 @import "_variables";
 
 .company {
-  &__mainVisual {
-    position: relative;
-  }
-
-  &__mainVisualHeading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: $white;
-    letter-spacing: 8px;
-    transform: translate(-50%, -100%);
-  }
-
   &__leadInner {
     width: 50%;
     max-width: $--content-width-md;

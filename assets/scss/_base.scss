@@ -15,6 +15,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #333;
+  counter-reset: ranking 0;
   background-color: #fff;
 }
 
@@ -33,4 +34,8 @@ img {
 
 .roboto {
   font-family: "Roboto", sans-serif;
+}
+
+.screen-reader-text {
+  display: none;
 }

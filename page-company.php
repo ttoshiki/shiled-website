@@ -17,9 +17,9 @@ get_header();
 
 	<main class="site-main">
 		<div class="company">
-      <section class="company__mainVisual">
-        <h1 class="company__mainVisualHeading roboto">COMPANY</h1>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/mv@2x.jpg 2x" alt="" class="company__mainVisualBg">
+      <section class="l-mainVisual">
+        <h1 class="l-mainVisualHeading roboto">COMPANY</h1>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
       <section class="company__lead">
         <div class="company__leadInner">

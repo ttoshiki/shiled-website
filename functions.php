@@ -175,3 +175,29 @@ function post_has_archive($args, $post_type)
     return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+// Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
+function official_pagination()
+{
+    global $wp_query;
+    $big = 999999999;
+    echo paginate_links(array(
+        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+        'format' => '?paged=%#%',
+        'current' => max(1, get_query_var('paged')),
+        'prev_text' => __('<'),
+        'next_text' => __('>'),
+        'mid_size' => 2,
+        'total' => $wp_query->max_num_pages
+    ));
+}
+
+// PopularPostsの出力変更
+function remove_posted_on($output)
+{
+    return str_replace("に投稿された", "", $output);
+}
+add_filter('wpp_post', 'remove_posted_on');
+
+
+
