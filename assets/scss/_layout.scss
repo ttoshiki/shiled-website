@@ -14,6 +14,23 @@
   }
 }
 
+.l-doubleCol {
+  display: flex;
+  justify-content: space-between;
+  max-width: $--content-width-md;
+  margin: 100px auto 64px;
+}
+
+.l-aside {
+  width: 59%;
+  min-width: 298px;
+  margin-left: 48px;
+
+  .wpp-thumbnail {
+    width: 33.56%;
+  }
+}
+
 .widget-title {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -105,11 +122,11 @@
 
   &.next,
   &.prev {
-    color: #3983c8;
-    background-color: $white;
-    border: 1px solid #3983c8;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
       "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic",
       Verdana, Meiryo, sans-serif;
+    color: #3983c8;
+    background-color: $white;
+    border: 1px solid #3983c8;
   }
 }

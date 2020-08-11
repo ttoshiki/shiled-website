@@ -21,36 +21,30 @@ get_header();
         <h1 class="l-mainVisualHeading roboto">NEWS</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/news/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
 			</section>
-			<div class="single__contents">
+			<div class="l-doubleCol">
 				<div class="single__main">
 					<?php if (have_posts()): ?>
-						<ul class="single__list">
-							<?php while (have_posts()) : the_post(); ?>
-							<li class="single__item">
-								<article id="post-<?php the_ID(); ?>" <?php post_class('single__article'); ?>>
-									<a href="<?php the_permalink(); ?>" class="">
+							<article id="post-<?php the_ID(); ?>" <?php post_class('single__article'); ?>>
+								<?php while (have_posts()) : the_post(); ?>
+									<?php get_template_part('template-parts/breadcrumb'); ?>
+									<span class="single__cat roboto"><?php the_category(' '); ?></span><time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="single__date roboto"><?php echo get_post_time('Y.m.d'); ?></time>
+									<h3 class="single__title"><?php echo get_the_title(); ?></h3>
 										<?php
 											if ( has_post_thumbnail() ) {
 												the_post_thumbnail();
 											} else { ?>
 												<img src="" alt="no-image" width="240" height="240">
-											<?php } ?>
-									</a>
-									<div class="single__meta">
-										<span class="single__cat roboto"><?php the_category(' '); ?></span><time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="single__date roboto"><?php echo get_post_time('Y.m.d'); ?></time>
-										<h3 class="single__title"><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
-										<p class="single__content"><?php the_excerpt(); ?></p>
-									</div>
-								</article>
-							</li>
-							<?php endwhile; ?>
-						</ul>
-						<?php else: ?>
+										<?php } ?>
+										<div class="single__meta">
+											<p class="single__content"><?php the_content(); ?></p>
+										</div>
+									<?php endwhile; ?>
+									<?php else: ?>
+							</article>
 						<!-- 投稿が無い場合の処理 -->
 					<?php endif; ?>
-					<?php get_template_part('template-parts/pagination'); ?>
 				</div>
-				<aside class="single__aside">
+				<aside class="l-aside">
 					<?php get_sidebar(); ?>
 				</aside>
 			</div>

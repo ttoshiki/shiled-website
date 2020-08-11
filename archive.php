@@ -21,7 +21,7 @@ get_header();
         <h1 class="l-mainVisualHeading roboto">NEWS</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/news/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
 			</section>
-			<div class="archive__contents">
+			<div class="l-doubleCol">
 				<div class="archive__main">
 					<?php if (have_posts()): ?>
 						<ul class="archive__list">
@@ -50,7 +50,7 @@ get_header();
 					<?php endif; ?>
 					<?php get_template_part('template-parts/pagination'); ?>
 				</div>
-				<aside class="archive__aside">
+				<aside class="l-aside">
 					<?php get_sidebar(); ?>
 				</aside>
 			</div>

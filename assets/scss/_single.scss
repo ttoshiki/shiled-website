@@ -1,0 +1,46 @@
+@import "_variables";
+
+.single {
+  &__list {
+    margin: 0;
+  }
+
+  &__cat {
+    a {
+      color: #3983c8;
+    }
+  }
+
+  &__date {
+    margin-left: 24px;
+    color: #3983c8;
+  }
+
+  &__title {
+    margin: 12px 0 0px;
+    font-size: 30px;
+    color: #000000;
+  }
+
+  &__article > .wp-post-image {
+    width: 100%;
+    height: auto;
+    margin: 24px auto 0;
+  }
+
+  &__main {
+    h2 {
+      padding-bottom: 12px;
+      margin-bottom: 0;
+      font-size: 25px;
+      border-bottom: 1px solid #d7e6f4;
+    }
+
+    p {
+      margin: 24px 0 32px;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #000000;
+    }
+  }
+}

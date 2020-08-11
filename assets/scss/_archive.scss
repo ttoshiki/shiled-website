@@ -1,13 +1,6 @@
 @import "_variables";
 
 .archive {
-  &__contents {
-    display: flex;
-    justify-content: space-between;
-    max-width: $--content-width-md;
-    margin: 100px auto;
-  }
-
   &__list {
     margin: 0;
   }
@@ -49,10 +42,5 @@
   &__content {
     font-size: 15px;
     color: #000000;
-  }
-
-  &__aside {
-    width: 59%;
-    margin-left: 48px;
   }
 }

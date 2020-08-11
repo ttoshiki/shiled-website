@@ -168,6 +168,59 @@ img {
   background-color: #3983c8;
 }
 
+.breadcrumb {
+  margin-bottom: 12px;
+  color: #04287e;
+}
+
+.breadcrumb a {
+  color: #04287e;
+}
+
+.breadcrumb__inner > span:not(:first-child) {
+  margin-left: 4px;
+}
+
+.related .entry-title {
+  display: -webkit-box;
+  margin-top: 0;
+  overflow: hidden;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.related-title {
+  font-size: 20px;
+  color: #3983c8;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #3983c8;
+}
+
+.related-list {
+  display: flex;
+}
+
+.related-item {
+  width: 22.8%;
+  margin: 0;
+}
+
+.related-item:not(:first-child) {
+  margin-left: 2.94%;
+}
+
+.related-item img {
+  width: 100%;
+}
+
+.related-date {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #3983c8;
+}
+
 .l-mainVisual {
   position: relative;
 }
@@ -180,6 +233,23 @@ img {
   color: #ffffff;
   letter-spacing: 8px;
   transform: translate(-50%, -100%);
+}
+
+.l-doubleCol {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 100px auto 64px;
+}
+
+.l-aside {
+  width: 59%;
+  min-width: 298px;
+  margin-left: 48px;
+}
+
+.l-aside .wpp-thumbnail {
+  width: 33.56%;
 }
 
 .widget-title {
@@ -271,10 +341,10 @@ img {
 }
 
 .page-numbers.next, .page-numbers.prev {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   color: #3983c8;
   background-color: #ffffff;
   border: 1px solid #3983c8;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 }
 
 .header {
@@ -753,13 +823,6 @@ img {
   border-bottom: 1px solid rgba(4, 40, 126, 0.15);
 }
 
-.archive__contents {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1150px;
-  margin: 100px auto;
-}
-
 .archive__list {
   margin: 0;
 }
@@ -801,7 +864,41 @@ img {
   color: #000000;
 }
 
-.archive__aside {
-  width: 59%;
-  margin-left: 48px;
+.single__list {
+  margin: 0;
+}
+
+.single__cat a {
+  color: #3983c8;
+}
+
+.single__date {
+  margin-left: 24px;
+  color: #3983c8;
+}
+
+.single__title {
+  margin: 12px 0 0px;
+  font-size: 30px;
+  color: #000000;
+}
+
+.single__article > .wp-post-image {
+  width: 100%;
+  height: auto;
+  margin: 24px auto 0;
+}
+
+.single__main h2 {
+  padding-bottom: 12px;
+  margin-bottom: 0;
+  font-size: 25px;
+  border-bottom: 1px solid #d7e6f4;
+}
+
+.single__main p {
+  margin: 24px 0 32px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #000000;
 }
