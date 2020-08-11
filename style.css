@@ -902,3 +902,172 @@ img {
   line-height: 1.8;
   color: #000000;
 }
+
+.contact__inner {
+  max-width: 800px;
+  margin: 100px auto;
+}
+
+.contact__leadParagraph {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contact form {
+  margin-top: 72px;
+}
+
+.contact .required-label {
+  display: inline-block;
+  padding: 4px 6px;
+  font-size: 15px;
+  color: #ffffff;
+  text-indent: 4px;
+  letter-spacing: 4px;
+  background-color: #04287e;
+}
+
+.contact .required-label.-optional {
+  color: #000000;
+  background-color: #e6e6e6;
+}
+
+.contact .form-item {
+  display: inline-block;
+  width: 140px;
+  margin-left: 12px;
+}
+
+.contact .wpcf7-list-item.first {
+  margin-left: 0;
+}
+
+.contact .form-input:not(:first-child) {
+  margin-top: 48px;
+}
+
+.contact .form-input.-textarea label {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact .form-input input[type="text"],
+.contact .form-input input[type="tel"],
+.contact .form-input input[type="email"] {
+  width: 74%;
+  padding: 10px 0 10px 10px;
+  border: 2px solid #d8d8d8;
+}
+
+.contact .form-input input[type="text"] + .wpcf7-not-valid-tip,
+.contact .form-input input[type="tel"] + .wpcf7-not-valid-tip,
+.contact .form-input input[type="email"] + .wpcf7-not-valid-tip {
+  width: 74%;
+  margin: 0 0 0 auto;
+}
+
+.contact .form-input .wpcf7-radio + .wpcf7-not-valid-tip {
+  width: 74%;
+  margin: 0 0 0 auto;
+}
+
+.contact .form-input .your-message {
+  width: 74%;
+}
+
+.contact .form-input textarea {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  border: 2px solid #d8d8d8;
+}
+
+.contact .form-submitArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 0 0;
+}
+
+.contact .form-submitAreaCaution {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.contact .form-submitAreaCaution a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+.contact .form-submitBtnWrapper {
+  position: relative;
+  width: 44%;
+  height: 70px;
+  font-size: 14px;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact .form-submitBtnWrapper::after {
+  position: absolute;
+  top: 20px;
+  right: 48px;
+  width: 24px;
+  height: 17px;
+  content: "";
+  background-image: url(assets/img/icons/icon_arrow-right.png);
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+}
+
+.contact .form-submitBtnWrapper:hover .form-submitBtn {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #04287e;
+}
+
+.contact .form-submitBtnWrapper:hover::after {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+
+.contact .form-submitBtn {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  padding: 0 24px 0 0px;
+  color: #04287e;
+  text-indent: 24px;
+  letter-spacing: 24px;
+  background-color: #ffffff;
+  border: 1px solid #04287e;
+  transition: all 0.2s;
+}
+
+.contact__privacy {
+  height: 330px;
+  padding: 48px 64px 0;
+  margin: 54px 0 0;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact__privacyBlock {
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(88, 162, 196, 0.3);
+}
+
+.contact__privacyHeading {
+  margin: 0 0 32px;
+  color: #04287e;
+  text-align: center;
+}
+
+.contact__privacySubHeading {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contact__privacyParagraph {
+  padding: 0 16px;
+  margin-bottom: 0;
+  line-height: 1.8;
+}

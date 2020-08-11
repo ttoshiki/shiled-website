@@ -1,4 +1,178 @@
 @import "_variables";
 
 .contact {
+  &__inner {
+    max-width: 800px;
+    margin: 100px auto;
+  }
+
+  &__leadParagraph {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  form {
+    margin-top: 72px;
+  }
+
+  .required-label {
+    display: inline-block;
+    padding: 4px 6px;
+    font-size: 15px;
+    color: $white;
+    text-indent: 4px;
+    letter-spacing: 4px;
+    background-color: $--color-primary;
+
+    &.-optional {
+      color: #000000;
+      background-color: #e6e6e6;
+    }
+  }
+
+  .form-item {
+    display: inline-block;
+    width: 140px;
+    margin-left: 12px;
+  }
+
+  .wpcf7-list-item {
+    &.first {
+      margin-left: 0;
+    }
+  }
+
+  .form-input {
+    &:not(:first-child) {
+      margin-top: 48px;
+    }
+    &.-textarea {
+      label {
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 74%;
+      padding: 10px 0 10px 10px;
+      border: 2px solid #d8d8d8;
+
+      & + .wpcf7-not-valid-tip {
+        width: 74%;
+        margin: 0 0 0 auto;
+      }
+    }
+
+    .wpcf7-radio + .wpcf7-not-valid-tip {
+      width: 74%;
+      margin: 0 0 0 auto;
+    }
+
+    .your-message {
+      width: 74%;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px 0 10px 10px;
+      border: 2px solid #d8d8d8;
+    }
+  }
+
+  .form-submitArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 48px 0 0;
+  }
+
+  .form-submitAreaCaution {
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    a {
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+
+  .form-submitBtnWrapper {
+    position: relative;
+    width: 44%;
+    height: 70px;
+    font-size: 14px;
+    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+
+    &::after {
+      position: absolute;
+      top: 20px;
+      right: 48px;
+      width: 24px;
+      height: 17px;
+      content: "";
+      background-image: url(assets/img/icons/icon_arrow-right.png);
+      background-repeat: no-repeat;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      .form-submitBtn {
+        color: $white;
+        cursor: pointer;
+        background-color: $--color-primary;
+      }
+
+      &::after {
+        filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+          brightness(107%) contrast(101%);
+      }
+    }
+  }
+
+  .form-submitBtn {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    padding: 0 24px 0 0px;
+    color: $--color-primary;
+    text-indent: 24px;
+    letter-spacing: 24px;
+    background-color: $white;
+    border: 1px solid $--color-primary;
+    transition: all 0.2s;
+  }
+
+  &__privacy {
+    height: 330px;
+    padding: 48px 64px 0;
+    margin: 54px 0 0;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  &__privacyBlock {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba($color: #58a2c4, $alpha: 0.3);
+  }
+
+  &__privacyHeading {
+    margin: 0 0 32px;
+    color: $--color-primary;
+    text-align: center;
+  }
+
+  &__privacySubHeading {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  &__privacyParagraph {
+    padding: 0 16px;
+    margin-bottom: 0;
+    line-height: 1.8;
+  }
 }

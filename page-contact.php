@@ -16,20 +16,37 @@ get_header();
 ?>
 
 	<main class="site-main">
-		<div class="company">
+		<div class="contact">
       <section class="l-mainVisual">
         <h1 class="l-mainVisualHeading roboto">CONTACT</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/contact/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/contact/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
-      <section class="contact__lead">
-        <div class="contact__leadInner">
-          <h2 class="contact__leadHeading">暮らしに、安堵を。</h2>
+      <div class="contact__inner">
+        <section class="contact__lead">
           <p class="contact__leadParagraph">
-            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
-            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
+            お問い合わせフォームからご連絡ください。ご記入されましたら【送信】ボタンをクリックしてください。<br>
+            送信後に確認メールをお送りしています。届かない場合は、お手数ですがxxx@xxx.xxxまでお問い合わせ<br>
+            内容をお送りください。
           </p>
+        </section>
+        <?php while (have_posts()) : ?>
+				<?php
+          the_post();
+          the_content();
+          endwhile;
+        ?>
+        <div class="contact__privacy">
+          <h2 class="contact__privacyHeading">プライバシーポリシー</h2>
+          <div class="contact__privacyBlock">
+            <h3 class="contact__privacySubHeading">第1条（個人情報）</h3>
+            <p class="contact__privacyParagraph">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。</p>
+          </div>
+          <div class="contact__privacyBlock">
+            <h3 class="contact__privacySubHeading">第1条（個人情報）</h3>
+            <p class="contact__privacyParagraph">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。</p>
+          </div>
         </div>
-      </section>
+      </div>
 		</div>
 	</main><!-- #main -->
 
