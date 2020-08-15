@@ -40,3 +40,9 @@ img {
 .screen-reader-text {
   display: none;
 }
+
+.site-main {
+  width: 100%;
+  min-width: $--content-width-md;
+  margin: 0 auto;
+}

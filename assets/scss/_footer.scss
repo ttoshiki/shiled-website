@@ -1,8 +1,14 @@
 @import "_variables";
 
 .footer {
+  width: 100%;
+  min-width: $--content-width-md;
+  margin: 0 auto;
+
   &__links {
     display: flex;
+    width: 100%;
+    min-width: $--content-width-md;
   }
 
   &__linksBlock {
@@ -130,7 +136,10 @@
   }
 
   &__companyCopyrightWrapper {
+    width: 100%;
+    min-width: $--content-width-md;
     padding: 4px 0;
+    margin: 0 auto;
     text-align: center;
     background-color: $--color-primary;
   }

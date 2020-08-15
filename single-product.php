@@ -63,11 +63,9 @@ get_header();
                   <?php the_content(); ?>
                 </div>
                 <div class="singleProduct__buttons">
-                  <a href="
-                    <?php if (get_field('url')): ?>
-                      <?php the_field('url'); ?>
-                    <?php endif; ?>
-                    " class="c-btn"><span class="c-btn__text">購入はこちら</span></a>
+                  <?php if (get_field('url')): ?>
+                    <a href="<?php the_field('url'); ?>" class="c-btn"><span class="c-btn__text">購入はこちら</span></a>
+                  <?php endif; ?>
                   <a href="<?php echo home_url('/contact/') ?>" class="c-btn"><span class="c-btn__text">お問い合わせ</span></a>
                 </div>
               </div>
