@@ -1,0 +1,105 @@
+@import "_variables";
+
+.archiveProduct {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 60px;
+    grid-column-gap: 3%;
+    max-width: $--content-width-md;
+    margin: 100px auto;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -12px;
+      left: 14px;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      color: $--color-primary;
+      letter-spacing: 2px;
+      content: counter(product-num, decimal-leading-zero) " ";
+      counter-increment: product-num 1;
+    }
+  }
+
+  &__meta {
+    position: relative;
+    width: 88%;
+    padding: 36px 20px 40px;
+    margin: -60px auto 0;
+    background-color: $white;
+    box-shadow: 0px 0px 6.57px 2.43px rgba(0, 0, 0, 0.05);
+  }
+
+  &__wrapper {
+    .wp-post-image {
+      width: 250px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  &__metaLink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; /* 必要であればリンク要素の重なりのベース順序指定 */
+    width: 100%;
+    height: 100%;
+    text-indent: -999px;
+  }
+
+  &__cat {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    width: 72%;
+    padding: 4px 0;
+    color: $white;
+    text-align: center;
+    background-color: $--color-primary-tint;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 17px;
+
+    a {
+      color: $--color-primary;
+    }
+  }
+
+  &__lead {
+    margin: 8px 0 0;
+  }
+
+  &__price {
+    display: block;
+    margin-top: 8px;
+  }
+
+  &__more {
+    position: absolute;
+    right: 48px;
+    bottom: 8px;
+    font-size: 13px;
+    color: $--color-primary;
+    letter-spacing: 2px;
+
+    &::after {
+      position: absolute;
+      top: -5px;
+      right: -32px;
+      width: 24px;
+      height: 17px;
+      content: "";
+      background-image: url(assets/img/icons/icon_arrow-right.png);
+      background-repeat: no-repeat;
+    }
+  }
+}

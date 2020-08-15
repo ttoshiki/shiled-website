@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<header id="header" class="header roboto">
+	<header id="header" class="header roboto<?php if (is_singular('product')) { echo ' products'; } ?>">
 		<nav class="header__nav <?php
 		 if (!is_front_page()) { echo '-hasLogo'; } ?>">
 			<?php

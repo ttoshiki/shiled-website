@@ -157,10 +157,14 @@ function shield_scripts()
     wp_enqueue_style('roboto');
 
     wp_enqueue_script('jquery');
-
+    wp_enqueue_script('main-script', get_template_directory_uri() . '/assets/js/main.js', array(), '', false);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
+    }
+
+    if (is_singular()) {
+        wp_enqueue_script('single-product-script', get_template_directory_uri() . '/assets/js/single-product.js', array(), '', false);
     }
 }
 add_action('wp_enqueue_scripts', 'shield_scripts');

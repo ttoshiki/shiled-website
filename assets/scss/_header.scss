@@ -33,6 +33,53 @@
       letter-spacing: 2px;
     }
   }
+
+  &.products {
+    box-shadow: 0px 0px 14.76px 3.24px rgba(0, 0, 0, 0.1);
+
+    .-hasLogo {
+      display: flex;
+      padding: 24px 0 18px;
+
+      div {
+        left: auto;
+        margin: 8px 0 0 62px;
+        transform: none;
+      }
+    }
+
+    .menu {
+      margin: 0;
+
+      a {
+        color: $--color-primary;
+      }
+    }
+
+    .custom-logo-link {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 254px;
+      margin: 0 0 0 32px;
+
+      img {
+        width: 100%;
+        height: auto;
+        filter: none;
+      }
+    }
+
+    div {
+      position: relative;
+    }
+  }
+}
+
+#page {
+  &.products {
+    position: absolute;
+  }
 }
 
 .fixedMenu {
@@ -66,11 +113,13 @@
 .custom-logo-link {
   position: absolute;
   top: 24px;
-  left: 24px;
+  left: 32px;
   z-index: 100;
 
   img {
     width: 50%;
     height: 50%;
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+      brightness(107%) contrast(101%);
   }
 }

@@ -1,0 +1,364 @@
+@import "_variables";
+
+.singleProduct {
+  max-width: $--content-width-md;
+  margin: 60px auto 0;
+
+  .breadcrumb__inner {
+    letter-spacing: 1px;
+  }
+
+  &__productInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 56px;
+    margin: 16px 0 0;
+  }
+
+  &__photos {
+    & > img {
+      width: 100%;
+      height: 33.41vw;
+      object-fit: cover;
+    }
+  }
+
+  &__subPhotos {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-column-gap: 11px;
+    margin-top: 6px;
+
+    & > img {
+      width: 176px;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
+
+  &__subPhoto {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__cat {
+    padding: 4px 56px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #4c8fcd;
+  }
+
+  &__title {
+    margin: 24px 0 0;
+    font-size: 30px;
+    color: $--color-primary;
+    letter-spacing: 1px;
+  }
+
+  &__description {
+    margin: 24px 0 0;
+
+    p {
+      line-height: 2.2;
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    margin: 24px 0 0;
+
+    a {
+      width: 48%;
+
+      &:not(:first-child) {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  &-doubleCol {
+    display: flex;
+    align-items: flex-start;
+    margin: 100px 0 0;
+
+    &__col {
+      &.-detailText {
+        width: 100%;
+      }
+
+      &.-fixed {
+        position: sticky;
+        top: 16px;
+        margin-left: 24px;
+        border-top: 2px solid $--color-primary;
+        box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      width: 31.5%;
+      color: $--color-primary;
+    }
+  }
+
+  &__linkText {
+    position: relative;
+    padding-bottom: 24px;
+    text-align: center;
+    border-bottom: 1px solid $--color-primary;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      width: 36px;
+      height: 24px;
+      content: "";
+      background-image: url(assets/img/icons/icon_arrow-right.png);
+      background-size: cover;
+      transform: translateY(-70%) rotate(90deg);
+    }
+  }
+
+  &__linkEnName {
+    letter-spacing: 2px;
+  }
+
+  &__linkName {
+    margin: 8px 0 0;
+    letter-spacing: 3px;
+  }
+
+  &__details {
+    margin: 48px 0 0;
+
+    dl {
+      margin: 24px 0 0;
+    }
+
+    dt {
+      width: 20%;
+      padding: 16px 0;
+      font-size: 13px;
+      color: $--color-primary;
+      text-align: center;
+      letter-spacing: 1px;
+      border: 1px solid $--color-primary;
+      border-right: none;
+    }
+
+    dd {
+      width: 80%;
+      padding: 16px 0 16px 40px;
+      margin-left: 0;
+      font-size: 13px;
+      border: 1px solid $--color-primary;
+    }
+  }
+
+  &__subHeadingWrapper {
+    display: flex;
+    align-items: center;
+    color: $--color-primary;
+
+    &.-point {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subHeading {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  &__subHeadingEn {
+    margin-left: 12px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  &__definitionItem {
+    display: flex;
+
+    &:not(:first-of-type) {
+      dt,
+      dd {
+        border-top: none;
+      }
+    }
+  }
+
+  &__points {
+    margin: 48px 0 24px;
+  }
+
+  &__pointWrapper {
+    display: flex;
+    align-items: center;
+    margin: 12px 0 0;
+  }
+
+  &__pointIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__point {
+    margin-left: 20px;
+  }
+
+  &__faq {
+    margin: 48px 0 0;
+  }
+
+  &__faqWrapper {
+    margin: 24px 0 0;
+    border: 1px solid $--color-primary;
+  }
+
+  &__questionWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      position: absolute;
+      right: 20px;
+      font-size: 15px;
+      color: $--color-primary;
+      content: ">";
+      transition: all 0.2s;
+      transform: rotate(90deg) scale(1.2, 2);
+    }
+
+    &.-open {
+      &::after {
+        right: 29px;
+        transform: rotate(-90deg) scale(1.2, 2);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__answerWrapper {
+    display: none;
+  }
+
+  &__answerWrapperInner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__faqLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-right: 1px solid $--color-primary;
+
+    &.-question {
+      color: $white;
+      background-color: $--color-primary;
+    }
+  }
+
+  &__answer,
+  &__question {
+    margin: 0 0 0 20px;
+  }
+
+  &__question {
+    color: $--color-primary;
+  }
+
+  &__fixedInfo {
+    padding: 32px;
+  }
+
+  &__fixedImage {
+    display: block;
+    width: 100%;
+  }
+
+  &__fixedInfoTitle {
+    display: block;
+    margin: 12px 0 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: $--color-primary;
+  }
+
+  &__fixedInfoButtons {
+    margin: 12px 0 0;
+  }
+
+  &__fixedPurchaseLink,
+  &__fixedContactLink {
+    width: 100%;
+  }
+
+  &__fixedPurchaseLink {
+    &.c-btn {
+      color: $white;
+      text-align: center;
+      background-color: $--color-primary;
+
+      &::after {
+        filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+          brightness(107%) contrast(101%);
+      }
+
+      &:hover {
+        color: $--color-primary;
+        background-color: $white;
+
+        &::after {
+          filter: none;
+        }
+      }
+    }
+  }
+
+  &__fixedContactLink {
+    margin: 24px 0 0;
+    text-align: center;
+
+    &.c-btn {
+      color: $white;
+      text-align: center;
+      background-color: $--color-primary-tint;
+      border: 1px solid $--color-primary-tint;
+
+      &::after {
+        filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+          brightness(107%) contrast(101%);
+      }
+
+      &:hover {
+        color: $--color-primary-tint;
+        background-color: $white;
+
+        &::after {
+          filter: none;
+        }
+      }
+    }
+  }
+}
