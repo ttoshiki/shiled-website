@@ -176,3 +176,79 @@
     line-height: 1.8;
   }
 }
+
+@include mq(mobile) {
+  .contact {
+    &__inner {
+      padding: 0 20px;
+      margin: 60px auto 0;
+    }
+
+    .wpcf7-list-item {
+      margin: 12px 20px 0 0;
+
+      &.first {
+        margin-left: auto;
+      }
+    }
+
+    .form-input {
+      &.-textarea {
+        label {
+          display: block;
+        }
+      }
+
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"] {
+        width: 100%;
+
+        & + .wpcf7-not-valid-tip {
+          width: 100%;
+        }
+      }
+
+      .your-message {
+        width: 100%;
+      }
+
+      &:not(:first-child) {
+        margin-top: 40px;
+      }
+    }
+
+    &__privacy {
+      height: 380px;
+      padding: 24px 12px 0;
+      margin: 48px 0 60px;
+    }
+
+    &__privacyHeading {
+      margin: 0 0 24px;
+    }
+
+    .form-submitArea {
+      flex-direction: column;
+      margin: 24px 0 0;
+    }
+
+    .form-submitBtnWrapper {
+      width: 80%;
+      margin: 12px 0 0;
+    }
+  }
+
+  .wpcf7-form-control-wrap {
+    display: block;
+    margin-top: 10px;
+
+    &.form-items {
+      margin-top: 4px;
+    }
+  }
+
+  .wpcf7 form .wpcf7-response-output {
+    margin: 2em 0 1em;
+  }
+}

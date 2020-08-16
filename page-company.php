@@ -21,7 +21,7 @@ get_header();
         <h1 class="l-mainVisualHeading roboto">COMPANY</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
-      <section class="company__lead">
+      <section class="company__lead fadein">
         <div class="company__leadInner">
           <h2 class="company__leadHeading">暮らしに、安堵を。</h2>
           <p class="company__leadParagraph">
@@ -34,7 +34,7 @@ get_header();
         </div>
       </section>
       <section class="company__message">
-        <div class="company__messageInner">
+        <div class="company__messageInner fadein">
           <h2 class="company__messageHeading roboto">MESSAGE</h2>
           <div class="company__messageContents">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/president@2x.jpg 2x" alt="" class="">

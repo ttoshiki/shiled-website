@@ -8,11 +8,9 @@ jQuery(function() {
 
     if (index === 0) {
       thumbnailSrcUrl = eyeCatchSrcUrl;
-      console.log('a')
     } else {
       thumbnailSrcUrl = jQuery(this).attr('src');
     }
-    console.log(thumbnailSrcUrl);
     jQuery('.singleProduct__photos > img').attr('src', thumbnailSrcUrl);
     jQuery('.singleProduct__photos > img').attr('srcset', thumbnailSrcUrl);
   });

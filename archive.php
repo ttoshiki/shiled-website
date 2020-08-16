@@ -39,7 +39,7 @@ get_header();
 									<div class="archive__meta">
 										<span class="archive__cat roboto"><?php the_category(' '); ?></span><time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="archive__date roboto"><?php echo get_post_time('Y.m.d'); ?></time>
 										<h3 class="archive__title"><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
-										<p class="archive__content"><?php the_excerpt(); ?></p>
+										<div class="archive__content"><?php the_excerpt(); ?></div>
 									</div>
 								</article>
 							</li>

@@ -74,7 +74,7 @@ get_header();
 			<?php endif; ?>
 			<section class="c-banners">
         <div>
-          <a href="<?php echo home_url('/product/') ?>" class="c-banner__link">
+          <a href="<?php echo home_url('/service/') ?>" class="c-banner__link">
             <div class="c-banner">
                 <h2 class="c-banner__heading">SERVICE</h2>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/banner02.jpg" alt="service" class="c-banner">
@@ -82,7 +82,7 @@ get_header();
           </a>
         </div>
         <div>
-          <a href="<?php echo home_url('/service/') ?>" class="c-banner__link">
+          <a href="<?php echo home_url('/product/') ?>" class="c-banner__link">
             <div class="c-banner">
               <h2 class="c-banner__heading">COMPANY</h2>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/product/banner03.jpg" alt="company" class="c-banner">

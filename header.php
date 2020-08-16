@@ -23,8 +23,28 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="header" class="header roboto<?php if (is_singular('product')) { echo ' products'; } else if (is_front_page()) { echo ' home'; } ?>">
-		<nav class="header__nav<?php
-		 if (!is_front_page()) { echo ' -hasLogo'; } ?>">
+		<div class="header__hammenu -sp">
+			<?php
+				the_custom_logo();
+			?>
+			<span class="header__trigger" href="#" @click="toggleMenu" id="trigger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+			<div class="header__hammenuWrapper">
+				<?php
+					wp_nav_menu(array(
+						'theme_location' => 'primary'
+					));
+				?>
+				<a href="<?php echo home_url('/contact/'); ?>" class="header__hammenuConversion">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download-tint.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download-tint.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download-tint@2x.png 2x" alt="ダウンロード" class="header__hammenuConversionIcon">
+					資料ダウンロード
+				</a>
+			</div>
+		</div>
+		<nav class="header__nav -pc<?php if (!is_front_page()) { echo ' -hasLogo'; } ?>">
 			<?php
 				the_custom_logo();
 			?>
@@ -34,4 +54,4 @@
 				));
 			?>
 		</nav>
-	</header><!-- #page -->
+	</header>

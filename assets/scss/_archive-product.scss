@@ -103,3 +103,13 @@
     }
   }
 }
+
+@include mq(mobile) {
+  .archiveProduct {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 20px;
+      margin: 60px auto;
+    }
+  }
+}

@@ -149,3 +149,80 @@
     color: $white;
   }
 }
+
+@include mq(mobile) {
+  .footer {
+    min-width: auto;
+
+    &__links {
+      flex-direction: column;
+      min-width: auto;
+    }
+
+    &__linksBlock {
+      width: 100%;
+      height: 160px;
+    }
+
+    &__linkButton {
+      padding: 18px 40px;
+    }
+
+    &__linkHeading {
+      font-size: 16px;
+    }
+
+    &__address {
+      margin-top: 4px;
+    }
+
+    &__logo {
+      width: 56%;
+      margin: 32px auto 0;
+    }
+
+    &__nav {
+      .menu {
+        width: 89.33%;
+        padding: 8px 0;
+        margin: 32px auto 0;
+      }
+
+      .menu-item {
+        &:not(:first-child) {
+          margin-left: 5.34vw;
+        }
+
+        a {
+          font-size: 3.2vw;
+        }
+      }
+    }
+
+    &__companyName {
+      display: block;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    &__companyInfo {
+      flex-direction: column;
+    }
+
+    &__companyAddress {
+      margin-top: 4px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    &__companyText {
+      padding: 0 20px;
+      margin: 20px 0 0;
+    }
+
+    &__companyCopyrightWrapper {
+      min-width: auto;
+      margin-bottom: 54px;
+    }
+  }
+}

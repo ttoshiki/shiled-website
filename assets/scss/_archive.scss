@@ -39,8 +39,49 @@
     }
   }
 
-  &__content {
+  &__content p {
     font-size: 15px;
     color: #000000;
+  }
+}
+
+@include mq(mobile) {
+  .archive {
+    &__article {
+      flex-direction: column;
+      padding: 0 20px;
+
+      .attachment-post-thumbnail {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+
+    &__meta {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &__cat {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 12px;
+    }
+
+    &__date {
+      font-size: 12px;
+    }
+
+    &__title {
+      margin: 8px 0 0;
+      font-size: 16px;
+    }
+
+    &__content p {
+      margin: 8px 0 0;
+      font-size: 13px;
+    }
   }
 }

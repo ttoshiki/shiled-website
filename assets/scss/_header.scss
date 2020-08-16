@@ -54,7 +54,8 @@
       display: flex;
       padding: 24px 0 18px;
 
-      div {
+      & > div {
+        position: relative;
         left: auto;
         margin: 10px 0 0 62px;
         transform: none;
@@ -82,10 +83,6 @@
         filter: none;
       }
     }
-
-    div {
-      position: relative;
-    }
   }
 
   &.products.-fixed {
@@ -107,7 +104,8 @@
         display: block;
       }
 
-      div {
+      .menu-menu-1-container {
+        position: relative;
         left: auto;
         margin: 10px 0 0 62px;
         transform: none;
@@ -118,6 +116,59 @@
         padding: 24px 0 18px;
       }
     }
+  }
+
+  &__hammenu {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    z-index: 200;
+  }
+
+  &__trigger,
+  &__trigger span {
+    box-sizing: border-box;
+    display: inline-block;
+    transition: all 0.4s;
+  }
+
+  &__trigger {
+    position: relative;
+    width: 52px;
+    height: 52px;
+  }
+
+  &__trigger span {
+    position: absolute;
+    left: 50%;
+    width: 26px;
+    height: 2px;
+    background-color: #fff;
+
+    &:first-of-type {
+      transform: translate(-50%, 16px);
+    }
+
+    &:nth-of-type(2) {
+      top: 48%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:nth-of-type(3) {
+      transform: translate(-50%, 32px);
+    }
+  }
+
+  &__trigger.active span:nth-of-type(1) {
+    -webkit-transform: translate(-12px, 26px) rotate(-45deg);
+    transform: translate(-12px, 26px) rotate(-45deg);
+  }
+  &__trigger.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  &__trigger.active span:nth-of-type(3) {
+    -webkit-transform: translate(-12px, 26px) rotate(-45deg);
+    transform: translate(-12px, 26px) rotate(45deg);
   }
 }
 
@@ -166,5 +217,149 @@
     height: 50%;
     filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
       brightness(107%) contrast(101%);
+  }
+}
+
+@include mq(mobile) {
+  .header {
+    min-width: auto;
+
+    &.home {
+      &.-fixed {
+        nav {
+          display: none;
+        }
+
+        & > div {
+          top: auto;
+          right: auto;
+          display: flex;
+          align-items: center;
+          padding: 0 12px 0 24px;
+          background-color: $white;
+        }
+
+        .menu-menu-1-container {
+          margin: 0;
+        }
+      }
+    }
+
+    &.-fixed {
+      .custom-logo-link {
+        display: block;
+        width: auto;
+        margin: 8px auto 0;
+
+        img {
+          width: 60%;
+        }
+      }
+
+      .header__trigger {
+        span {
+          background-color: $--color-primary;
+        }
+      }
+
+      .menu {
+        font-size: 16px;
+
+        a {
+          font-weight: 600;
+          color: $white;
+        }
+      }
+
+      .header__hammenu {
+        top: auto;
+        right: auto;
+        display: flex;
+        align-items: center;
+        padding: 0 12px 0 24px;
+        background-color: rgba($color: $white, $alpha: 0.9);
+      }
+
+      .-hasLogo {
+        display: none;
+      }
+    }
+
+    &__hammenuWrapper {
+      position: fixed;
+      top: 52px;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: calc(100vh - 52px);
+      background-color: rgba($color: $--color-primary, $alpha: 0.9);
+
+      li a {
+        padding: 2px 4px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $white;
+      }
+
+      li {
+        text-align: center;
+        letter-spacing: 3px;
+
+        &:not(:first-child) {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    &__hammenuConversion {
+      display: flex;
+      align-items: center;
+      padding: 8vw 12.8vw;
+      margin-top: 40px;
+      font-weight: 600;
+      color: $--color-primary-tint;
+      letter-spacing: 2px;
+      background-color: $white;
+    }
+
+    &__hammenuConversionIcon {
+      display: block;
+      width: 16px;
+      margin-right: 14px;
+    }
+  }
+
+  .fixedMenu {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    writing-mode: horizontal-tb;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding: 18px 0;
+      font-size: 12px;
+      letter-spacing: 3px;
+
+      img {
+        max-height: 16px;
+      }
+    }
+
+    &__icon {
+      margin: 0 12px 0 0;
+    }
+  }
+
+  .custom-logo-link {
+    display: none;
   }
 }

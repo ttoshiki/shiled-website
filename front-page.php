@@ -33,7 +33,7 @@ get_header();
 					</p>
 					<a href="<?php echo home_url('/company/') ?>" class="home__leadContentsButton c-btn"><span class="c-btn__text">& SHIELDについて</span></a>
 				</div>
-				<div class="home__leadContentsPhotos">
+				<div class="home__leadContentsPhotos fadein">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/photo01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/photo01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/home/photo01@2x.jpg 2x" alt="">
 					<div class="home__leadContentsPhotos -lower">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/photo02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/photo02.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/home/photo02@2x.jpg 2x" alt="">
@@ -98,7 +98,7 @@ get_header();
 						<a href="<?php echo home_url('/company/') ?>" class="c-btn"><span class="c-btn__text">ニュース一覧はこちら</span></a>
 					</div>
 			</section>
-			<section class="home__footerVisual">
+			<section class="home__footerVisual fadein">
 				<h2 class="home__footerVisualHeading">PROTECT YOUR LIFE</h2>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/footer_visual.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/footer_visual.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/home/footer_visual@2x.jpg 2x" alt="" class="home__footerVisualImage">
 			</section>

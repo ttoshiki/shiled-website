@@ -15,7 +15,20 @@ $white: #ffffff;
 $black: #333333;
 
 // Width Rule
-$--content-width-xs: 320px;
+$--content-width-xxs: 320px;
+$--content-width-xs: 769px;
 $--content-width-sm: 1000px;
 $--content-width-md: 1100px;
 $--content-width-xl: 1280px;
+
+// media-query
+$breakpoints: (
+  "mobile": "screen and (max-width: 480px)",
+  "pc": "screen and (min-width: 481px)",
+);
+
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

@@ -130,3 +130,27 @@
     border: 1px solid #3983c8;
   }
 }
+
+@include mq(mobile) {
+  .l-mainVisual {
+    &Heading {
+      font-size: 30px;
+    }
+  }
+
+  .l-doubleCol {
+    flex-direction: column;
+    margin: 60px auto 32px;
+  }
+
+  .l-aside {
+    width: 100%;
+    padding: 0 20px;
+    margin-left: 0;
+  }
+
+  .sidebar-banner {
+    display: block;
+    margin: 32px auto 48px;
+  }
+}

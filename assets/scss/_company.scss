@@ -137,6 +137,7 @@
     margin: 0;
     font-size: 50px;
     color: $--color-primary;
+    text-align: center;
     letter-spacing: 10px;
   }
 
@@ -147,6 +148,114 @@
 
     &:last-child {
       border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+    }
+  }
+}
+
+@include mq(mobile) {
+  .company {
+    &__leadInner {
+      width: 100%;
+      padding: 220px 20px 0;
+      margin: 0;
+    }
+
+    &__lead {
+      &::before {
+        top: 27vw;
+        width: 57vw;
+        height: 31.47vw;
+      }
+      &::after {
+        right: auto;
+        left: 50%;
+        width: 36.53vw;
+        height: 38.4vw;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__leadHeading {
+      margin: 32px 0 0;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    &__leadParagraph {
+      font-size: 13px;
+
+      &:first-of-type {
+        margin-top: 16px;
+      }
+
+      &:not(:first-of-type) {
+        margin-top: 20px;
+      }
+    }
+
+    &__message {
+      margin: 60px 0 0;
+
+      &::before {
+        top: 24px;
+        width: 69.9vw;
+        height: 88vw;
+      }
+    }
+
+    &__messageHeading {
+      font-size: 30px;
+      letter-spacing: 6px;
+    }
+
+    &__messageContents {
+      flex-direction: column;
+      padding: 0 20px;
+      margin: 24px 0 0;
+    }
+
+    &__messageText {
+      margin: 80px 0 0;
+    }
+
+    &__messageSubHeading {
+      font-size: 15px;
+    }
+
+    &__messageParagraph {
+      margin: 12px 0 0;
+      font-size: 13px;
+    }
+
+    &__messagePresidentName {
+      font-size: 13px;
+    }
+
+    &__overview {
+      flex-direction: column;
+      padding: 0 20px;
+      margin: 60px 0 0;
+
+      dl {
+        margin-left: 0;
+      }
+
+      dt {
+        width: 100%;
+      }
+
+      dd {
+        margin: 4px 0 0;
+      }
+    }
+
+    &__overviewHeading {
+      font-size: 30px;
+      letter-spacing: 6px;
+    }
+
+    &__overviewRow {
+      flex-direction: column;
     }
   }
 }

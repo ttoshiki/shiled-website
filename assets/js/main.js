@@ -1,7 +1,7 @@
 "use strict";
 
 jQuery(function() {
-  jQuery('a[href^="#"]').click(function(){
+  jQuery('a[href^="#"]').on('click', function(){
     var speed = 300;
     var href= jQuery(this).attr("href");
     var target = jQuery(href == "#" || href == "" ? 'html' : href);
@@ -20,7 +20,9 @@ jQuery(function() {
     if (_window.scrollTop() > heroBottom) {
       _header.addClass("-fixed");
     } else {
-      _header.removeClass("-fixed");
+      if (!(jQuery("#trigger").hasClass("active"))) {
+        _header.removeClass("-fixed");
+      }
     }
   });
 
@@ -31,4 +33,39 @@ jQuery(function() {
   } else {
       jQuery('head').prepend('<meta name="viewport" content="width=1440">');
   }
+
+  // spメニューOPEN
+  jQuery(".header__trigger").on('click', function() {
+    if ((jQuery(this)).hasClass("-opened")) {
+      jQuery(".header__hammenuWrapper").fadeOut(300);
+    } else {
+      jQuery(".header__hammenuWrapper").fadeIn(300);
+      jQuery(".header__hammenuWrapper").css('display', 'flex');
+    }
+    if (!(jQuery("#header").hasClass("-fixed"))) {
+      jQuery(".header").addClass('-fixed');
+    } else {
+      if (_window.scrollTop() < 94) {
+        console.log('a')
+        jQuery("header").removeClass("-fixed");
+      }
+    }
+    jQuery(this).toggleClass('-opened')
+    jQuery(".header__trigger").toggleClass('active');
+  });
+
+  // fadein
+  jQuery(function () {
+    jQuery(window).scroll(function () {
+      jQuery(".fadein").each(function () {
+        var elemPos = jQuery(this).offset().top;
+        var scroll = jQuery(window).scrollTop();
+        var windowHeight = jQuery(window).height();
+        if (scroll > elemPos - windowHeight + 50) {
+          jQuery(this).addClass("scrollin");
+        }
+      });
+    });
+    jQuery(window).scroll();
+  });
 })

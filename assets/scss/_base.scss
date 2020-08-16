@@ -46,3 +46,21 @@ img {
   min-width: $--content-width-md;
   margin: 0 auto;
 }
+
+.-sp {
+  display: none;
+}
+
+@include mq(mobile) {
+  .-pc {
+    display: none;
+  }
+
+  .-sp {
+    display: block;
+  }
+
+  .site-main {
+    min-width: auto;
+  }
+}

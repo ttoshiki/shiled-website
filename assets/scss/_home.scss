@@ -128,3 +128,68 @@
     transform: translate(-50%, -100%);
   }
 }
+
+@include mq(mobile) {
+  .home {
+    &__leadContents {
+      flex-direction: column-reverse;
+    }
+
+    &__leadContentsText {
+      padding: 0 20px;
+      margin: 0;
+    }
+
+    &__leadContentsHeading {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    &__leadContentsParagraph {
+      font-size: 13px;
+    }
+
+    &__leadContentsPhotos {
+      display: block;
+      padding: 0 20px;
+      margin: 0 auto;
+
+      &.-lower {
+        display: none;
+      }
+    }
+
+    &__leadContentsButton {
+      margin-top: 24px;
+    }
+
+    &__newsList {
+      padding: 0 20px;
+    }
+
+    &__newsHeading {
+      font-size: 30px;
+    }
+
+    &__newsLink {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px 0 40px;
+
+      &::after {
+        top: 76px;
+        right: 0;
+      }
+    }
+
+    &__newsItemHeading {
+      margin: 0;
+    }
+
+    &__footerVisualHeading {
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
