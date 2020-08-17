@@ -245,6 +245,20 @@
       }
     }
 
+    &.products {
+      height: 52px;
+
+      .-hasLogo {
+        display: none;
+      }
+
+      .header__trigger {
+        span {
+          background-color: $--color-primary;
+        }
+      }
+    }
+
     &.-fixed {
       .custom-logo-link {
         display: block;

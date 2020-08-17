@@ -260,4 +260,31 @@
       font-size: 24px;
     }
   }
+
+  .breadcrumb {
+    &__inner {
+      font-size: 12px;
+    }
+  }
+
+  .related-list {
+    flex-wrap: wrap;
+  }
+
+  .related-item {
+    width: 48.5%;
+    margin: 0;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 3%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 }

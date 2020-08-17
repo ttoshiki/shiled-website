@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/*
+Theme Name: &SHIELD
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: &SHIELD original theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: &SHIELD
+*/
 *,
 *::after,
 *::before {
@@ -303,6 +314,25 @@ img {
   .c-banner__heading {
     font-size: 24px;
   }
+  .breadcrumb__inner {
+    font-size: 12px;
+  }
+  .related-list {
+    flex-wrap: wrap;
+  }
+  .related-item {
+    width: 48.5%;
+    margin: 0;
+  }
+  .related-item:not(:first-child) {
+    margin-left: 0;
+  }
+  .related-item:nth-child(2n) {
+    margin-left: 3%;
+  }
+  .related-item img {
+    width: 100%;
+  }
 }
 
 .l-mainVisual {
@@ -447,6 +477,9 @@ img {
   .sidebar-banner {
     display: block;
     margin: 32px auto 48px;
+  }
+  .widget .cat-item {
+    font-size: 13px;
   }
 }
 
@@ -675,6 +708,15 @@ img {
   }
   .header.home.-fixed .menu-menu-1-container {
     margin: 0;
+  }
+  .header.products {
+    height: 52px;
+  }
+  .header.products .-hasLogo {
+    display: none;
+  }
+  .header.products .header__trigger span {
+    background-color: #04287e;
   }
   .header.-fixed .custom-logo-link {
     display: block;
@@ -1607,6 +1649,26 @@ img {
   color: #000000;
 }
 
+@media screen and (max-width: 480px) {
+  .single__main {
+    padding: 0 20px;
+  }
+  .single__cat a {
+    font-size: 12px;
+  }
+  .single__title {
+    margin: 8px 0 0;
+    font-size: 24px;
+  }
+  .single h2 {
+    font-size: 22px;
+  }
+  .single p {
+    margin: 20px 0 24px;
+    font-size: 13px;
+  }
+}
+
 .singleProduct {
   max-width: 1100px;
   margin: 60px auto 0;
@@ -1952,6 +2014,27 @@ img {
 
 .singleProduct__fixedContactLink.c-btn:hover::after {
   filter: none;
+}
+
+@media screen and (max-width: 480px) {
+  .singleProduct__productInfo {
+    grid-template-columns: 1fr;
+  }
+  .singleProduct .single__article {
+    padding: 0 20px;
+  }
+  .singleProduct__photos > img {
+    height: auto;
+  }
+  .singleProduct__buttons {
+    text-align: center;
+  }
+  .singleProduct__buttons a {
+    width: 64%;
+  }
+  .singleProduct-doubleCol {
+    flex-direction: column;
+  }
 }
 
 .contact__inner {

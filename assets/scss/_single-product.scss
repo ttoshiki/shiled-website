@@ -362,3 +362,33 @@
     }
   }
 }
+
+@include mq(mobile) {
+  .singleProduct {
+    &__productInfo {
+      grid-template-columns: 1fr;
+    }
+
+    .single__article {
+      padding: 0 20px;
+    }
+
+    &__photos {
+      & > img {
+        height: auto;
+      }
+    }
+
+    &__buttons {
+      text-align: center;
+
+      a {
+        width: 64%;
+      }
+    }
+
+    &-doubleCol {
+      flex-direction: column;
+    }
+  }
+}

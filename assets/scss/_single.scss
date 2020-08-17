@@ -44,3 +44,31 @@
     }
   }
 }
+
+@include mq(mobile) {
+  .single {
+    &__main {
+      padding: 0 20px;
+    }
+
+    &__cat {
+      a {
+        font-size: 12px;
+      }
+    }
+
+    &__title {
+      margin: 8px 0 0;
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      margin: 20px 0 24px;
+      font-size: 13px;
+    }
+  }
+}
