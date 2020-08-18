@@ -22,7 +22,7 @@ get_header();
 			?>
 			<section class="home__leadContents">
 				<div class="home__leadContentsText">
-					<h2 class="home__leadContentsHeading">暮らしに、安堵を。</h2>
+					<h2 class="home__leadContentsHeading"><span id="effect_01">暮らしに、安堵を。</span></h2>
 					<p class="home__leadContentsParagraph">
 						私たちは、新しい公衆衛生の視点で<br>
 						さまざまな角度からモノやコトを創造していきます。
@@ -79,7 +79,7 @@ get_header();
 				<?php endif; ?>
 			</section>
 			<section class="home__news">
-					<h2 class="home__newsHeading roboto">NEWS</h2>
+					<h2 class="home__newsHeading roboto"><span id="effect_02">NEWS</span></h2>
 					<?php if (have_posts()): ?>
 						<ul class="home__newsList">
 							<?php while (have_posts()) : the_post(); ?>
@@ -99,7 +99,7 @@ get_header();
 					</div>
 			</section>
 			<section class="home__footerVisual fadein">
-				<h2 class="home__footerVisualHeading">PROTECT YOUR LIFE</h2>
+				<h2 class="home__footerVisualHeading"><span id="effect_03">PROTECT YOUR LIFE</span></h2>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/footer_visual.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/footer_visual.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/home/footer_visual@2x.jpg 2x" alt="" class="home__footerVisualImage">
 			</section>
 		</div>

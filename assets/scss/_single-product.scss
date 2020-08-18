@@ -365,6 +365,8 @@
 
 @include mq(mobile) {
   .singleProduct {
+    $this: &;
+
     &__productInfo {
       grid-template-columns: 1fr;
     }
@@ -375,7 +377,7 @@
 
     &__photos {
       & > img {
-        height: auto;
+        height: 82.35vw;
       }
     }
 
@@ -384,11 +386,73 @@
 
       a {
         width: 64%;
+
+        &:not(:first-child) {
+          margin: 24px 0 0;
+        }
+      }
+    }
+
+    &__details {
+      dl {
+        margin: 16px 0 0;
+      }
+
+      dt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      dd {
+        padding: 12px;
       }
     }
 
     &-doubleCol {
       flex-direction: column;
+
+      &__col {
+        &.-fixed {
+          position: relative;
+          top: auto;
+          margin: 64px 0 0;
+        }
+      }
+    }
+
+    &__subHeadingWrapper {
+      &.-point {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__subPhotos {
+      grid-column-gap: 2%;
+    }
+
+    &__pointWrapper {
+      margin: 6px 0 0;
+
+      #{$this}__point {
+        margin: 8px 0 8px 12px;
+      }
+    }
+
+    &__pointIcon {
+      height: auto;
+    }
+
+    &__faqLabel {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__faqWrapper {
+      #{$this}__question,
+      #{$this}__answer {
+        margin: 0 0 0 12px;
+      }
     }
   }
 }

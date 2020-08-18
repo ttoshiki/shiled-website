@@ -23,20 +23,20 @@ get_header();
       </section>
       <section class="company__lead fadein">
         <div class="company__leadInner">
-          <h2 class="company__leadHeading">暮らしに、安堵を。</h2>
-          <p class="company__leadParagraph">
+          <h2 class="company__leadHeading"><span id="effect_01">暮らしに、安堵を。</span></h2>
+          <p class="company__leadParagraph fadein">
             ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
             ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
           </p>
-          <p class="company__leadParagraph">
+          <p class="company__leadParagraph fadein">
             ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。
           </p>
         </div>
       </section>
       <section class="company__message">
-        <div class="company__messageInner fadein">
-          <h2 class="company__messageHeading roboto">MESSAGE</h2>
-          <div class="company__messageContents">
+        <div class="company__messageInner">
+          <h2 class="company__messageHeading roboto"><span id="effect_02">MESSAGE</span></h2>
+          <div class="company__messageContents fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/president@2x.jpg 2x" alt="" class="">
             <div class="company__messageText">
               <h3 class="company__messageSubHeading">ダミーテキスト<br>ダミーテキストダミー。</h3>
@@ -56,7 +56,7 @@ get_header();
         </div>
       </section>
       <section class="company__overview">
-        <h2 class="company__overviewHeading roboto">COMPANY</h2>
+        <h2 class="company__overviewHeading roboto"><span id="effect_03">COMPANY</span></h2>
         <dl>
           <div class="company__overviewRow">
             <dt>会社名</dt>

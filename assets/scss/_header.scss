@@ -257,16 +257,39 @@
           background-color: $--color-primary;
         }
       }
+
+      &.-fixed {
+        & + .site-main {
+          margin-top: 112px;
+        }
+
+        .header__hammenu {
+          padding: 0 7px 0 24px;
+        }
+      }
+
+      .custom-logo-link {
+        display: flex;
+        align-items: center;
+        width: 47.63vw;
+        margin: -2px 0 0 30px;
+      }
+
+      .header__hammenu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
     }
 
     &.-fixed {
       .custom-logo-link {
         display: block;
-        width: auto;
-        margin: 8px auto 0;
+        width: 47.64vw;
+        margin: 8px 0 0;
 
         img {
-          width: 60%;
+          width: 100%;
         }
       }
 

@@ -280,12 +280,28 @@ img {
 .fadein {
   opacity: 0;
   transition: all 1s;
-  transform: translateY(10px);
 }
 
 .fadein.scrollin {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.block-revealer__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: #04287e;
+  opacity: 0;
+}
+
+#effect_01,
+#effect_02,
+#effect_03 {
+  display: inline-block;
 }
 
 @media screen and (max-width: 480px) {
@@ -718,13 +734,30 @@ img {
   .header.products .header__trigger span {
     background-color: #04287e;
   }
+  .header.products.-fixed + .site-main {
+    margin-top: 112px;
+  }
+  .header.products.-fixed .header__hammenu {
+    padding: 0 7px 0 24px;
+  }
+  .header.products .custom-logo-link {
+    display: flex;
+    align-items: center;
+    width: 47.63vw;
+    margin: -2px 0 0 30px;
+  }
+  .header.products .header__hammenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   .header.-fixed .custom-logo-link {
     display: block;
-    width: auto;
-    margin: 8px auto 0;
+    width: 47.64vw;
+    margin: 8px 0 0;
   }
   .header.-fixed .custom-logo-link img {
-    width: 60%;
+    width: 100%;
   }
   .header.-fixed .header__trigger span {
     background-color: #04287e;
@@ -2024,7 +2057,7 @@ img {
     padding: 0 20px;
   }
   .singleProduct__photos > img {
-    height: auto;
+    height: 82.35vw;
   }
   .singleProduct__buttons {
     text-align: center;
@@ -2032,8 +2065,50 @@ img {
   .singleProduct__buttons a {
     width: 64%;
   }
+  .singleProduct__buttons a:not(:first-child) {
+    margin: 24px 0 0;
+  }
+  .singleProduct__details dl {
+    margin: 16px 0 0;
+  }
+  .singleProduct__details dt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .singleProduct__details dd {
+    padding: 12px;
+  }
   .singleProduct-doubleCol {
     flex-direction: column;
+  }
+  .singleProduct-doubleCol__col.-fixed {
+    position: relative;
+    top: auto;
+    margin: 64px 0 0;
+  }
+  .singleProduct__subHeadingWrapper.-point {
+    margin-bottom: 12px;
+  }
+  .singleProduct__subPhotos {
+    grid-column-gap: 2%;
+  }
+  .singleProduct__pointWrapper {
+    margin: 6px 0 0;
+  }
+  .singleProduct__pointWrapper .singleProduct__point {
+    margin: 8px 0 8px 12px;
+  }
+  .singleProduct__pointIcon {
+    height: auto;
+  }
+  .singleProduct__faqLabel {
+    width: 40px;
+    height: 40px;
+  }
+  .singleProduct__faqWrapper .singleProduct__question,
+  .singleProduct__faqWrapper .singleProduct__answer {
+    margin: 0 0 0 12px;
   }
 }
 

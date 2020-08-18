@@ -30,7 +30,7 @@ get_header();
 					$the_query = new WP_Query($args); if ($the_query->have_posts()):
 				?>
 				<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-					<li id="post-<?php the_ID(); ?>" <?php post_class('archiveProduct__item'); ?>>
+					<li id="post-<?php the_ID(); ?>" <?php post_class('archiveProduct__item fadein'); ?>>
 						<div class="archiveProduct__wrapper">
 							<a href="<?php the_permalink(); ?>" class="">
 								<?php
