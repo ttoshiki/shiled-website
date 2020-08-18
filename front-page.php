@@ -41,42 +41,19 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<section class="home__products">
-				<h2>PRODUCTS</h2>
-				<?php
-					$args = array( 'post_type' => 'Product' );
-					$the_query = new WP_Query($args); if ($the_query->have_posts()):
-				?>
-				<ul class="home__productList">
-					<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-						<li class="home__productItem">
-							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-								<a href="<?php the_permalink(); ?>">
-									<?php
-										if ( has_post_thumbnail() ) { // 投稿にアイキャッチ画像が割り当てられているかチェックします。
-											the_post_thumbnail();
-										}
-									?>
-									<div>
-										<?php
-											$terms = wp_get_object_terms($post->ID, 'product_category');
-											foreach ($terms as $term) {
-													echo '<span>' . $term->name . '</span>';
-											}
-										?>
-									</div>
-									<?php echo get_the_title(); ?>
-									<?php the_content(); ?>
-								</a>
-							</div>
-						</li>
-					<?php endwhile; ?>
-				</ul>
-				<a href="<?php echo home_url('/company/') ?>" class="c-btn"><span class="c-btn__text">商品一覧はこちら</span></a>
-				<?php wp_reset_postdata(); ?>
-				<?php else: ?>
-					<p>商品がありません。</p>
-				<?php endif; ?>
+			<section class="home__siteLinks">
+				<div class="home__siteLink service fadein">
+					<span class="home__siteLinksTitleEn roboto">SERVICE</span>
+					<h2 class="home__siteLinksTitle">除菌清掃サービス</h2>
+					<p class="home__siteLinksParagraph">細菌やウイルスによる被害を拡大しない為に、<br>除菌清掃サービスをご提供しております。</p>
+					<a href="<?php echo home_url('/service/') ?>" class="c-btn"><span class="c-btn__text">サービスについて</span></a>
+				</div>
+				<div class="home__siteLink product fadein">
+					<span class="home__siteLinksTitleEn roboto">PRODUCTS</span>
+					<h2 class="home__siteLinksTitle">除菌製品のご紹介</h2>
+					<p class="home__siteLinksParagraph">ご家庭に置きたくなる、使いたくなる<br>デザイン性の高い除菌製品をご用意しております。</p>
+					<a href="<?php echo home_url('/product/') ?>" class="c-btn"><span class="c-btn__text">製品について</span></a>
+				</div>
 			</section>
 			<section class="home__news">
 					<h2 class="home__newsHeading roboto"><span id="effect_02">NEWS</span></h2>
