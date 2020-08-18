@@ -19,7 +19,7 @@
     line-height: 1.8;
 
     &:first-of-type {
-      margin-top: 72px;
+      margin-top: 56px;
     }
 
     &:not(:first-of-type) {
@@ -100,9 +100,14 @@
     margin: 40px 0 0;
     font-size: 17px;
     line-height: 1.8;
+
+    &:first-of-type {
+      margin-top: 32px;
+    }
   }
 
   &__messagePresidentName {
+    margin: 32px 0 0;
     font-size: 20px;
     line-height: 1.8;
   }

@@ -76,7 +76,7 @@ img {
 .c-btn {
   position: relative;
   display: inline-block;
-  padding: 20px 64px 20px 24px;
+  padding: 20px 76px 20px 36px;
   font-size: 14px;
   color: #04287e;
   letter-spacing: 2px;
@@ -88,7 +88,7 @@ img {
 .c-btn::after {
   position: absolute;
   top: 15px;
-  right: 24px;
+  right: 32px;
   width: 24px;
   height: 17px;
   content: "";
@@ -361,7 +361,7 @@ img {
   left: 50%;
   font-size: 50px;
   color: #ffffff;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
   transform: translate(-50%, -100%);
 }
 
@@ -530,7 +530,7 @@ img {
 
 .header__nav .menu-item {
   margin: 0 32px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .header.-fixed, .header.home.-fixed {
@@ -774,6 +774,8 @@ img {
     right: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
     padding: 0 12px 0 24px;
     background-color: rgba(255, 255, 255, 0.9);
   }
@@ -941,15 +943,17 @@ img {
 }
 
 .footer__nav .menu-item a {
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 600;
   color: #04287e;
+  letter-spacing: 3px;
 }
 
 .footer__companyInfo {
   display: flex;
   max-width: 1000px;
-  margin: 48px auto;
+  margin: 48px auto 40px;
 }
 
 .footer__companyOverview {
@@ -961,6 +965,7 @@ img {
 
 .footer__companyName {
   font-size: 18px;
+  letter-spacing: 2px;
 }
 
 .footer__companyAddress {
@@ -1028,6 +1033,7 @@ img {
   }
   .footer__nav .menu-item a {
     font-size: 3.2vw;
+    letter-spacing: 1px;
   }
   .footer__companyName {
     display: block;
@@ -1060,6 +1066,7 @@ img {
 }
 
 .home__leadContentsHeading {
+  margin-bottom: 40px;
   font-size: 40px;
   color: #04287e;
 }
@@ -1156,7 +1163,7 @@ img {
 
 .home__footerVisual {
   position: relative;
-  margin-top: 80px;
+  margin-top: 88px;
 }
 
 .home__footerVisualImage {
@@ -1244,7 +1251,7 @@ img {
 }
 
 .company__leadParagraph:first-of-type {
-  margin-top: 72px;
+  margin-top: 56px;
 }
 
 .company__leadParagraph:not(:first-of-type) {
@@ -1326,7 +1333,12 @@ img {
   line-height: 1.8;
 }
 
+.company__messageParagraph:first-of-type {
+  margin-top: 32px;
+}
+
 .company__messagePresidentName {
+  margin: 32px 0 0;
   font-size: 20px;
   line-height: 1.8;
 }
@@ -1600,6 +1612,7 @@ img {
 .archiveProduct__title {
   margin: 0;
   font-size: 17px;
+  color: #04287e;
 }
 
 .archiveProduct__title a {
@@ -1840,7 +1853,8 @@ img {
 }
 
 .singleProduct__details {
-  margin: 48px 0 0;
+  padding-top: 94px;
+  margin: -46px 0 0;
 }
 
 .singleProduct__details dl {
@@ -1897,7 +1911,8 @@ img {
 }
 
 .singleProduct__points {
-  margin: 48px 0 24px;
+  padding-top: 94px;
+  margin: -46px 0 24px;
 }
 
 .singleProduct__pointWrapper {
@@ -1916,7 +1931,8 @@ img {
 }
 
 .singleProduct__faq {
-  margin: 48px 0 0;
+  padding-top: 94px;
+  margin: -46px 0 0;
 }
 
 .singleProduct__faqWrapper {

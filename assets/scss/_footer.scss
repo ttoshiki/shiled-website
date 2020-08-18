@@ -95,9 +95,11 @@
       }
 
       a {
+        font-family: "Roboto", sans-serif;
         font-size: 17px;
         font-weight: 600;
         color: $--color-primary;
+        letter-spacing: 3px;
       }
     }
   }
@@ -105,7 +107,7 @@
   &__companyInfo {
     display: flex;
     max-width: $--content-width-sm;
-    margin: 48px auto;
+    margin: 48px auto 40px;
   }
 
   &__companyOverview {
@@ -117,6 +119,7 @@
 
   &__companyName {
     font-size: 18px;
+    letter-spacing: 2px;
   }
 
   &__companyAddress {
@@ -195,6 +198,7 @@
 
         a {
           font-size: 3.2vw;
+          letter-spacing: 1px;
         }
       }
     }
