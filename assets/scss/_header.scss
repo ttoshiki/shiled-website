@@ -15,7 +15,7 @@
 
     &.-hasLogo {
       div {
-        left: 700px;
+        left: 780px;
       }
     }
 
@@ -183,6 +183,7 @@
   top: 120px;
   right: 13px;
   z-index: 100;
+  min-height: 440px;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 
@@ -377,6 +378,7 @@
     bottom: 0;
     display: flex;
     width: 100%;
+    min-height: auto;
     writing-mode: horizontal-tb;
 
     &__link {

@@ -122,26 +122,26 @@ get_header();
                     <?php endwhile; ?>
                   <?php endif; ?>
                 </section>
-                <section id="faq" class="singleProduct__faq">
-                  <div class="singleProduct__subHeadingWrapper">
-                    <h3 class="singleProduct__subHeading">よくある質問</h3>
-                    <span class="singleProduct__subHeadingEn roboto">FAQ</span>
-                  </div>
-                  <?php if (have_rows('faq')): ?>
-                    <?php while (have_rows('faq')): the_row(); ?>
-                      <div class="singleProduct__faqWrapper -question">
-                        <div class="singleProduct__questionWrapper">
-                          <span class="singleProduct__faqLabel -question roboto">Q</span><p class="singleProduct__question"><?php the_sub_field('question'); ?></p>
-                        </div>
-                        <div class="singleProduct__answerWrapper">
-                          <div class="singleProduct__answerWrapperInner">
-                            <span class="singleProduct__faqLabel -answer roboto">A</span><p class="singleProduct__answer"><?php the_sub_field('answer'); ?></p>
+                <?php if (have_rows('faq')): ?>
+                  <section id="faq" class="singleProduct__faq">
+                    <div class="singleProduct__subHeadingWrapper">
+                      <h3 class="singleProduct__subHeading">よくある質問</h3>
+                      <span class="singleProduct__subHeadingEn roboto">FAQ</span>
+                    </div>
+                      <?php while (have_rows('faq')): the_row(); ?>
+                        <div class="singleProduct__faqWrapper -question">
+                          <div class="singleProduct__questionWrapper">
+                            <span class="singleProduct__faqLabel -question roboto">Q</span><p class="singleProduct__question"><?php the_sub_field('question'); ?></p>
+                          </div>
+                          <div class="singleProduct__answerWrapper">
+                            <div class="singleProduct__answerWrapperInner">
+                              <span class="singleProduct__faqLabel -answer roboto">A</span><p class="singleProduct__answer"><?php the_sub_field('answer'); ?></p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    <?php endwhile; ?>
-                  <?php endif; ?>
-                </section>
+                      <?php endwhile; ?>
+                  </section>
+                <?php endif; ?>
               </div>
               <div class="singleProduct-doubleCol__col -fixed">
                 <div class="singleProduct__fixedInfo">
