@@ -37,68 +37,92 @@ get_header();
         </div>
       </section>
       <section class="service__feature">
-        <h2 class="service__featureHeading">&SHIELD除菌清掃サービスの特徴</h2>
-        <div class="service__featurePoint">
-          <h3 class="service__featurePointHeading">
-            細菌だけでなく、<br>
-            ウイルスに効果があります
-          </h3>
-          <p class="service__featurePointParagraph">プロスポーツチームの除菌清掃を受託しております。</p>
-        </div>
-        <div class="service__featurePoint">
-          <h3 class="service__featurePointHeading">
-            洗剤を使用しません
-          </h3>
-          <p class="service__featurePointParagraph">洗剤成分や芳香成分が残留せずニオイの元を分解して消臭します。</p>
-        </div>
-        <div class="service__featurePoint">
-          <h3 class="service__featurePointHeading">
-            弱酸性次亜塩素酸水を<br>
-            噴霧して除菌いたします
-          </h3>
-          <p class="service__featurePointParagraph">新型コロナウイルスへの有効性も正式に発表されています。</p>
-        </div>
-        <div class="service__featurePoint">
-          <h3 class="service__featurePointHeading">
-            抗菌コーティングを施し、<br>
-            ２年間保証いたします
-          </h3>
-          <p class="service__featurePointParagraph">補償：従業員様コロナ感染発覚時除菌作業を50％引きで実施。</p>
-        </div>
-        <div class="service__featurePhotos">
-          <figure class="service__featurePhoto">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/feature01@2x.jpg 2x" alt="&SHIELD除菌清掃サービスのイメージ">
-            <figcaption class="service__featurePhotoCaption">アルカリ電解水での拭き取り</figcaption>
-          </figure>
-          <figure class="service__featurePhoto">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature02.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/feature02@2x.jpg 2x" alt="&SHIELD除菌清掃サービスのイメージ">
-            <figcaption class="service__featurePhotoCaption">次亜塩素酸水の噴霧</figcaption>
-          </figure>
-          <figure class="service__featurePhoto">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature03.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/feature03@2x.jpg 2x" alt="&SHIELD除菌清掃サービスのイメージ">
-            <figcaption class="service__featurePhotoCaption">アルカリ電解水での拭き取りをしたことにより除菌効果がアップ</figcaption>
-          </figure>
+        <div class="service__featureInner">
+          <h2 class="service__featureHeading">&SHIELD除菌清掃サービスの特徴</h2>
+          <div class="service__featurePoints">
+            <div class="service__featurePoint">
+              <div class="service__featurePointNumWrapper roboto">
+                <span class="service__featurePointText">POINT</span>
+                <span class="service__featurePointNum">1</span>
+              </div>
+              <h3 class="service__featurePointHeading">
+                細菌だけでなく、<br>
+                ウイルスに効果があります
+              </h3>
+              <p class="service__featurePointParagraph">プロスポーツチームの除菌清掃を受託しております。</p>
+            </div>
+            <div class="service__featurePoint">
+              <div class="service__featurePointNumWrapper roboto">
+                <span class="service__featurePointText">POINT</span>
+                <span class="service__featurePointNum">2</span>
+              </div>
+              <h3 class="service__featurePointHeading">
+                洗剤を使用しません
+              </h3>
+              <p class="service__featurePointParagraph">洗剤成分や芳香成分が残留せずニオイの元を分解して消臭します。</p>
+            </div>
+            <div class="service__featurePoint">
+              <div class="service__featurePointNumWrapper roboto">
+                <span class="service__featurePointText">POINT</span>
+                <span class="service__featurePointNum">3</span>
+              </div>
+              <h3 class="service__featurePointHeading">
+                弱酸性次亜塩素酸水を<br>
+                噴霧して除菌いたします
+              </h3>
+              <p class="service__featurePointParagraph">新型コロナウイルスへの有効性も正式に発表されています。</p>
+            </div>
+            <div class="service__featurePoint">
+              <div class="service__featurePointNumWrapper roboto">
+                <span class="service__featurePointText">POINT</span>
+                <span class="service__featurePointNum">4</span>
+              </div>
+              <h3 class="service__featurePointHeading">
+                抗菌コーティングを施し、<br>
+                ２年間保証いたします
+              </h3>
+              <p class="service__featurePointParagraph">補償：従業員様コロナ感染発覚時除菌作業を50％引きで実施。</p>
+            </div>
+          </div>
+          <div class="service__featurePhotos">
+            <figure class="service__featurePhoto">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/feature01@2x.jpg 2x" alt="&SHIELD除菌清掃サービスのイメージ">
+              <figcaption class="service__featurePhotoCaption">アルカリ電解水での拭き取り</figcaption>
+            </figure>
+            <figure class="service__featurePhoto">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature02.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/feature02@2x.jpg 2x" alt="&SHIELD除菌清掃サービスのイメージ">
+              <figcaption class="service__featurePhotoCaption">次亜塩素酸水の噴霧</figcaption>
+            </figure>
+            <figure class="service__featurePhoto">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature03.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/feature03@2x.jpg 2x" alt="&SHIELD除菌清掃サービスのイメージ">
+              <figcaption class="service__featurePhotoCaption">アルカリ電解水での拭き取りをしたことにより除菌効果がアップ</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
       <section class="service__flow">
-        <h2 class="service__flowHeading">除菌清掃作業の主な流れ</h2>
-        <div class="service__flowStep">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow01.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow01@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
-          <span class="service__flowStepNumber">STEP1</span>
-          <h3 class="service__flowStepHeading">アルカリ電解水によるふき取り</h3>
-          <p class="service__flowStepParagraph">作業場所 埃、塵、汚れが付着している箇所。トイレや棚、デスクなど水を使用した拭き取りが可能な箇所。</p>
-        </div>
-        <div class="service__flowStep">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow02.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow02@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
-          <span class="service__flowStepNumber">STEP2</span>
-          <h3 class="service__flowStepHeading">次亜塩素酸水の噴霧</h3>
-          <p class="service__flowStepParagraph">作業場所 室内全体に噴霧。室内の壁など普段清掃が行き届きにくい箇所も清掃、除菌することが可能。</p>
-        </div>
-        <div class="service__flowStep">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow03@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
-          <span class="service__flowStepNumber">STEP3</span>
-          <h3 class="service__flowStepHeading">抗菌コーティング</h3>
-          <p class="service__flowStepParagraph">作業場所 不特定多数の人が触る箇所を中心にドアノブや壁面、ドア、テーブルを始めとした箇所。</p>
+        <div class="service__flowInner">
+          <h2 class="service__flowHeading">除菌清掃作業の主な流れ</h2>
+          <div class="service__flowSteps">
+            <div class="service__flowStep">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow01.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow01@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
+              <span class="service__flowStepNumber roboto">STEP1</span>
+              <h3 class="service__flowStepHeading">アルカリ電解水によるふき取り</h3>
+              <p class="service__flowStepParagraph">作業場所 埃、塵、汚れが付着している箇所。トイレや棚、デスクなど水を使用した拭き取りが可能な箇所。</p>
+            </div>
+            <div class="service__flowStep">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow02.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow02@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
+              <span class="service__flowStepNumber roboto">STEP2</span>
+              <h3 class="service__flowStepHeading">次亜塩素酸水の噴霧</h3>
+              <p class="service__flowStepParagraph">作業場所 室内全体に噴霧。室内の壁など普段清掃が行き届きにくい箇所も清掃、除菌することが可能。</p>
+            </div>
+            <div class="service__flowStep">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow03@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
+              <span class="service__flowStepNumber roboto">STEP3</span>
+              <h3 class="service__flowStepHeading">抗菌コーティング</h3>
+              <p class="service__flowStepParagraph">作業場所 不特定多数の人が触る箇所を中心にドアノブや壁面、ドア、テーブルを始めとした箇所。</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="service__coatingFeature">

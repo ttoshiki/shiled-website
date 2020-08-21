@@ -575,6 +575,7 @@ img {
 
 .header.products .custom-logo-link img, .header.-fixed .custom-logo-link img {
   width: 100%;
+  min-width: 254px;
   height: auto;
   filter: none;
 }
@@ -759,6 +760,7 @@ img {
   }
   .header.-fixed .custom-logo-link img {
     width: 100%;
+    min-width: auto;
   }
   .header.-fixed .header__trigger span {
     background-color: #04287e;
@@ -1563,6 +1565,213 @@ img {
   .company__overviewRow {
     flex-direction: column;
   }
+}
+
+.service__lead {
+  max-width: 1100px;
+  margin: 100px auto 0;
+}
+
+.service__leadHeading {
+  margin: 0;
+  font-size: 30px;
+  color: #04287e;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.service__leadContents {
+  display: flex;
+  margin: 64px auto 0;
+}
+
+.service__leadImage {
+  box-shadow: 0px 0px 13.14px 4.86px rgba(0, 0, 0, 0.1);
+}
+
+.service__leadText {
+  margin-left: 48px;
+}
+
+.service__subHeading {
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 1.8;
+  color: #04287e;
+  letter-spacing: 4px;
+}
+
+.service__leadParagraph {
+  margin: 32px 0 0;
+  font-size: 17px;
+  line-height: 1.88;
+  color: #333333;
+}
+
+.service__feature {
+  padding: 88px 0 100px;
+  margin: 114px 0 0;
+  background-color: #d6eefa;
+}
+
+.service__featureInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service__featureHeading {
+  margin: 0;
+  font-size: 30px;
+  color: #04287e;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.service__featurePoints {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px 0 0;
+}
+
+.service__featurePointNumWrapper {
+  position: absolute;
+  top: -8px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  background-color: #3983c8;
+}
+
+.service__featurePointText {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.service__featurePointNum {
+  margin-top: 8px;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.service__featurePoint {
+  position: relative;
+  width: 48.2%;
+  padding: 16px 28px 24px 28px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 7.8px 2.2px rgba(0, 0, 0, 0.15);
+}
+
+.service__featurePointHeading {
+  min-height: 70px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.75;
+  color: #04287e;
+  letter-spacing: 2px;
+}
+
+.service__featurePointParagraph {
+  margin: 20px 0 0;
+  font-size: 15px;
+}
+
+.service__featurePhotos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__featurePhoto {
+  width: 31.2%;
+  margin: 0;
+}
+
+.service__featurePhoto > img {
+  width: 100%;
+  box-shadow: 0px 0px 7.8px 2.2px rgba(0, 0, 0, 0.15);
+}
+
+.service__featurePhotoCaption {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.service__flow {
+  padding: 88px 0 100px;
+  background-color: #eeeeee;
+}
+
+.service__flowInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service__flowHeading {
+  margin: 0;
+  font-size: 30px;
+  color: #04287e;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.service__flowSteps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 0 0;
+}
+
+.service__flowStep {
+  position: relative;
+  text-align: center;
+}
+
+.service__flowStep > img {
+  max-height: 256px;
+}
+
+.service__flowStep:not(:last-child)::after {
+  position: absolute;
+  top: 128px;
+  right: -28px;
+  width: 48px;
+  height: 40px;
+  content: "";
+  background-image: url(assets/img/icons/icon_arrow-right.png);
+  background-size: cover;
+}
+
+.service__flowStepNumber {
+  display: block;
+  margin: 8px 0 0;
+  font-size: 15px;
+  color: #3983c8;
+  text-align-last: center;
+  letter-spacing: 2px;
+}
+
+.service__flowStepHeading {
+  margin: 10px 0 0;
+  font-size: 20px;
+  color: #04287e;
+  letter-spacing: 2px;
+}
+
+.service__flowStepParagraph {
+  width: 76%;
+  margin: 16px auto 0;
+  font-size: 14px;
+  line-height: 2.1;
+  text-align: left;
 }
 
 .archive__list {

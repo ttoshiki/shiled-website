@@ -79,6 +79,7 @@
 
       img {
         width: 100%;
+        min-width: 254px;
         height: auto;
         filter: none;
       }
@@ -291,6 +292,7 @@
 
         img {
           width: 100%;
+          min-width: auto;
         }
       }
 
