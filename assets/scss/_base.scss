@@ -17,10 +17,12 @@ body {
   color: #333;
   counter-reset: ranking 0;
   counter-reset: product-num 0;
+  counter-reset: flow-num 0;
   background-color: #fff;
 }
 
-ul {
+ul,
+ol {
   padding-left: 0;
   list-style: none;
 }

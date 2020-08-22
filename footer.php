@@ -45,16 +45,18 @@
 		<div class="footer__companyCopyrightWrapper">
 			<small class="footer__companyCopyright">© &SHIELD All Rights Reserved</small>
 		</div>
-		<aside class="fixedMenu">
-			<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble@2x.png 2x" alt="吹き出し" class="fixedMenu__icon">
-				お問い合わせ
-			</a>
-			<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download@2x.png 2x" alt="ダウンロード" class="fixedMenu__icon">
-				資料ダウンロード
-			</a>
-		</aside>
+		<?php if (! (is_singular('product')) ): ?>
+			<aside class="fixedMenu">
+				<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble@2x.png 2x" alt="吹き出し" class="fixedMenu__icon">
+					お問い合わせ
+				</a>
+				<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download@2x.png 2x" alt="ダウンロード" class="fixedMenu__icon">
+					資料ダウンロード
+				</a>
+			</aside>
+		<?php endif; ?>
 	</footer>
 </div><!-- #page -->
 

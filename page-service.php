@@ -127,72 +127,86 @@ get_header();
       </section>
       <section class="service__coatingFeature">
         <h2 class="service__coatingFeatureHeading">抗菌コーティングの特徴</h2>
-        <div class="service__coatingFeatureWrapper">
-          <h3 class="service__coatingFeatureSubHeading">複合効果で快適に</h3>
-          <ul class="service__coatingFeatureList">
-            <li class="service__coatingFeatureItem">ウイルス・細菌・VOC・悪臭などの有害物質を分解し安全な空間がつくれます</li>
-            <li class="service__coatingFeatureItem">掃除しやすく清潔な空間がつくれます</li>
-            <li class="service__coatingFeatureItem">ハウスダストやアレルゲンがつきにくい快適な空間がつくれます</li>
-          </ul>
-        </div>
-        <div class="service__coatingFeatureWrapper">
-          <h3 class="service__coatingFeatureSubHeading">効果が永続的</h3>
-          <ul class="service__coatingFeatureList">
-            <li class="service__coatingFeatureItem">他の消臭や、抗ウイルス抗菌メカニズムですと効果が長続きしませんが、本製品は完全無機の成分特性と、触媒反応による分解で永続的に効果が持続します</li>
-          </ul>
-        </div>
-        <div class="service__coatingFeatureWrapper">
-          <h3 class="service__coatingFeatureSubHeading">透明で暗所に強い</h3>
-          <ul class="service__coatingFeatureList">
-            <li class="service__coatingFeatureItem">暗所でも、抗カビ・抗菌・抗ウイルス効果があります</li>
-            <li class="service__coatingFeatureItem">LEDに対応、さらに可視光照度500LUX以下の低照度で分解能力を発揮します</li>
-            <li class="service__coatingFeatureItem">コーティング液は薄膜にすると透明度が極めて高く、様々なものに施工できます</li>
-          </ul>
+        <div class="service__coatingFeatures">
+          <div class="service__coatingFeatureWrapper">
+            <h3 class="service__coatingFeatureSubHeading">複合効果で快適に</h3>
+            <ul class="service__coatingFeatureList">
+              <li class="service__coatingFeatureItem">ウイルス・細菌・VOC・悪臭などの有害物質を分解し安全な空間がつくれます</li>
+              <li class="service__coatingFeatureItem">掃除しやすく清潔な空間がつくれます</li>
+              <li class="service__coatingFeatureItem">ハウスダストやアレルゲンがつきにくい快適な空間がつくれます</li>
+            </ul>
+          </div>
+          <div class="service__coatingFeatureWrapper">
+            <h3 class="service__coatingFeatureSubHeading">効果が永続的</h3>
+            <ul class="service__coatingFeatureList">
+              <li class="service__coatingFeatureItem">他の消臭や、抗ウイルス抗菌メカニズムですと効果が長続きしませんが、本製品は完全無機の成分特性と、触媒反応による分解で永続的に効果が持続します</li>
+            </ul>
+          </div>
+          <div class="service__coatingFeatureWrapper">
+            <h3 class="service__coatingFeatureSubHeading">透明で暗所に強い</h3>
+            <ul class="service__coatingFeatureList">
+              <li class="service__coatingFeatureItem">暗所でも、抗カビ・抗菌・抗ウイルス効果があります</li>
+              <li class="service__coatingFeatureItem">LEDに対応、さらに可視光照度500LUX以下の低照度で分解能力を発揮します</li>
+              <li class="service__coatingFeatureItem">コーティング液は薄膜にすると透明度が極めて高く、様々なものに施工できます</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="service__nanoCoat">
         <h2 class="service__nanoCoatHeading">抗菌コーティング「メディカルナノコート」とは？</h2>
-        <div class="nanoCoatWrapper">
+        <div class="service__nanoCoatWrapper">
           <div class="service__nanoCoatImages">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow03@2x.png 2x" alt="通常断面" class="service__nanoCoatImage">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow03@2x.png 2x" alt="メディカルナノコート施工断面" class="service__nanoCoatImage">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01@2x.jpg 2x" alt="通常断面" class="service__nanoCoatImage">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02@2x.jpg 2x" alt="メディカルナノコート施工断面" class="service__nanoCoatImage">
           </div>
-          <span class="service__nanoCoatCaution">※メディカルナノコート（シングルナノ）と通常表面の比較</span>
+          <div class="service__nanoCoatCautionWrapper">
+            <span class="service__nanoCoatCaution">※メディカルナノコート（シングルナノ）と通常表面の比較</span>
+          </div>
           <p class="service__nanoCoatParagraph">身近にある様々な基材は、表面上は平らに見えますが、実は、目に見えない微細な凸凹があります。メディカルナノコートは壁面等に塗布することで、細菌・ウイルスを破壊し、カビの発生を抑制する特殊被膜ナノコーティング剤です。シングルナノ粒子径（1～10ナノメートル）のケイ素、プラチナ等の独自の無機系ナノ素材で目に見えないミクロ、ナノレベルの凹凸をコーティングし、抗菌抗カビ抗ウイルス性能を付与します。さらに、コーティング面には帯電防止機能もあるため、微生物や微細なチリやほこりを付着させません。また、メディカルナノコートを塗布するとコーティング表面は超親水性になりますので、水滴や汚れがつかず、カビや微生物の繁殖できない清潔な環境を作り出し効果が持続します。</p>
         </div>
       </section>
       <section class="service__verification">
-        <h2 class="service__verificationHeading">第三者機関での検証</h2>
-        <div class="service__verificationTestCase">
-          <h3 class="service__verificationCaseHeading">第三者機関試験で確かな効果を検証済みです。</h3>
-          <div class="service__verificationCaseContents">
-            <div class="service__verificationCaseCotent">
-              <h4 class="service__verificationCaseSubHeading">国際空港にて効果持続検証試験 拭取り検査</h4>
-              <p class="service__verificationParagraph">国際空港でコーディング施工後16ヶ月と28ヶ月後の細菌   拭取り検査を行い、実空間での抗菌効果が確認され、その結果が国際学会で発表されています。</p>
+        <div class="service__verificationInner">
+          <h2 class="service__verificationHeading">第三者機関での検証</h2>
+          <div class="service__verificationTestCase">
+            <div class="service__verificationNumWrapper roboto">
+              <span class="service__verificationText">TEST</span>
+              <span class="service__verificationNum">1</span>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/verification01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/verification01.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/verification01@2x.png 2x" alt="拭き取り検査グラフ" class="service__verificationGraph">
-          </div>
-          <div class="service__verificationCaseContents">
-            <div class="service__verificationCaseCotent">
-              <h4 class="service__verificationCaseSubHeading">インフルエンザ不活性化試験 / 食環境研究所</h4>
-              <p class="service__verificationParagraph">メディカルナノコートは、15秒間以上インフルエンザウイルスに反応させることによって、インフルエンザウイルスを99.99%不活性（無力化）することが確認されました。<br>（減菌生理食塩水ではほとんど無力化されていません。）</p>
+            <h3 class="service__verificationCaseHeading">第三者機関試験で確かな効果を検証済みです。</h3>
+            <div class="service__verificationCaseContents -doubleCol -first">
+              <div class="service__verificationCaseContent">
+                <h4 class="service__verificationCaseSubHeading">国際空港にて効果持続検証試験 拭取り検査</h4>
+                <p class="service__verificationParagraph">国際空港でコーディング施工後16ヶ月と28ヶ月後の細菌   拭取り検査を行い、実空間での抗菌効果が確認され、その結果が国際学会で発表されています。</p>
+              </div>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/verification01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/verification01.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/verification01@2x.png 2x" alt="拭き取り検査グラフ" class="service__verificationGraph">
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/verification02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/verification02.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/verification02@2x.png 2x" alt="インフルエンザ不活性化試験結果表" class="service__verificationGraph">
+            <div class="service__verificationCaseContents -doubleCol">
+              <div class="service__verificationCaseContent">
+                <h4 class="service__verificationCaseSubHeading">インフルエンザ不活性化試験 / 食環境研究所</h4>
+                <p class="service__verificationParagraph">メディカルナノコートは、15秒間以上インフルエンザウイルスに反応させることによって、インフルエンザウイルスを99.99%不活性（無力化）することが確認されました。<br>（減菌生理食塩水ではほとんど無力化されていません。）</p>
+              </div>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/verification02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/verification02.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/verification02@2x.png 2x" alt="インフルエンザ不活性化試験結果表" class="service__verificationGraph">
+            </div>
+            <div class="service__verificationCaseContents">
+              <h4 class="service__verificationCaseSubHeading">無光抗菌試験 / 一般財団法人カケンテストセンター</h4>
+              <p class="service__verificationParagraph">光の無い環境下で黄色ぶどう球菌・膀炎かん菌・大腸菌等様々なウイルスに対して抗菌効果が認められました。無光レジオネラ菌試験においてもメディカルナノコートを塗布したディスクの周りに細菌の発育は見られませんでした。</p>
+            </div>
           </div>
-          <div class="service__verificationCaseContents">
-            <h4 class="service__verificationCaseSubHeading">無光抗菌試験 / 一般財団法人カケンテストセンター</h4>
-            <p class="service__verificationParagraph">光の無い環境下で黄色ぶどう球菌・膀炎かん菌・大腸菌等様々なウイルスに対して抗菌効果が認められました。無光レジオネラ菌試験においてもメディカルナノコートを塗布したディスクの周りに細菌の発育は見られませんでした。</p>
-          </div>
-        </div>
-        <div class="service__verificationTestCase">
-          <h3 class="service__verificationCaseHeading">閉鎖パッチテスト（24時間皮膚貼り付け）/ 総合健康開発研究所</h3>
-          <div class="service__verificationCaseContents">
-            <h4 class="service__verificationCaseSubHeading">無光抗菌試験 / 一般財団法人カケンテストセンター</h4>
-            <p class="service__verificationParagraph">被験者22名がメディカルナノコートで浸したディスクを24時間皮膚に張り付け、剥離後60分後と24時間後の2回判定を行ったところ被験者全員が陰性だったので、皮膚刺激指数は0であり安全性が確認された。</p>
-          </div>
-          <div class="service__verificationCaseContents">
-            <h4 class="service__verificationCaseSubHeading">食品衛生法・食品、添加物の規格基準 / 財団法人化学研究評価機構 高分子試験・評価センター</h4>
-            <p class="service__verificationParagraph">食品衛生法で定められた安全性を確認し、子供が口に入れる可能性のあるおもちゃへの塗膜及び、おもちゃの製造に用いるポリ塩化ビニルを主体とする材料に使用できます。</p>
+          <div class="service__verificationTestCase">
+            <div class="service__verificationNumWrapper roboto">
+              <span class="service__verificationText">TEST</span>
+              <span class="service__verificationNum">2</span>
+            </div>
+            <h3 class="service__verificationCaseHeading">子供が舐めてもOKな基準をクリア、肌への影響もテスト済み、安心して使用できます。</h3>
+            <div class="service__verificationCaseContents -first">
+              <h4 class="service__verificationCaseSubHeading">閉鎖パッチテスト（24時間皮膚貼り付け）/ 総合健康開発研究所</h4>
+              <p class="service__verificationParagraph">被験者22名がメディカルナノコートで浸したディスクを24時間皮膚に張り付け、剥離後60分後と24時間後の2回判定を行ったところ被験者全員が陰性だったので、皮膚刺激指数は0であり安全性が確認された。</p>
+            </div>
+            <div class="service__verificationCaseContents -textOnly">
+              <h4 class="service__verificationCaseSubHeading">食品衛生法・食品、添加物の規格基準 / 財団法人化学研究評価機構 高分子試験・評価センター</h4>
+              <p class="service__verificationParagraph">食品衛生法で定められた安全性を確認し、子供が口に入れる可能性のあるおもちゃへの塗膜及び、おもちゃの製造に用いるポリ塩化ビニルを主体とする材料に使用できます。</p>
+            </div>
           </div>
         </div>
       </section>
@@ -211,42 +225,42 @@ get_header();
         <div class="service__coronaFlowCaseFacility">
           <figure class="service__coronaCaseFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case01@2x.jpg 2x" alt="羽田空港国際線">
-            <figcaption class="service__featurePhotoCaption">羽田空港国際線</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">羽田空港国際線</figcaption>
           </figure>
           <figure class="service__coronaCaseFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case02.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case02@2x.jpg 2x" alt="関西国際空港">
-            <figcaption class="service__featurePhotoCaption">関西国際空港</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">関西国際空港</figcaption>
           </figure>
           <figure class="service__coronaCaseFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case03.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case03@2x.jpg 2x" alt="市原市役所">
-            <figcaption class="service__featurePhotoCaption">市原市役所</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">市原市役所</figcaption>
           </figure>
         </div>
-        <p class="service__coronaFlowParagraph">不特定多数の方が触る場所への施工</p>
+        <p class="service__coronaFlowParagraph -place">不特定多数の方が触る場所への施工</p>
         <div class="service__coronaCasePlace">
           <figure class="service__coronaCasePlaceFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case04.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case04.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case04@2x.jpg 2x" alt="キッズスペース">
-            <figcaption class="service__featurePhotoCaption">キッズスペース</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">キッズスペース</figcaption>
           </figure>
           <figure class="service__coronaCasePlaceFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case05.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case05.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case05@2x.jpg 2x" alt="カート（羽田空港）">
-            <figcaption class="service__featurePhotoCaption">カート（羽田空港）</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">カート（羽田空港）</figcaption>
           </figure>
           <figure class="service__coronaCasePlaceFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case06.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case06.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case06@2x.jpg 2x" alt="エレベーター内（ボタン）">
-            <figcaption class="service__featurePhotoCaption">エレベーター内（ボタン）</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">エレベーター内（ボタン）</figcaption>
           </figure>
           <figure class="service__coronaCasePlaceFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case07.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case07.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case07@2x.jpg 2x" alt="階段の手すり">
-            <figcaption class="service__featurePhotoCaption">階段の手すり</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">階段の手すり</figcaption>
           </figure>
           <figure class="service__coronaCasePlaceFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case08.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case08.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case08@2x.jpg 2x" alt="自動販売機">
-            <figcaption class="service__featurePhotoCaption">自動販売機</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">自動販売機</figcaption>
           </figure>
           <figure class="service__coronaCasePlaceFigure">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case09.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case09.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case09@2x.jpg 2x" alt="お手洗い">
-            <figcaption class="service__featurePhotoCaption">お手洗い</figcaption>
+            <figcaption class="service__coronaCasePhotoCaption">お手洗い</figcaption>
           </figure>
         </div>
       </section>
@@ -259,7 +273,7 @@ get_header();
         </div>
         <div class="service__contactPhone">
           <span class="service__contactPhoneHeading">電話でのお問い合わせ</span>
-          <small class="service_contactPhoneBusinessHours">営業時間 ／ 9:00〜18:00</small>
+          <small class="service__contactPhoneBusinessHours">営業時間 ／ 9:00〜18:00</small>
           <address class="service__contactPhoneAddress">TEL 03-0000-0000</address>
         </div>
       </section>
