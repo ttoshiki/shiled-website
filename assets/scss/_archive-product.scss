@@ -8,6 +8,7 @@
     grid-column-gap: 3%;
     max-width: $--content-width-md;
     margin: 100px auto;
+    counter-reset: product-num 0;
   }
 
   &__item {

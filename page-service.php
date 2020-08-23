@@ -40,7 +40,7 @@ get_header();
         <div class="service__featureInner">
           <h2 class="service__featureHeading">&SHIELD除菌清掃サービスの特徴</h2>
           <div class="service__featurePoints">
-            <div class="service__featurePoint">
+            <div class="service__featurePoint fadein">
               <div class="service__featurePointNumWrapper roboto">
                 <span class="service__featurePointText">POINT</span>
                 <span class="service__featurePointNum">1</span>
@@ -51,7 +51,7 @@ get_header();
               </h3>
               <p class="service__featurePointParagraph">プロスポーツチームの除菌清掃を受託しております。</p>
             </div>
-            <div class="service__featurePoint">
+            <div class="service__featurePoint fadein">
               <div class="service__featurePointNumWrapper roboto">
                 <span class="service__featurePointText">POINT</span>
                 <span class="service__featurePointNum">2</span>
@@ -61,7 +61,7 @@ get_header();
               </h3>
               <p class="service__featurePointParagraph">洗剤成分や芳香成分が残留せずニオイの元を分解して消臭します。</p>
             </div>
-            <div class="service__featurePoint">
+            <div class="service__featurePoint fadein">
               <div class="service__featurePointNumWrapper roboto">
                 <span class="service__featurePointText">POINT</span>
                 <span class="service__featurePointNum">3</span>
@@ -72,7 +72,7 @@ get_header();
               </h3>
               <p class="service__featurePointParagraph">新型コロナウイルスへの有効性も正式に発表されています。</p>
             </div>
-            <div class="service__featurePoint">
+            <div class="service__featurePoint fadein">
               <div class="service__featurePointNumWrapper roboto">
                 <span class="service__featurePointText">POINT</span>
                 <span class="service__featurePointNum">4</span>
@@ -84,7 +84,7 @@ get_header();
               <p class="service__featurePointParagraph">補償：従業員様コロナ感染発覚時除菌作業を50％引きで実施。</p>
             </div>
           </div>
-          <div class="service__featurePhotos">
+          <div class="service__featurePhotos fadein">
             <figure class="service__featurePhoto">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/feature01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/feature01@2x.jpg 2x" alt="&SHIELD除菌清掃サービスのイメージ">
               <figcaption class="service__featurePhotoCaption">アルカリ電解水での拭き取り</figcaption>
@@ -104,19 +104,19 @@ get_header();
         <div class="service__flowInner">
           <h2 class="service__flowHeading">除菌清掃作業の主な流れ</h2>
           <div class="service__flowSteps">
-            <div class="service__flowStep">
+            <div class="service__flowStep fadein">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow01.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow01@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
               <span class="service__flowStepNumber roboto">STEP1</span>
               <h3 class="service__flowStepHeading">アルカリ電解水によるふき取り</h3>
               <p class="service__flowStepParagraph">作業場所 埃、塵、汚れが付着している箇所。トイレや棚、デスクなど水を使用した拭き取りが可能な箇所。</p>
             </div>
-            <div class="service__flowStep">
+            <div class="service__flowStep fadein">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow02.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow02@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
               <span class="service__flowStepNumber roboto">STEP2</span>
               <h3 class="service__flowStepHeading">次亜塩素酸水の噴霧</h3>
               <p class="service__flowStepParagraph">作業場所 室内全体に噴霧。室内の壁など普段清掃が行き届きにくい箇所も清掃、除菌することが可能。</p>
             </div>
-            <div class="service__flowStep">
+            <div class="service__flowStep fadein">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow03.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow03@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
               <span class="service__flowStepNumber roboto">STEP3</span>
               <h3 class="service__flowStepHeading">抗菌コーティング</h3>
@@ -128,7 +128,7 @@ get_header();
       <section class="service__coatingFeature">
         <h2 class="service__coatingFeatureHeading">抗菌コーティングの特徴</h2>
         <div class="service__coatingFeatures">
-          <div class="service__coatingFeatureWrapper">
+          <div class="service__coatingFeatureWrapper fadein">
             <h3 class="service__coatingFeatureSubHeading">複合効果で快適に</h3>
             <ul class="service__coatingFeatureList">
               <li class="service__coatingFeatureItem">ウイルス・細菌・VOC・悪臭などの有害物質を分解し安全な空間がつくれます</li>
@@ -136,13 +136,13 @@ get_header();
               <li class="service__coatingFeatureItem">ハウスダストやアレルゲンがつきにくい快適な空間がつくれます</li>
             </ul>
           </div>
-          <div class="service__coatingFeatureWrapper">
+          <div class="service__coatingFeatureWrapper fadein">
             <h3 class="service__coatingFeatureSubHeading">効果が永続的</h3>
             <ul class="service__coatingFeatureList">
               <li class="service__coatingFeatureItem">他の消臭や、抗ウイルス抗菌メカニズムですと効果が長続きしませんが、本製品は完全無機の成分特性と、触媒反応による分解で永続的に効果が持続します</li>
             </ul>
           </div>
-          <div class="service__coatingFeatureWrapper">
+          <div class="service__coatingFeatureWrapper fadein">
             <h3 class="service__coatingFeatureSubHeading">透明で暗所に強い</h3>
             <ul class="service__coatingFeatureList">
               <li class="service__coatingFeatureItem">暗所でも、抗カビ・抗菌・抗ウイルス効果があります</li>
@@ -154,7 +154,7 @@ get_header();
       </section>
       <section class="service__nanoCoat">
         <h2 class="service__nanoCoatHeading">抗菌コーティング「メディカルナノコート」とは？</h2>
-        <div class="service__nanoCoatWrapper">
+        <div class="service__nanoCoatWrapper fadein">
           <div class="service__nanoCoatImages">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01@2x.jpg 2x" alt="通常断面" class="service__nanoCoatImage">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02@2x.jpg 2x" alt="メディカルナノコート施工断面" class="service__nanoCoatImage">
@@ -168,7 +168,7 @@ get_header();
       <section class="service__verification">
         <div class="service__verificationInner">
           <h2 class="service__verificationHeading">第三者機関での検証</h2>
-          <div class="service__verificationTestCase">
+          <div class="service__verificationTestCase fadein">
             <div class="service__verificationNumWrapper roboto">
               <span class="service__verificationText">TEST</span>
               <span class="service__verificationNum">1</span>
@@ -193,7 +193,7 @@ get_header();
               <p class="service__verificationParagraph">光の無い環境下で黄色ぶどう球菌・膀炎かん菌・大腸菌等様々なウイルスに対して抗菌効果が認められました。無光レジオネラ菌試験においてもメディカルナノコートを塗布したディスクの周りに細菌の発育は見られませんでした。</p>
             </div>
           </div>
-          <div class="service__verificationTestCase">
+          <div class="service__verificationTestCase fadein">
             <div class="service__verificationNumWrapper roboto">
               <span class="service__verificationText">TEST</span>
               <span class="service__verificationNum">2</span>
@@ -213,7 +213,7 @@ get_header();
       <section class="service__coronaFlow">
         <h2 class="service__coronaFlowHeading">コロナ感染発覚時緊急対策フロー策定</h2>
         <p class="service__coronaFlowParagraph">お客様、従業員様でコロナ感染の発覚時から、<br>各所除菌対策フローを作成、再営業開始までの除菌計画をご提案します。</p>
-        <ol class="service__coronaFlowList">
+        <ol class="service__coronaFlowList fadein">
           <li class="service__coronaFlowItem">社内通達<br>スキーム確認</li>
           <li class="service__coronaFlowItem">関係各所通達<br>スキーム確認</li>
           <li class="service__coronaFlowItem">緊急連絡先<br>設定</li>
@@ -223,42 +223,42 @@ get_header();
         <h2 class="service__coronaFlowHeading">導入実績</h2>
         <p class="service__coronaFlowParagraph">羽田空港、関西空港、市役所などの公共施設、<br>またホテルなどのエレベーター内の感染予防として導入</p>
         <div class="service__coronaFlowCaseFacility">
-          <figure class="service__coronaCaseFigure">
+          <figure class="service__coronaCaseFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case01@2x.jpg 2x" alt="羽田空港国際線">
             <figcaption class="service__coronaCasePhotoCaption">羽田空港国際線</figcaption>
           </figure>
-          <figure class="service__coronaCaseFigure">
+          <figure class="service__coronaCaseFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case02.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case02@2x.jpg 2x" alt="関西国際空港">
             <figcaption class="service__coronaCasePhotoCaption">関西国際空港</figcaption>
           </figure>
-          <figure class="service__coronaCaseFigure">
+          <figure class="service__coronaCaseFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case03.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case03@2x.jpg 2x" alt="市原市役所">
             <figcaption class="service__coronaCasePhotoCaption">市原市役所</figcaption>
           </figure>
         </div>
         <p class="service__coronaFlowParagraph -place">不特定多数の方が触る場所への施工</p>
         <div class="service__coronaCasePlace">
-          <figure class="service__coronaCasePlaceFigure">
+          <figure class="service__coronaCasePlaceFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case04.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case04.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case04@2x.jpg 2x" alt="キッズスペース">
             <figcaption class="service__coronaCasePhotoCaption">キッズスペース</figcaption>
           </figure>
-          <figure class="service__coronaCasePlaceFigure">
+          <figure class="service__coronaCasePlaceFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case05.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case05.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case05@2x.jpg 2x" alt="カート（羽田空港）">
             <figcaption class="service__coronaCasePhotoCaption">カート（羽田空港）</figcaption>
           </figure>
-          <figure class="service__coronaCasePlaceFigure">
+          <figure class="service__coronaCasePlaceFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case06.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case06.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case06@2x.jpg 2x" alt="エレベーター内（ボタン）">
             <figcaption class="service__coronaCasePhotoCaption">エレベーター内（ボタン）</figcaption>
           </figure>
-          <figure class="service__coronaCasePlaceFigure">
+          <figure class="service__coronaCasePlaceFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case07.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case07.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case07@2x.jpg 2x" alt="階段の手すり">
             <figcaption class="service__coronaCasePhotoCaption">階段の手すり</figcaption>
           </figure>
-          <figure class="service__coronaCasePlaceFigure">
+          <figure class="service__coronaCasePlaceFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case08.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case08.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case08@2x.jpg 2x" alt="自動販売機">
             <figcaption class="service__coronaCasePhotoCaption">自動販売機</figcaption>
           </figure>
-          <figure class="service__coronaCasePlaceFigure">
+          <figure class="service__coronaCasePlaceFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case09.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case09.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case09@2x.jpg 2x" alt="お手洗い">
             <figcaption class="service__coronaCasePhotoCaption">お手洗い</figcaption>
           </figure>

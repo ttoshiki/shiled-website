@@ -110,6 +110,7 @@
 
 .wpp-list {
   margin: 0;
+  counter-reset: ranking 0;
 
   li {
     position: relative;

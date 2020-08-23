@@ -431,6 +431,7 @@
   &__coronaFlow {
     max-width: $--content-width-md;
     margin: 100px auto 60px;
+    counter-reset: flow-num 0;
   }
 
   &__coronaFlowHeading {
