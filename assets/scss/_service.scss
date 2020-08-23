@@ -218,7 +218,7 @@
     margin: 0;
     font-size: 30px;
     color: $--color-primary;
-    text-align-last: center;
+    text-align: center;
     letter-spacing: 4px;
   }
 
@@ -586,8 +586,8 @@
     }
 
     &:hover {
-      background-color: $white;
       color: $--color-primary;
+      background-color: $white;
 
       &::after {
         filter: none;
@@ -631,8 +631,8 @@
 
   &__contactPhone {
     margin: 40px 0 0;
-    color: $white;
     font-weight: 600;
+    color: $white;
     letter-spacing: 2px;
   }
 
@@ -655,5 +655,410 @@
 
 @include mq(mobile) {
   .service {
+    &__lead {
+      margin: 60px 0 0;
+    }
+
+    &__leadHeading {
+      padding: 0 20px;
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+
+    &__leadContents {
+      flex-direction: column;
+      padding: 0 20px;
+      margin: 20px 0 0;
+    }
+
+    &__leadText {
+      margin: 20px 0 0;
+    }
+
+    &__subHeading {
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+
+    &__leadParagraph {
+      margin: 16px 0 0;
+    }
+
+    &__leadParagraph {
+      font-size: 13px;
+    }
+
+    &__feature {
+      padding: 60px 0 80px;
+      margin: 80px 0 0;
+    }
+
+    &__featureInner {
+      padding: 0 20px;
+    }
+
+    &__featureHeading {
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+
+    &__featurePoints {
+      flex-direction: column;
+      margin: 40px 0 0;
+    }
+
+    &__featurePoint {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    &__featurePointHeading {
+      min-height: 48px;
+      font-size: 15px;
+    }
+
+    &__featurePointParagraph {
+      margin: 12px 0 0;
+      font-size: 13px;
+    }
+
+    &__featurePointNumWrapper {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__featurePointText {
+      font-size: 10px;
+    }
+
+    &__featurePointNum {
+      margin-top: 6px;
+      font-size: 18px;
+    }
+
+    &__featurePhotos {
+      flex-direction: column;
+    }
+
+    &__featurePhoto {
+      width: 80%;
+      margin: 0 auto;
+
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+
+    &__featurePhotoCaption {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    &__flow {
+      padding: 60px 0 80px;
+    }
+
+    &__flowInner {
+      padding: 0 20px;
+    }
+
+    &__flowHeading {
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+
+    &__flowSteps {
+      flex-direction: column;
+      margin: 40px 0 0;
+    }
+
+    &__flowStep {
+      & > img {
+        width: 68%;
+      }
+
+      &:not(:first-child) {
+        margin-top: 80px;
+      }
+
+      &:not(:last-child)::after {
+        top: auto;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+      }
+    }
+
+    &__coatingFeature {
+      padding: 0 20px;
+      margin: 60px 0 0;
+    }
+
+    &__coatingFeatureHeading {
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+
+    &__coatingFeatures {
+      flex-direction: column;
+      margin: 48px auto 0;
+    }
+
+    &__coatingFeatureWrapper {
+      width: 100%;
+
+      &::before {
+        top: -32px;
+        font-size: 40px;
+        text-indent: 5px;
+        letter-spacing: 5px;
+      }
+
+      &:not(:first-child) {
+        margin-top: 48px;
+      }
+    }
+
+    &__coatingFeatureSubHeading {
+      margin: 44px 0 0;
+      font-size: 18px;
+    }
+
+    &__coatingFeatureList {
+      margin: 20px auto 0;
+    }
+
+    &__coatingFeatureItem {
+      font-size: 13px;
+
+      &::before {
+        left: -24px;
+        width: 16px;
+        height: 12px;
+      }
+    }
+
+    &__nanoCoat {
+      margin: 60px auto 0;
+    }
+
+    &__nanoCoatHeading {
+      padding: 0 20px;
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+
+    &__nanoCoatWrapper {
+      padding: 8px 8px 12px;
+      margin: 32px auto 0;
+    }
+
+    &__nanoCoatImages {
+      flex-direction: column;
+      padding: 12px 0 0;
+
+      & > img {
+        padding: 8px 0 0;
+
+        &:not(:first-child) {
+          margin-top: 12px;
+        }
+      }
+    }
+
+    &__nanoCoatCautionWrapper {
+      padding: 0 20px;
+    }
+
+    &__nanoCoatCaution {
+      padding-bottom: 4px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    &__nanoCoatParagraph {
+      padding: 0 12px;
+      font-size: 13px;
+    }
+
+    &__verification {
+      padding: 60px 0;
+    }
+
+    &__verificationInner {
+      padding: 0 20px;
+    }
+
+    &__verificationTestCase {
+      padding: 20px;
+      margin: 60px 0 0;
+
+      &:not(:first-of-type) {
+        margin: 54px 0 0;
+      }
+    }
+
+    &__verificationNumWrapper {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__verificationHeading {
+      font-size: 22px;
+    }
+
+    &__verificationText {
+      font-size: 10px;
+    }
+
+    &__verificationNum {
+      margin-top: 6px;
+      font-size: 18px;
+    }
+
+    &__verificationCaseHeading {
+      margin: 0 0 32px 74px;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    &__verificationCaseContents {
+      &.-doubleCol {
+        flex-direction: column;
+      }
+    }
+
+    &__verificationCaseSubHeading {
+      font-size: 16px;
+    }
+
+    &__verificationCaseContent {
+      margin-right: 0;
+    }
+
+    &__verificationParagraph {
+      font-size: 13px;
+    }
+
+    &__verificationGraph {
+      max-width: 100%;
+      margin-top: 12px;
+    }
+
+    &__verificationCaseContents {
+      margin: 56px 0 0;
+
+      &.-textOnly {
+        margin: 40px 0 0;
+      }
+    }
+
+    &__coronaFlow {
+      padding: 0 20px;
+      margin: 60px 0 48px;
+    }
+
+    &__coronaFlowHeading {
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+
+    &__coronaFlowParagraph {
+      margin: 16px 0 0;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+
+    &__coronaFlowList {
+      flex-direction: column;
+      margin: 48px 0 80px;
+    }
+
+    &__coronaFlowItem {
+      justify-content: flex-start;
+      width: 100%;
+      height: 78px;
+      padding: 0 0 0 90px;
+      font-size: 3.74vw;
+      border-radius: 60px;
+
+      &::before {
+        top: -1px;
+        left: -1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 78px;
+        height: 78px;
+        font-size: 18px;
+        border: 1px solid $--color-primary-tint;
+        border-radius: 50%;
+      }
+
+      &:not(:first-child) {
+        margin-top: 60px;
+      }
+
+      &:not(:last-child)::after {
+        top: auto;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+      }
+    }
+
+    &__coronaFlowCaseFacility {
+      margin: 40px 0 0;
+    }
+
+    &__coronaCasePhotoCaption {
+      top: 12px;
+      left: 16px;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    &__coronaCaseFigure {
+      margin: 0 0 3.5vw;
+
+      &:nth-child(2n) {
+        margin-left: 3.5vw;
+      }
+    }
+
+    &__coronaCasePlace {
+      margin: 32px 0 0;
+    }
+
+    &__coronaCasePlaceFigure {
+      width: 48%;
+      margin: 0 0 20px;
+    }
+
+    &__contactLink {
+      padding: 60px 20px;
+    }
+
+    &__contactLinkHeading {
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+
+    &__contactLinkParagraph {
+      font-size: 16px;
+    }
+
+    &__contactLinkButtons {
+      flex-direction: column;
+    }
+
+    &__contactLinkButton {
+      width: 100%;
+      padding: 36px 0;
+
+      &:not(:first-child) {
+        margin: 24px 0 0 0;
+      }
+    }
   }
 }

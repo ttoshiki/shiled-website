@@ -18,7 +18,7 @@ get_header();
 	<main class="site-main">
 		<div class="home">
 			<?php
-				echo do_shortcode('[rev_slider alias="main11"][/rev_slider]');
+				echo do_shortcode('[rev_slider alias="shield"][/rev_slider]');
 			?>
 			<section class="home__leadContents">
 				<div class="home__leadContentsText">

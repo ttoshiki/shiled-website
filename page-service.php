@@ -22,7 +22,7 @@ get_header();
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
       <section class="service__lead fadein">
-        <h2 class="service__leadHeading">抗菌コーティング&除菌清掃サービス</h2>
+        <h2 class="service__leadHeading">抗菌コーティング&除菌清掃<br class="-sp">サービス</h2>
         <div class="service__leadContents">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/lead_img.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/lead_img.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/lead_img@2x.jpg 2x" alt="" class="service__leadImage">
           <div class="service__leadText">
@@ -38,7 +38,7 @@ get_header();
       </section>
       <section class="service__feature">
         <div class="service__featureInner">
-          <h2 class="service__featureHeading">&SHIELD除菌清掃サービスの特徴</h2>
+          <h2 class="service__featureHeading">&SHIELD除菌清掃<br class="-sp">サービスの特徴</h2>
           <div class="service__featurePoints">
             <div class="service__featurePoint fadein">
               <div class="service__featurePointNumWrapper roboto">
@@ -160,7 +160,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat02@2x.jpg 2x" alt="メディカルナノコート施工断面" class="service__nanoCoatImage">
           </div>
           <div class="service__nanoCoatCautionWrapper">
-            <span class="service__nanoCoatCaution">※メディカルナノコート（シングルナノ）と通常表面の比較</span>
+            <span class="service__nanoCoatCaution">※メディカルナノコート（シングルナノ）と<br class="-sp">通常表面の比較</span>
           </div>
           <p class="service__nanoCoatParagraph">身近にある様々な基材は、表面上は平らに見えますが、実は、目に見えない微細な凸凹があります。メディカルナノコートは壁面等に塗布することで、細菌・ウイルスを破壊し、カビの発生を抑制する特殊被膜ナノコーティング剤です。シングルナノ粒子径（1～10ナノメートル）のケイ素、プラチナ等の独自の無機系ナノ素材で目に見えないミクロ、ナノレベルの凹凸をコーティングし、抗菌抗カビ抗ウイルス性能を付与します。さらに、コーティング面には帯電防止機能もあるため、微生物や微細なチリやほこりを付着させません。また、メディカルナノコートを塗布するとコーティング表面は超親水性になりますので、水滴や汚れがつかず、カビや微生物の繁殖できない清潔な環境を作り出し効果が持続します。</p>
         </div>
@@ -211,17 +211,17 @@ get_header();
         </div>
       </section>
       <section class="service__coronaFlow">
-        <h2 class="service__coronaFlowHeading">コロナ感染発覚時緊急対策フロー策定</h2>
-        <p class="service__coronaFlowParagraph">お客様、従業員様でコロナ感染の発覚時から、<br>各所除菌対策フローを作成、再営業開始までの除菌計画をご提案します。</p>
+        <h2 class="service__coronaFlowHeading">コロナ感染発覚時緊急対策<br class="-sp">フロー策定</h2>
+        <p class="service__coronaFlowParagraph">お客様、従業員様でコロナ感染の発覚時から、<br class="-pc">各所除菌対策フローを作成、再営業開始までの除菌計画をご提案します。</p>
         <ol class="service__coronaFlowList fadein">
-          <li class="service__coronaFlowItem">社内通達<br>スキーム確認</li>
-          <li class="service__coronaFlowItem">関係各所通達<br>スキーム確認</li>
-          <li class="service__coronaFlowItem">緊急連絡先<br>設定</li>
-          <li class="service__coronaFlowItem">除菌場所<br>設定</li>
-          <li class="service__coronaFlowItem">除菌優先<br>順位設定</li>
+          <li class="service__coronaFlowItem">社内通達<br class="-pc">スキーム確認</li>
+          <li class="service__coronaFlowItem">関係各所通達<br class="-pc">スキーム確認</li>
+          <li class="service__coronaFlowItem">緊急連絡先<br class="-pc">設定</li>
+          <li class="service__coronaFlowItem">除菌場所<br class="-pc">設定</li>
+          <li class="service__coronaFlowItem">除菌優先<br class="-pc">順位設定</li>
         </ol>
         <h2 class="service__coronaFlowHeading">導入実績</h2>
-        <p class="service__coronaFlowParagraph">羽田空港、関西空港、市役所などの公共施設、<br>またホテルなどのエレベーター内の感染予防として導入</p>
+        <p class="service__coronaFlowParagraph">羽田空港、関西空港、市役所などの公共施設、<br class="-pc">またホテルなどのエレベーター内の感染予防として導入</p>
         <div class="service__coronaFlowCaseFacility">
           <figure class="service__coronaCaseFigure fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case01@2x.jpg 2x" alt="羽田空港国際線">

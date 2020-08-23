@@ -12,21 +12,23 @@
 ?>
 
 	<footer class="footer">
-		<div class="footer__links">
-			<div class="footer__linksBlock">
-				<div class="footer__linksBlockInner">
-					<h3 class="footer__linkHeading">フォームからお問い合わせ</h3>
-					<a href="<?php echo home_url('/contact/'); ?>" class="footer__linkButton">お問い合わせはこちら</a>
+		<?php if ((!is_page('service'))): ?>
+			<div class="footer__links">
+				<div class="footer__linksBlock">
+					<div class="footer__linksBlockInner">
+						<h3 class="footer__linkHeading">フォームからお問い合わせ</h3>
+						<a href="<?php echo home_url('/contact/'); ?>" class="footer__linkButton">お問い合わせはこちら</a>
+					</div>
+				</div>
+				<div class="footer__linksBlock">
+					<div class="footer__linksBlockInner">
+						<h3 class="footer__linkHeading">電話でのお問い合わせ</h3>
+						<small class="footer__businessHours">営業時間 ／ 9:00〜18:00</small>
+						<address class="footer__address">TEL 03-0000-0000</address>
+					</div>
 				</div>
 			</div>
-			<div class="footer__linksBlock">
-				<div class="footer__linksBlockInner">
-					<h3 class="footer__linkHeading">電話でのお問い合わせ</h3>
-					<small class="footer__businessHours">営業時間 ／ 9:00〜18:00</small>
-					<address class="footer__address">TEL 03-0000-0000</address>
-				</div>
-			</div>
-		</div>
+		<?php endif; ?>
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_dark.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo_dark.png, <?php echo get_template_directory_uri(); ?>/assets/img/logo_dark@2x.png 2x" alt="" class="footer__logo">
 		<nav class="footer__nav">
 			<?php
@@ -45,7 +47,7 @@
 		<div class="footer__companyCopyrightWrapper">
 			<small class="footer__companyCopyright">© &SHIELD All Rights Reserved</small>
 		</div>
-		<?php if (! (is_singular('product')) ): ?>
+		<?php if (!is_singular('product')): ?>
 			<aside class="fixedMenu">
 				<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble@2x.png 2x" alt="吹き出し" class="fixedMenu__icon">
