@@ -82,6 +82,7 @@
       align-items: flex-end;
       width: 250px;
       max-height: 63px;
+      margin-right: 12px;
     }
 
     a {
@@ -94,17 +95,7 @@
         content: none;
       }
 
-      &:first-child {
-        background-color: $--color-primary;
-
-        &:hover {
-          color: $--color-primary;
-          background-color: $white;
-        }
-      }
-
-      &:not(:first-child) {
-        margin-left: 12px;
+      &.-contact {
         background-color: $--color-primary-tint;
         border: 1px solid $--color-primary-tint;
 
@@ -138,11 +129,14 @@
 
   &__links {
     display: flex;
-    justify-content: space-between;
 
     a {
       width: 31.5%;
       color: $--color-primary;
+
+      &:not(:first-child) {
+        margin-left: 22px;
+      }
     }
   }
 
@@ -387,6 +381,7 @@
     text-align: center;
 
     &.c-btn {
+      min-width: 276px;
       padding: 20px 40px;
       color: $white;
       text-align: center;
@@ -491,6 +486,10 @@
 
       a {
         width: 100%;
+
+        &:not(:first-child) {
+          margin-left: 0;
+        }
       }
     }
 

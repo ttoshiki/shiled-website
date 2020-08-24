@@ -934,6 +934,10 @@ img {
   text-align: center;
 }
 
+.footer__address a {
+  color: #ffffff;
+}
+
 .footer__logo {
   display: block;
   width: 300px;
@@ -2193,10 +2197,10 @@ img {
   height: 17px;
   content: "";
   background-image: url(assets/img/icons/icon_arrow-right.png);
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
   background-repeat: no-repeat;
   transition: all 0.2s;
   transform: translateY(-100%);
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
 
 .service__contactLinkButton.-primary {
@@ -2288,7 +2292,7 @@ img {
   }
   .service__featurePointHeading {
     min-height: 48px;
-    font-size: 15px;
+    font-size: 4vw;
   }
   .service__featurePointParagraph {
     margin: 12px 0 0;
@@ -2887,6 +2891,7 @@ img {
   align-items: flex-end;
   width: 250px;
   max-height: 63px;
+  margin-right: 12px;
 }
 
 .singleProduct__buttons a {
@@ -2900,22 +2905,12 @@ img {
   content: none;
 }
 
-.singleProduct__buttons a:first-child {
-  background-color: #04287e;
-}
-
-.singleProduct__buttons a:first-child:hover {
-  color: #04287e;
-  background-color: #ffffff;
-}
-
-.singleProduct__buttons a:not(:first-child) {
-  margin-left: 12px;
+.singleProduct__buttons a.-contact {
   background-color: #4c8fcd;
   border: 1px solid #4c8fcd;
 }
 
-.singleProduct__buttons a:not(:first-child):hover {
+.singleProduct__buttons a.-contact:hover {
   background-color: #70abe2;
   border-color: #70abe2;
 }
@@ -2940,12 +2935,15 @@ img {
 
 .singleProduct__links {
   display: flex;
-  justify-content: space-between;
 }
 
 .singleProduct__links a {
   width: 31.5%;
   color: #04287e;
+}
+
+.singleProduct__links a:not(:first-child) {
+  margin-left: 22px;
 }
 
 .singleProduct__linkText {
@@ -3182,6 +3180,7 @@ img {
 }
 
 .singleProduct__fixedContactLink.c-btn {
+  min-width: 276px;
   padding: 20px 40px;
   color: #ffffff;
   text-align: center;
@@ -3261,6 +3260,9 @@ img {
   }
   .singleProduct__links a {
     width: 100%;
+  }
+  .singleProduct__links a:not(:first-child) {
+    margin-left: 0;
   }
   .singleProduct__linkText {
     display: flex;

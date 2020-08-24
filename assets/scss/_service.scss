@@ -602,11 +602,11 @@
       height: 17px;
       content: "";
       background-image: url(assets/img/icons/icon_arrow-right.png);
+      filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+        brightness(107%) contrast(101%);
       background-repeat: no-repeat;
       transition: all 0.2s;
       transform: translateY(-100%);
-      filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
-        brightness(107%) contrast(101%);
     }
 
     &.-primary {
@@ -714,7 +714,7 @@
 
     &__featurePointHeading {
       min-height: 48px;
-      font-size: 15px;
+      font-size: 4vw;
     }
 
     &__featurePointParagraph {
