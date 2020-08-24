@@ -276,6 +276,10 @@
         align-items: center;
         width: 47.63vw;
         margin: -2px 0 0 30px;
+
+        img {
+          min-width: auto;
+        }
       }
 
       .header__hammenu {

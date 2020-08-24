@@ -749,6 +749,9 @@ img {
     width: 47.63vw;
     margin: -2px 0 0 30px;
   }
+  .header.products .custom-logo-link img {
+    min-width: auto;
+  }
   .header.products .header__hammenu {
     display: flex;
     justify-content: space-between;
@@ -2874,10 +2877,33 @@ img {
 
 .singleProduct__buttons a {
   width: 48%;
+  padding: 20px 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.singleProduct__buttons a::after {
+  content: none;
+}
+
+.singleProduct__buttons a:first-child {
+  background-color: #04287e;
+}
+
+.singleProduct__buttons a:first-child:hover {
+  color: #04287e;
+  background-color: #ffffff;
 }
 
 .singleProduct__buttons a:not(:first-child) {
   margin-left: 12px;
+  background-color: #4c8fcd;
+  border: 1px solid #4c8fcd;
+}
+
+.singleProduct__buttons a:not(:first-child):hover {
+  color: #4c8fcd;
+  background-color: transparent;
 }
 
 .singleProduct-doubleCol {
@@ -2994,6 +3020,21 @@ img {
   border-top: none;
 }
 
+.singleProduct__movie {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 24px 0 40px;
+}
+
+.singleProduct__movie iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .singleProduct__points {
   padding-top: 94px;
   margin: -46px 0 24px;
@@ -3106,22 +3147,19 @@ img {
 }
 
 .singleProduct__fixedPurchaseLink.c-btn {
+  padding: 20px 40px;
   color: #ffffff;
   text-align: center;
   background-color: #04287e;
 }
 
 .singleProduct__fixedPurchaseLink.c-btn::after {
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+  content: none;
 }
 
 .singleProduct__fixedPurchaseLink.c-btn:hover {
   color: #04287e;
   background-color: #ffffff;
-}
-
-.singleProduct__fixedPurchaseLink.c-btn:hover::after {
-  filter: none;
 }
 
 .singleProduct__fixedContactLink {
@@ -3130,6 +3168,7 @@ img {
 }
 
 .singleProduct__fixedContactLink.c-btn {
+  padding: 20px 40px;
   color: #ffffff;
   text-align: center;
   background-color: #4c8fcd;
@@ -3137,7 +3176,7 @@ img {
 }
 
 .singleProduct__fixedContactLink.c-btn::after {
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+  content: none;
 }
 
 .singleProduct__fixedContactLink.c-btn:hover {
@@ -3182,6 +3221,9 @@ img {
   }
   .singleProduct__details dd {
     padding: 12px;
+  }
+  .singleProduct__movie {
+    margin: 16px 0 24px;
   }
   .singleProduct__points {
     padding-top: 52px;

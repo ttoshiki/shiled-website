@@ -97,6 +97,11 @@ get_header();
                     <h3 class="singleProduct__subHeading">製品詳細</h3>
                     <span class="singleProduct__subHeadingEn roboto">DETAIL</span>
                   </div>
+                  <?php if (get_field('movie-code')): ?>
+                    <div class="singleProduct__movie">
+                      <?php the_field('movie-code'); ?>
+                    </div>
+                  <?php endif; ?>
                   <?php if (have_rows('detail')): ?>
                     <dl>
                       <?php while (have_rows('detail')): the_row(); ?>
