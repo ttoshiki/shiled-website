@@ -72,8 +72,17 @@
   }
 
   &__buttons {
+    display: flex;
+    align-items: flex-start;
     width: 100%;
     margin: 24px 0 0;
+
+    .shopify-buy-frame {
+      display: flex;
+      align-items: flex-end;
+      width: 250px;
+      max-height: 63px;
+    }
 
     a {
       width: 48%;
@@ -100,8 +109,8 @@
         border: 1px solid $--color-primary-tint;
 
         &:hover {
-          color: $--color-primary-tint;
-          background-color: transparent;
+          background-color: #70abe2;
+          border-color: #70abe2;
         }
       }
     }
@@ -389,12 +398,8 @@
       }
 
       &:hover {
-        color: $--color-primary-tint;
-        background-color: $white;
-
-        &::after {
-          filter: none;
-        }
+        background-color: #70abe2;
+        border-color: #70abe2;
       }
     }
   }
@@ -419,7 +424,12 @@
     }
 
     &__buttons {
+      flex-direction: column;
       margin: 0;
+
+      .shopify-buy-frame {
+        width: 66%;
+      }
 
       a {
         width: 66%;
