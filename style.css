@@ -365,6 +365,10 @@ img {
   transform: translate(-50%, -100%);
 }
 
+.l-mainVisual img {
+  width: 100%;
+}
+
 .l-doubleCol {
   display: flex;
   justify-content: space-between;
