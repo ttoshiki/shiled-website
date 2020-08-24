@@ -30,7 +30,7 @@
   &__meta {
     position: relative;
     width: 88%;
-    padding: 36px 20px 40px;
+    padding: 36px 18px 40px;
     margin: -60px auto 0;
     background-color: $white;
     box-shadow: 0px 0px 6.57px 2.43px rgba(0, 0, 0, 0.05);
@@ -78,6 +78,7 @@
 
   &__lead {
     margin: 8px 0 0;
+    font-feature-settings: "palt";
   }
 
   &__price {
