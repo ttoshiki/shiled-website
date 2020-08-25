@@ -268,7 +268,7 @@ get_header();
         <h2 class="service__contactLinkHeading">お問い合わせはこちら</h2>
         <p class="service__contactLinkParagraph">ご不明点やお見積もりなど、担当者がお客様のご相談を承ります。<br>お気軽にお問い合わせくださいませ。</p>
         <div class="service__contactLinkButtons">
-          <a href="<?php echo home_url('/contact/') ?>" class="service__contactLinkButton -primary">お問い合わせ</a>
+          <a href="<?php echo home_url('/download/') ?>" class="service__contactLinkButton -primary">お問い合わせ</a>
           <a href="" class="service__contactLinkButton">資料ダウンロード</a>
         </div>
         <div class="service__contactPhone">

@@ -1090,6 +1090,19 @@ img {
   }
 }
 
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  color: #04287e;
+}
+
+.error404 .custom-logo-link img {
+  filter: none;
+}
+
 .home__leadContents {
   display: flex;
   justify-content: center;
