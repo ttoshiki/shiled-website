@@ -177,6 +177,10 @@
       padding-left: 16px;
       list-style: disc;
     }
+
+    & > a {
+      color: $--color-primary;
+    }
   }
 }
 
@@ -233,6 +237,11 @@
 
     &__privacyHeading {
       margin: 0 0 24px;
+      font-size: 19px;
+    }
+
+    &__privacyItem {
+      font-size: 13px;
     }
 
     .form-submitArea {

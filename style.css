@@ -3624,6 +3624,10 @@ textarea {
   list-style: disc;
 }
 
+.contact__privacyItem > a {
+  color: #04287e;
+}
+
 @media screen and (max-width: 480px) {
   .contact__inner {
     padding: 0 20px;
@@ -3664,6 +3668,10 @@ textarea {
   }
   .contact__privacyHeading {
     margin: 0 0 24px;
+    font-size: 19px;
+  }
+  .contact__privacyItem {
+    font-size: 13px;
   }
   .contact .form-submitArea {
     flex-direction: column;
