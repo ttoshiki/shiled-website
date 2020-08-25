@@ -118,6 +118,7 @@
 
   &__overview {
     display: flex;
+    max-width: $--content-width-md;
     margin: 100px auto 0 10%;
 
     dl {
@@ -128,12 +129,13 @@
     }
 
     dt {
-      width: 9%;
+      width: 16%;
       font-weight: 600;
       color: $--color-primary;
     }
 
     dd {
+      width: 96%;
       margin-left: 80px;
     }
   }
