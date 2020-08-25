@@ -18,12 +18,12 @@ get_header();
 	<main class="site-main">
 		<div class="company">
       <section class="l-mainVisual">
-        <h1 class="l-mainVisualHeading roboto">COMPANY</h1>
+        <h1 class="l-mainVisualHeading roboto" id="effect_01">COMPANY</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
       <section class="company__lead fadein">
         <div class="company__leadInner">
-          <h2 class="company__leadHeading"><span id="effect_01">暮らしに、安堵を。</span></h2>
+          <h2 class="company__leadHeading"><span id="effect_02">暮らしに、安堵を。</span></h2>
           <p class="company__leadParagraph fadein">
             ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
             ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
@@ -35,7 +35,7 @@ get_header();
       </section>
       <section class="company__message">
         <div class="company__messageInner">
-          <h2 class="company__messageHeading roboto"><span id="effect_02">MESSAGE</span></h2>
+          <h2 class="company__messageHeading roboto"><span id="effect_03">MESSAGE</span></h2>
           <div class="company__messageContents fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/president@2x.jpg 2x" alt="" class="">
             <div class="company__messageText">
@@ -56,7 +56,7 @@ get_header();
         </div>
       </section>
       <section class="company__overview">
-        <h2 class="company__overviewHeading roboto"><span id="effect_03">COMPANY</span></h2>
+        <h2 class="company__overviewHeading roboto"><span id="effect_04">COMPANY</span></h2>
         <dl>
           <div class="company__overviewRow">
             <dt>会社名</dt>

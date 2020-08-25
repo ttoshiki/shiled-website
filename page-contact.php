@@ -18,7 +18,7 @@ get_header();
 	<main class="site-main">
 		<div class="contact">
       <section class="l-mainVisual">
-        <h1 class="l-mainVisualHeading roboto">CONTACT</h1>
+        <h1 class="l-mainVisualHeading roboto" id="effect_01">CONTACT</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/contact/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/contact/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
       <div class="contact__inner">

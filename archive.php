@@ -18,7 +18,7 @@ get_header();
 	<main class="site-main">
 		<div class="archive">
       <section class="l-mainVisual">
-        <h1 class="l-mainVisualHeading roboto">NEWS</h1>
+        <h1 class="l-mainVisualHeading roboto" id="effect_01">NEWS</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/news/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
 			</section>
 			<div class="l-doubleCol">

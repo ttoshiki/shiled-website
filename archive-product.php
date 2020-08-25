@@ -18,7 +18,7 @@ get_header();
 	<main class="site-main">
 		<div class="archiveProduct">
       <section class="l-mainVisual">
-        <h1 class="l-mainVisualHeading roboto">PRODUCTS</h1>
+        <h1 class="l-mainVisualHeading roboto" id="effect_01">PRODUCTS</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/product/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/product/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/product/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
 			</section>
 			<ul class="archiveProduct__list">
