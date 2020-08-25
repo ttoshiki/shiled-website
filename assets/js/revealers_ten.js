@@ -186,7 +186,7 @@
 					}
         }),
 
-				scrollElemToWatch_10 = document.getElementById('effect_010'),
+				scrollElemToWatch_10 = document.getElementById('effect_10'),
 				watcher_10 = scrollMonitor.create(scrollElemToWatch_10, -100),
 				rev10 = new RevealFx(scrollElemToWatch_10, {
 					revealSettings : {
@@ -241,7 +241,7 @@
 				watcher_9.enterViewport(function() {
 					rev9.reveal();
 					watcher_9.destroy();
-				})
+				}),
 				watcher_10.enterViewport(function() {
 					rev10.reveal();
 					watcher_10.destroy();

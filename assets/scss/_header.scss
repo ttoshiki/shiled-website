@@ -28,6 +28,11 @@
       a {
         font-weight: 600;
         color: $white;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
 

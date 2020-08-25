@@ -22,7 +22,7 @@ get_header();
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
       <section class="service__lead fadein">
-        <h2 class="service__leadHeading">抗菌コーティング&除菌清掃<br class="-sp">サービス</h2>
+        <h2 class="service__leadHeading"><span id="effect_02">抗菌コーティング&除菌清掃<br class="-sp">サービス</span></h2>
         <div class="service__leadContents">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/lead_img.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/lead_img.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/lead_img@2x.jpg 2x" alt="" class="service__leadImage">
           <div class="service__leadText">
@@ -38,7 +38,7 @@ get_header();
       </section>
       <section class="service__feature">
         <div class="service__featureInner">
-          <h2 class="service__featureHeading">&SHIELD除菌清掃<br class="-sp">サービスの特徴</h2>
+          <h2 class="service__featureHeading"><span id="effect_03">&SHIELD除菌清掃<br class="-sp">サービスの特徴</span></h2>
           <div class="service__featurePoints">
             <div class="service__featurePoint fadein">
               <div class="service__featurePointNumWrapper roboto">
@@ -102,7 +102,7 @@ get_header();
       </section>
       <section class="service__flow">
         <div class="service__flowInner">
-          <h2 class="service__flowHeading">除菌清掃作業の主な流れ</h2>
+          <h2 class="service__flowHeading"><span id="effect_04">除菌清掃作業の主な流れ</span></h2>
           <div class="service__flowSteps">
             <div class="service__flowStep fadein">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/flow01.png, <?php echo get_template_directory_uri(); ?>/assets/img/service/flow01@2x.png 2x" alt="除菌清掃作業の流れのイメージ">
@@ -126,7 +126,7 @@ get_header();
         </div>
       </section>
       <section class="service__coatingFeature">
-        <h2 class="service__coatingFeatureHeading">抗菌コーティングの特徴</h2>
+        <h2 class="service__coatingFeatureHeading"><span id="effect_05">抗菌コーティングの特徴</span></h2>
         <div class="service__coatingFeatures">
           <div class="service__coatingFeatureWrapper fadein">
             <h3 class="service__coatingFeatureSubHeading">複合効果で快適に</h3>
@@ -153,7 +153,7 @@ get_header();
         </div>
       </section>
       <section class="service__nanoCoat">
-        <h2 class="service__nanoCoatHeading">抗菌コーティング「メディカルナノコート」とは？</h2>
+        <h2 class="service__nanoCoatHeading"><span id="effect_06">抗菌コーティング「メディカルナノコート」とは？</span></h2>
         <div class="service__nanoCoatWrapper fadein">
           <div class="service__nanoCoatImages">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/nano_coat01@2x.jpg 2x" alt="通常断面" class="service__nanoCoatImage">
@@ -167,7 +167,7 @@ get_header();
       </section>
       <section class="service__verification">
         <div class="service__verificationInner">
-          <h2 class="service__verificationHeading">第三者機関での検証</h2>
+          <h2 class="service__verificationHeading"><span id="effect_07">第三者機関での検証</span></h2>
           <div class="service__verificationTestCase fadein">
             <div class="service__verificationNumWrapper roboto">
               <span class="service__verificationText">TEST</span>
@@ -211,7 +211,7 @@ get_header();
         </div>
       </section>
       <section class="service__coronaFlow">
-        <h2 class="service__coronaFlowHeading">コロナ感染発覚時緊急対策<br class="-sp">フロー策定</h2>
+        <h2 class="service__coronaFlowHeading"><span id="effect_08">コロナ感染発覚時緊急対策<br class="-sp">フロー策定</span></h2>
         <p class="service__coronaFlowParagraph">お客様、従業員様でコロナ感染の発覚時から、<br class="-pc">各所除菌対策フローを作成、再営業開始までの除菌計画をご提案します。</p>
         <ol class="service__coronaFlowList fadein">
           <li class="service__coronaFlowItem">社内通達<br class="-pc">スキーム確認</li>
@@ -220,7 +220,7 @@ get_header();
           <li class="service__coronaFlowItem">除菌場所<br class="-pc">設定</li>
           <li class="service__coronaFlowItem">除菌優先<br class="-pc">順位設定</li>
         </ol>
-        <h2 class="service__coronaFlowHeading">導入実績</h2>
+        <h2 class="service__coronaFlowHeading"><span id="effect_09">導入実績</span></h2>
         <p class="service__coronaFlowParagraph">羽田空港、関西空港、市役所などの公共施設、<br class="-pc">またホテルなどのエレベーター内の感染予防として導入</p>
         <div class="service__coronaFlowCaseFacility">
           <figure class="service__coronaCaseFigure fadein">
@@ -265,7 +265,7 @@ get_header();
         </div>
       </section>
       <section class="service__contactLink">
-        <h2 class="service__contactLinkHeading">お問い合わせはこちら</h2>
+        <h2 class="service__contactLinkHeading"><span id="effect_10">お問い合わせはこちら</span></h2>
         <p class="service__contactLinkParagraph">ご不明点やお見積もりなど、担当者がお客様のご相談を承ります。<br>お気軽にお問い合わせくださいませ。</p>
         <div class="service__contactLinkButtons">
           <a href="<?php echo home_url('/download/') ?>" class="service__contactLinkButton -primary">お問い合わせ</a>

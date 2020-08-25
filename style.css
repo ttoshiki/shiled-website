@@ -301,7 +301,13 @@ img {
 #effect_01,
 #effect_02,
 #effect_03,
-#effect_04 {
+#effect_04,
+#effect_05,
+#effect_06,
+#effect_07,
+#effect_08,
+#effect_09,
+#effect_10 {
   display: inline-block;
 }
 
@@ -531,6 +537,11 @@ img {
 .header__nav .menu a {
   font-weight: 600;
   color: #ffffff;
+  transition: opacity 0.2s;
+}
+
+.header__nav .menu a:hover {
+  opacity: 0.5;
 }
 
 .header__nav .menu-item {
@@ -1246,6 +1257,7 @@ img {
 }
 
 .home__newsDate {
+  width: 88px;
   font-size: 15px;
   font-weight: 600;
   color: #04287e;

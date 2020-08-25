@@ -176,8 +176,10 @@ function shield_scripts()
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/revealers_three.js', array(), '', true);
     } else if (is_page('company')) {
         wp_enqueue_script('company-script', get_template_directory_uri() . '/assets/js/revealers_four.js', array(), '', true);
-    } else if (is_page('service') || is_page('contact') || is_archive() || is_single())  {
+    } else if (is_page('contact') || is_archive() || is_single())  {
         wp_enqueue_script('reveals-one-script', get_template_directory_uri() . '/assets/js/revealers_one.js', array(), '', true);
+    } else if(is_page('service')) {
+        wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/revealers_ten.js', array(), '', true);
     }
 }
 add_action('wp_enqueue_scripts', 'shield_scripts');
