@@ -24,7 +24,7 @@
 					<div class="footer__linksBlockInner">
 						<h3 class="footer__linkHeading">電話でのお問い合わせ</h3>
 						<small class="footer__businessHours">営業時間 ／ 9:00〜18:00</small>
-						<address class="footer__address">TEL 03-0000-0000</address>
+						<address class="footer__address">TEL 045-323-4610</address>
 					</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
 		<div class="footer__companyInfo">
 			<div class="footer__companyOverview">
 				<span class="footer__companyName">株式会社&SHIELD</span>
-				<address class="footer__companyAddress">〒000-0000　東京都港区南青山1-1-1</address>
+				<address class="footer__companyAddress">〒221-0832　神奈川県横浜市神奈川区桐畑3-6 TERRAビル</address>
 			</div>
 			<p class="footer__companyText">私たちは新しい公衆衛生の視点でさまざまな角度からモノやコトを創造していきます。あなたの大切な人を守るために。&SHIELDの製品やサービスについてのお問い合わせは、お気軽にご連絡ください。</p>
 		</div>

@@ -274,7 +274,7 @@ get_header();
         <div class="service__contactPhone">
           <span class="service__contactPhoneHeading">電話でのお問い合わせ</span>
           <small class="service__contactPhoneBusinessHours">営業時間 ／ 9:00〜18:00</small>
-          <address class="service__contactPhoneAddress">TEL 03-0000-0000</address>
+          <address class="service__contactPhoneAddress">TEL 045-323-4610</address>
         </div>
       </section>
 		</div>
