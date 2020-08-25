@@ -476,8 +476,16 @@
         &.-fixed {
           position: relative;
           top: auto;
+          width: 100%;
           margin: 64px 0 0;
         }
+      }
+    }
+
+    &__fixedContactLink {
+      &.c-btn {
+        width: 100%;
+        min-width: auto;
       }
     }
 

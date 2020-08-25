@@ -290,5 +290,10 @@
       font-size: 16px;
       text-align: center;
     }
+
+    &__footerVisualImage {
+      height: 200px;
+      object-fit: cover;
+    }
   }
 }
