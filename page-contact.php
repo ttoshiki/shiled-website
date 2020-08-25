@@ -25,8 +25,7 @@ get_header();
         <section class="contact__lead">
           <p class="contact__leadParagraph">
             お問い合わせフォームからご連絡ください。ご記入されましたら【送信】ボタンをクリックしてください。<br>
-            送信後に確認メールをお送りしています。届かない場合は、お手数ですがxxx@xxx.xxxまでお問い合わせ<br>
-            内容をお送りください。
+            送信後に確認メールをお送りしています。届かない場合は、お手数ですがxxx@xxx.xxxまでお問い合わせ内容をお送りください。
           </p>
         </section>
         <?php while (have_posts()) : ?>

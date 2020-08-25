@@ -32,6 +32,23 @@ img {
   max-width: 100%;
 }
 
+select,
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  border-radius: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  resize: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -61,5 +78,13 @@ img {
 
   .site-main {
     min-width: auto;
+  }
+
+  select,
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    font-size: 16px;
   }
 }

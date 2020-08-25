@@ -250,6 +250,19 @@
   display: inline-block;
 }
 
+.widget_archive {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 10px;
+    bottom: -2px;
+    color: $black;
+    content: ">";
+    transform: translateY(-50%) rotate(90deg) scale(1, 1.6);
+  }
+}
+
 @include mq(mobile) {
   .c-btn {
     font-size: 12px;

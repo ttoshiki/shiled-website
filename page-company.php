@@ -25,11 +25,11 @@ get_header();
         <div class="company__leadInner">
           <h2 class="company__leadHeading"><span id="effect_02">暮らしに、安堵を。</span></h2>
           <p class="company__leadParagraph fadein">
-            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
-            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。<br>
+            &SHIELDのミッションは「守る」ことです。<br>
+            私たちのシンボルであるロゴマークは、盾を意味する「SHIELD」と、ミッションである「守る」の漢字からデザインしています。
           </p>
           <p class="company__leadParagraph fadein">
-            ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト ダミーテキスト 。
+            日々の暮らしや企業の役に立つ衛生関連情報やサービスを提供することで、皆様と皆様にとって大切な人を様々なリスクの不安からお守りしたいと考えております。
           </p>
         </div>
       </section>
@@ -39,17 +39,15 @@ get_header();
           <div class="company__messageContents fadein">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/president.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/company/president@2x.jpg 2x" alt="" class="">
             <div class="company__messageText">
-              <h3 class="company__messageSubHeading">ダミーテキスト<br>ダミーテキストダミー。</h3>
+              <h3 class="company__messageSubHeading">大切な人を「守る」存在でありたい</h3>
               <p class="company__messageParagraph">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                &SHIELDは「社員とその家族を守りたい」、その想いから始まりました。
               </p>
               <p class="company__messageParagraph">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                新型コロナウイルスが世界的に拡がりを見せ、日々不安を抱え、働く社員を目の当たりにし、少しでも社員とその家族の不安を解消できることが無いか模索いたしました。その中で世の中の衛生関連商品を適切に取り扱い、使用することがリスクから守るということにたどり着きました。皆様が様々なリスクから自分や大切な人を「守る」。そのための高品質なサービスや商品を誠意を持って提供いたします。
               </p>
               <p class="company__messagePresidentName">
-                代表　お名前
+                代表　佐藤　渉
               </p>
             </div>
           </div>
@@ -60,23 +58,27 @@ get_header();
         <dl>
           <div class="company__overviewRow">
             <dt>会社名</dt>
-            <dd>&SHIELD</dd>
+            <dd>株式会社テラ &SHIELD事業部</dd>
           </div>
           <div class="company__overviewRow">
-            <dt>代表者</dt>
-            <dd>代表者お名前</dd>
+            <dt>代表</dt>
+            <dd>代表取締役社長　佐藤　渉</dd>
           </div>
           <div class="company__overviewRow">
-            <dt>所在地</dt>
-            <dd>◯◯県◯◯◯市◯◯◯◯◯◯◯◯◯◯</dd>
+            <dt>本社所在地</dt>
+            <dd>〒221-0832　神奈川県横浜市神奈川区桐畑3-6 TERRAビル</dd>
           </div>
           <div class="company__overviewRow">
-            <dt>事業内容</dt>
-            <dd>ダミーテキストダミーテキストダミーテキスト</dd>
+            <dt>電話番号</dt>
+            <dd>045-323-4610</dd>
           </div>
           <div class="company__overviewRow">
             <dt>設立</dt>
-            <dd>0000年00月</dd>
+            <dd>1989年6月</dd>
+          </div>
+          <div class="company__overviewRow">
+            <dt>事業内容</dt>
+            <dd>ソリューション事業、モバイルショップ事業、アクセサリー事業、法人アプリ事業、モバイル関連各種事業開発</dd>
           </div>
         </dl>
       </section>
