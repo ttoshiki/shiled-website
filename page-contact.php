@@ -35,15 +35,23 @@ get_header();
           endwhile;
         ?>
         <div class="contact__privacy">
-          <h2 class="contact__privacyHeading">プライバシーポリシー</h2>
-          <div class="contact__privacyBlock">
-            <h3 class="contact__privacySubHeading">第1条（個人情報）</h3>
-            <p class="contact__privacyParagraph">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。</p>
-          </div>
-          <div class="contact__privacyBlock">
-            <h3 class="contact__privacySubHeading">第1条（個人情報）</h3>
-            <p class="contact__privacyParagraph">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。</p>
-          </div>
+          <h2 class="contact__privacyHeading">個人情報の取り扱いについて</h2>
+          <ul class="contact__privacyList">
+            <li class="contact__privacyItem">
+              ご入力いただいた個人情報は、下記の個人情報の取扱いの内容に従い管理いたします。<br>
+              必要な項目をご入力いただけない場合、適切な対応ができない場合がありますのでご了承ください。
+            </li>
+            <li class="contact__privacyItem">
+              入力された情報は、以下に示す目的で利用させていただき、他の用途には利用いたしません。<br>
+              <ul>
+                <li>資料の送付</li>
+                <li>お問い合わせ、ご相談への対応</li>
+              </ul>
+            </li>
+            <li class="contact__privacyItem">
+              「個人情報の第三者への提供」「個人情報の取扱い業務の委託」「個人情報提供の任意性」「個人情報の開示・提供・削除について」等、個人情報の取り扱いに関する詳細については、以下の<a href="https://www.terracom.co.jp/information/privacy_policy.html">「プライバシーポリシー」</a>ページを参照してください。
+            </li>
+          </ul>
         </div>
       </div>
 		</div>
