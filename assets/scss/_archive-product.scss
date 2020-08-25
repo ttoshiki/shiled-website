@@ -109,10 +109,36 @@
 
 @include mq(mobile) {
   .archiveProduct {
+    &__wrapper {
+      width: 100%;
+
+      .wp-post-image {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+
     &__list {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       padding: 0 20px;
       margin: 60px auto;
+
+      & > li {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &__item {
+      &::before {
+        left: 13vw;
+      }
+    }
+
+    &__meta {
+      width: 72%;
     }
   }
 }

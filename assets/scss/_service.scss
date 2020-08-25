@@ -650,6 +650,10 @@
   &__contactPhoneAddress {
     font-size: 22px;
     font-style: normal;
+
+    a {
+      color: $white;
+    }
   }
 }
 
@@ -965,7 +969,7 @@
 
     &__coronaFlowParagraph {
       margin: 16px 0 0;
-      font-size: 17px;
+      font-size: 15px;
       letter-spacing: 1px;
     }
 

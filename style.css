@@ -2304,6 +2304,10 @@ img {
   font-style: normal;
 }
 
+.service__contactPhoneAddress a {
+  color: #ffffff;
+}
+
 @media screen and (max-width: 480px) {
   .service__lead {
     margin: 60px 0 0;
@@ -2546,7 +2550,7 @@ img {
   }
   .service__coronaFlowParagraph {
     margin: 16px 0 0;
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: 1px;
   }
   .service__coronaFlowList {
@@ -2805,10 +2809,29 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+  .archiveProduct__wrapper {
+    width: 100%;
+  }
+  .archiveProduct__wrapper .wp-post-image {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
   .archiveProduct__list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 20px;
     margin: 60px auto;
+  }
+  .archiveProduct__list > li {
+    display: flex;
+    justify-content: center;
+  }
+  .archiveProduct__item::before {
+    left: 13vw;
+  }
+  .archiveProduct__meta {
+    width: 72%;
   }
 }
 
