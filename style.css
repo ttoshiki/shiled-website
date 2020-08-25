@@ -3596,6 +3596,7 @@ textarea {
   letter-spacing: 24px;
   background-color: #ffffff;
   border: 1px solid #04287e;
+  border-radius: 0;
   transition: all 0.2s;
 }
 
