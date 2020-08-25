@@ -1435,10 +1435,15 @@ textarea {
     padding: 24px 0 40px;
   }
   .home__newsLink::after {
-    top: 76px;
+    top: 50%;
     right: 0;
+    width: 20px;
+    height: 12px;
+    background-size: cover;
+    transform: translateY(-50%);
   }
   .home__newsItemHeading {
+    width: 84%;
     margin: 0;
   }
   .home__footerVisualHeading {

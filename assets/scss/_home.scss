@@ -276,12 +276,17 @@
       padding: 24px 0 40px;
 
       &::after {
-        top: 76px;
+        top: 50%;
         right: 0;
+        width: 20px;
+        height: 12px;
+        background-size: cover;
+        transform: translateY(-50%);
       }
     }
 
     &__newsItemHeading {
+      width: 84%;
       margin: 0;
     }
 
