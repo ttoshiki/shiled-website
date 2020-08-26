@@ -56,7 +56,7 @@ get_header();
                 <?php endif; ?>
                 <?php if (get_field('price')): ?>
                   <span class="singleProduct__price">
-                    ¥<?php the_field('price'); ?>-
+                    <?php the_field('price'); ?>
                   </span>
                 <?php endif; ?>
                 <div class="singleProduct__description">
@@ -108,7 +108,7 @@ get_header();
                     <dl>
                       <?php while (have_rows('detail')): the_row(); ?>
                         <div class="singleProduct__definitionItem">
-                          <dt>製品詳細</dt>
+                          <dt><?php the_sub_field('detail-heading'); ?></dt>
                           <dd><?php the_sub_field('detail-content'); ?></dd>
                         </div>
                       <?php endwhile; ?>
