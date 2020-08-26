@@ -3143,9 +3143,10 @@ textarea {
   display: flex;
   align-items: center;
   width: 80%;
-  padding: 16px 0 16px 40px;
+  padding: 16px 40px 16px 40px;
   margin-left: 0;
   font-size: 13px;
+  text-align: justify;
   border: 1px solid #04287e;
 }
 
@@ -3369,6 +3370,12 @@ textarea {
   .singleProduct__buttons a:not(:first-child) {
     margin: 16px 0 0;
   }
+  .singleProduct__definitionItem {
+    flex-direction: column;
+  }
+  .singleProduct__definitionItem:first-of-type dt {
+    border-bottom: none;
+  }
   .singleProduct__details {
     padding-top: 52px;
     margin: -12px 0 0;
@@ -3380,9 +3387,11 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: 100%;
+    border-right: 1px solid #04287e;
   }
   .singleProduct__details dd {
+    width: 100%;
     padding: 12px;
   }
   .singleProduct__movie {
