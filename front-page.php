@@ -72,7 +72,7 @@ get_header();
 						<!-- 投稿が無い場合の処理 -->
 					<?php endif; ?>
 					<div class="home__newsButton">
-						<a href="<?php echo home_url('/company/') ?>" class="c-btn"><span class="c-btn__text">ニュース一覧はこちら</span></a>
+						<a href="<?php echo home_url('/news/') ?>" class="c-btn"><span class="c-btn__text">ニュース一覧はこちら</span></a>
 					</div>
 			</section>
 			<section class="home__footerVisual fadein">
