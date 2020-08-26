@@ -278,6 +278,10 @@
         .header__hammenu {
           padding: 0 1.867vw 0 6.4vw;
         }
+
+        .header__hammenuInner {
+          margin-top: -124px;
+        }
       }
 
       .custom-logo-link {
@@ -345,7 +349,7 @@
       }
 
       .header__hammenuInner {
-        margin-top: -40px;
+        margin-top: -110px;
       }
     }
 
@@ -407,7 +411,7 @@
     }
 
     &__hammenuInner {
-      margin-top: -54px;
+      margin-top: -124px;
     }
 
     &__hammenuConversion {

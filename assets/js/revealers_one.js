@@ -10,7 +10,7 @@
 				watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -10),
 				rev1 = new RevealFx(scrollElemToWatch_1, {
 					revealSettings : {
-						bgcolor: '#04287e',
+						bgcolor: '#ffffff',
 						duration: 350,
 						onStart: function(contentEl, revealerEl) {
 							anime.remove(contentEl);
