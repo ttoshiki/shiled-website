@@ -39,7 +39,7 @@
 		</nav>
 		<div class="footer__companyInfo">
 			<div class="footer__companyOverview">
-				<span class="footer__companyName">株式会社&SHIELD</span>
+				<span class="footer__companyName">株式会社テラ &SHIELD事業部</span>
 				<address class="footer__companyAddress">〒221-0832　神奈川県横浜市神奈川区桐畑3-6 TERRAビル</address>
 			</div>
 			<p class="footer__companyText">私たちは新しい公衆衛生の視点でさまざまな角度からモノやコトを創造していきます。あなたの大切な人を守るために。&SHIELDの製品やサービスについてのお問い合わせは、お気軽にご連絡ください。</p>

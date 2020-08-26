@@ -58,7 +58,7 @@ get_header();
         <dl>
           <div class="company__overviewRow">
             <dt>会社名</dt>
-            <dd>株式会社AND SHIELD（通称：&SHIELD）</dd>
+            <dd>株式会社テラ &SHIELD事業部</dd>
           </div>
           <div class="company__overviewRow">
             <dt>代表</dt>
