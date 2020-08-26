@@ -853,6 +853,12 @@ textarea {
   .header.-fixed .-hasLogo {
     display: none;
   }
+  .header.-fixed .menu-menu-1-container {
+    margin-bottom: 4px;
+  }
+  .header.-fixed .header__hammenuInner {
+    margin-top: -40px;
+  }
   .header__nav .custom-logo-link {
     display: block;
   }
@@ -900,6 +906,9 @@ textarea {
   .header__hammenuWrapper li:not(:first-child) {
     margin-top: 9.4vw;
   }
+  .header__hammenuInner {
+    margin-top: -54px;
+  }
   .header__hammenuConversion {
     display: flex;
     align-items: center;
@@ -914,6 +923,9 @@ textarea {
     display: block;
     width: 16px;
     margin-right: 14px;
+  }
+  .header .menu-menu-1-container {
+    margin-bottom: 0px;
   }
   .fixedMenu {
     top: auto;

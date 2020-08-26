@@ -339,6 +339,14 @@
       .-hasLogo {
         display: none;
       }
+
+      .menu-menu-1-container {
+        margin-bottom: 4px;
+      }
+
+      .header__hammenuInner {
+        margin-top: -40px;
+      }
     }
 
     &__nav {
@@ -398,6 +406,10 @@
       }
     }
 
+    &__hammenuInner {
+      margin-top: -54px;
+    }
+
     &__hammenuConversion {
       display: flex;
       align-items: center;
@@ -413,6 +425,10 @@
       display: block;
       width: 16px;
       margin-right: 14px;
+    }
+
+    .menu-menu-1-container {
+      margin-bottom: 0px;
     }
   }
 

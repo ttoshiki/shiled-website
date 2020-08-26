@@ -46,7 +46,6 @@ jQuery(function() {
       jQuery(".header").addClass('-fixed');
     } else {
       if (_window.scrollTop() < 94) {
-        console.log('a')
         jQuery("header").removeClass("-fixed");
       }
     }
