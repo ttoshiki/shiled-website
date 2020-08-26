@@ -57,7 +57,11 @@ get_header();
 										<?php the_field('lead-sentence'); ?>
 									</p>
 								<?php endif; ?>
-								<?php if (get_field('price')): ?>
+								<?php if (get_field('list-price')): ?>
+									<span class="archiveProduct__price">
+										<?php the_field('list-price'); ?>
+									</span>
+								<?php else: ?>
 									<span class="archiveProduct__price">
 										<?php the_field('price'); ?>
 									</span>

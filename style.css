@@ -2770,7 +2770,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 60px;
-  grid-column-gap: 3%;
+  grid-column-gap: 1%;
   max-width: 1100px;
   margin: 100px auto;
   counter-reset: product-num 0;
@@ -2796,7 +2796,7 @@ textarea {
   position: relative;
   width: 88%;
   height: calc(100% - 245px);
-  padding: 36px 18px 40px;
+  padding: 36px 11px 40px;
   margin: -60px auto 0;
   background-color: #ffffff;
   box-shadow: 0px 0px 6.57px 2.43px rgba(0, 0, 0, 0.05);
@@ -2807,8 +2807,10 @@ textarea {
 }
 
 .archiveProduct__wrapper .wp-post-image {
-  width: 250px;
+  display: block;
+  width: 260px;
   height: 300px;
+  margin: auto;
   object-fit: cover;
 }
 
@@ -2837,7 +2839,7 @@ textarea {
 
 .archiveProduct__title {
   margin: 0;
-  font-size: 17px;
+  font-size: 16px;
   color: #04287e;
 }
 
@@ -2847,8 +2849,9 @@ textarea {
 
 .archiveProduct__lead {
   margin: 8px 0 0;
-  font-feature-settings: "palt";
+  font-size: 13px;
   text-align: justify;
+  font-feature-settings: "palt";
 }
 
 .archiveProduct__price {
