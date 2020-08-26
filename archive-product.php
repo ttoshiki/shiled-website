@@ -59,7 +59,7 @@ get_header();
 								<?php endif; ?>
 								<?php if (get_field('price')): ?>
 									<span class="archiveProduct__price">
-										¥<?php the_field('price'); ?>-
+										<?php the_field('price'); ?>
 									</span>
 								<?php endif; ?>
 								<span class="archiveProduct__more roboto">SEE MORE</span>
