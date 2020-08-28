@@ -203,9 +203,6 @@ function change_posts_per_page($query)
     if (is_front_page()) {
         $query->set('posts_per_page', '4');
         return $query;
-    } elseif (is_post_type_archive('product')) {
-        $query->set('posts_per_page', '8');
-        return $query;
     }
 }
 add_filter('pre_get_posts', 'change_posts_per_page');
