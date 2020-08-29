@@ -273,7 +273,7 @@ get_header();
         </div>
         <div class="service__contactPhone">
           <span class="service__contactPhoneHeading">電話でのお問い合わせ</span>
-          <small class="service__contactPhoneBusinessHours">営業時間 ／ 9:00〜18:00</small>
+          <small class="service__contactPhoneBusinessHours">営業時間 ／ 9:00〜18:00（土日祝日を除く)</small>
           <address class="service__contactPhoneAddress">TEL 045-323-4610</address>
         </div>
       </section>

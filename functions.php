@@ -52,6 +52,7 @@ if (! function_exists('shield_setup')) :
         register_nav_menus(
             array(
                 'primary' => esc_html__('Main Menu', 'shield'),
+                'footer' => esc_html__('Footer Menu', 'shield'),
             )
         );
 
@@ -174,11 +175,11 @@ function shield_scripts()
 
     if (is_front_page()) {
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/revealers_three.js', array(), '', true);
-    } else if (is_page('company')) {
+    } elseif (is_page('company')) {
         wp_enqueue_script('company-script', get_template_directory_uri() . '/assets/js/revealers_four.js', array(), '', true);
-    } else if (is_page('contact') || is_archive() || is_single())  {
+    } elseif (is_page('contact') || is_archive() || is_single()) {
         wp_enqueue_script('reveals-one-script', get_template_directory_uri() . '/assets/js/revealers_one.js', array(), '', true);
-    } else if(is_page('service')) {
+    } elseif (is_page('service')) {
         wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/revealers_ten.js', array(), '', true);
     }
 }
@@ -230,6 +231,3 @@ function remove_posted_on($output)
     return str_replace("に投稿された", "", $output);
 }
 add_filter('wpp_post', 'remove_posted_on');
-
-
-

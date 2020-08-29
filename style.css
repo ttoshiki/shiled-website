@@ -1041,7 +1041,7 @@ textarea {
   margin: 48px auto 0;
 }
 
-.footer__nav .menu {
+.footer__nav .menu-primary-container .menu {
   display: flex;
   justify-content: center;
   max-width: 1000px;
@@ -1051,11 +1051,11 @@ textarea {
   border-bottom: 1px solid rgba(4, 40, 126, 0.15);
 }
 
-.footer__nav .menu-item:not(:first-child) {
+.footer__nav .menu-primary-container .menu-item:not(:first-child) {
   margin-left: 64px;
 }
 
-.footer__nav .menu-item a {
+.footer__nav .menu-primary-container .menu-item a {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 600;
@@ -1063,10 +1063,26 @@ textarea {
   letter-spacing: 3px;
 }
 
+.footer__nav .menu-footer-container .menu {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0;
+}
+
+.footer__nav .menu-footer-container .menu-item:not(:first-child) {
+  margin-left: 64px;
+}
+
+.footer__nav .menu-footer-container .menu-item a {
+  font-size: 13px;
+  color: #04287e;
+  letter-spacing: 3px;
+}
+
 .footer__companyInfo {
   display: flex;
   max-width: 1000px;
-  margin: 48px auto 40px;
+  margin: 40px auto;
 }
 
 .footer__companyOverview {
@@ -1131,7 +1147,7 @@ textarea {
     left: 50%;
   }
   .footer__linksBlockInner {
-    width: 72%;
+    width: 80%;
     transform: translate(-50%, -50%);
   }
   .footer__linkButton {
@@ -1148,21 +1164,38 @@ textarea {
     width: 56%;
     margin: 32px auto 0;
   }
-  .footer__nav .menu {
+  .footer__nav .menu-primary-container .menu {
     flex-wrap: wrap;
     width: 89.33%;
     padding: 8px 0;
     margin: 32px auto 0;
   }
-  .footer__nav .menu-item {
+  .footer__nav .menu-primary-container .menu-item {
     margin: 0.8vw 0;
   }
-  .footer__nav .menu-item:not(:first-child) {
+  .footer__nav .menu-primary-container .menu-item:not(:first-child) {
     margin-left: 6vw;
   }
-  .footer__nav .menu-item a {
+  .footer__nav .menu-primary-container .menu-item a {
     font-size: 3.8vw;
     letter-spacing: 1px;
+  }
+  .footer__nav .menu-footer-container {
+    padding: 0 20px;
+  }
+  .footer__nav .menu-footer-container .menu {
+    flex-direction: column;
+  }
+  .footer__nav .menu-footer-container .menu-item {
+    padding-bottom: 8px;
+    margin: 4px 0;
+    border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+  }
+  .footer__nav .menu-footer-container .menu-item:not(:first-child) {
+    margin-left: 0;
+  }
+  .footer__nav .menu-footer-container .menu-item a {
+    font-size: 12px;
   }
   .footer__companyName {
     display: block;

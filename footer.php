@@ -23,7 +23,7 @@
 				<div class="footer__linksBlock">
 					<div class="footer__linksBlockInner">
 						<h3 class="footer__linkHeading">電話でのお問い合わせ</h3>
-						<small class="footer__businessHours">営業時間 ／ 9:00〜18:00</small>
+						<small class="footer__businessHours">営業時間 ／ 9:00〜18:00（土日祝日を除く)</small>
 						<address class="footer__address">TEL 045-323-4610</address>
 					</div>
 				</div>
@@ -33,7 +33,12 @@
 		<nav class="footer__nav">
 			<?php
         wp_nav_menu(array(
-          'theme_location' => 'primary'
+					'theme_location' => 'primary',
+					'container_class' => 'menu-primary-container',
+        ));
+        wp_nav_menu(array(
+					'theme_location' => 'footer',
+					'container_class' => 'menu-footer-container',
         ));
       ?>
 		</nav>

@@ -83,27 +83,49 @@
   }
 
   &__nav {
-    .menu {
-      display: flex;
-      justify-content: center;
-      max-width: $--content-width-sm;
-      padding: 24px 0;
-      margin: 48px auto 0;
-      border-top: 1px solid rgba(4, 40, 126, 0.15);
-      border-bottom: 1px solid rgba(4, 40, 126, 0.15);
-    }
-
-    .menu-item {
-      &:not(:first-child) {
-        margin-left: 64px;
+    .menu-primary-container {
+      .menu {
+        display: flex;
+        justify-content: center;
+        max-width: $--content-width-sm;
+        padding: 24px 0;
+        margin: 48px auto 0;
+        border-top: 1px solid rgba(4, 40, 126, 0.15);
+        border-bottom: 1px solid rgba(4, 40, 126, 0.15);
       }
 
-      a {
-        font-family: "Roboto", sans-serif;
-        font-size: 17px;
-        font-weight: 600;
-        color: $--color-primary;
-        letter-spacing: 3px;
+      .menu-item {
+        &:not(:first-child) {
+          margin-left: 64px;
+        }
+
+        a {
+          font-family: "Roboto", sans-serif;
+          font-size: 17px;
+          font-weight: 600;
+          color: $--color-primary;
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+    .menu-footer-container {
+      .menu {
+        display: flex;
+        justify-content: center;
+        margin: 24px 0 0;
+      }
+
+      .menu-item {
+        &:not(:first-child) {
+          margin-left: 64px;
+        }
+
+        a {
+          font-size: 13px;
+          color: $--color-primary;
+          letter-spacing: 3px;
+        }
       }
     }
   }
@@ -111,7 +133,7 @@
   &__companyInfo {
     display: flex;
     max-width: $--content-width-sm;
-    margin: 48px auto 40px;
+    margin: 40px auto;
   }
 
   &__companyOverview {
@@ -185,7 +207,7 @@
     }
 
     &__linksBlockInner {
-      width: 72%;
+      width: 80%;
       transform: translate(-50%, -50%);
     }
 
@@ -208,23 +230,46 @@
     }
 
     &__nav {
-      .menu {
-        flex-wrap: wrap;
-        width: 89.33%;
-        padding: 8px 0;
-        margin: 32px auto 0;
-      }
-
-      .menu-item {
-        margin: 0.8vw 0;
-
-        &:not(:first-child) {
-          margin-left: 6vw;
+      .menu-primary-container {
+        .menu {
+          flex-wrap: wrap;
+          width: 89.33%;
+          padding: 8px 0;
+          margin: 32px auto 0;
         }
 
-        a {
-          font-size: 3.8vw;
-          letter-spacing: 1px;
+        .menu-item {
+          margin: 0.8vw 0;
+
+          &:not(:first-child) {
+            margin-left: 6vw;
+          }
+
+          a {
+            font-size: 3.8vw;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .menu-footer-container {
+        padding: 0 20px;
+        .menu {
+          flex-direction: column;
+        }
+
+        .menu-item {
+          padding-bottom: 8px;
+          margin: 4px 0;
+          border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+
+          &:not(:first-child) {
+            margin-left: 0;
+          }
+
+          a {
+            font-size: 12px;
+          }
         }
       }
     }
