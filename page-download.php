@@ -18,14 +18,14 @@ get_header();
 	<main class="site-main">
 		<div class="contact">
       <section class="l-mainVisual">
-        <h1 class="l-mainVisualHeading roboto" id="effect_01">CONTACT</h1>
+        <h1 class="l-mainVisualHeading roboto" id="effect_01">DOWNLOAD</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/contact/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/contact/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
       <div class="contact__inner">
         <section class="contact__lead">
           <p class="contact__leadParagraph">
-            お問い合わせフォームからご連絡ください。ご記入されましたら【送信】ボタンをクリックしてください。<br>
-            送信後に確認メールをお送りしています。届かない場合は、お手数ですが <a href="mailto:info@andshield.jp">info@andshield.jp</a> までお問い合わせ内容をお送りください。
+            資料ダウンロードをご希望の方はフォームにご入力後【送信】ボタンをクリックしてください。<br>
+            ご入力いただいたメールアドレス宛に資料をお送りいたします。
           </p>
         </section>
         <?php while (have_posts()) : ?>
