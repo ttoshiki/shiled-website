@@ -1184,15 +1184,23 @@ textarea {
     padding: 0 20px;
   }
   .footer__nav .menu-footer-container .menu {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .footer__nav .menu-footer-container .menu-item {
     padding-bottom: 8px;
     margin: 4px 0;
-    border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+  }
+  .footer__nav .menu-footer-container .menu-item:first-child {
+    width: 100%;
+    margin-bottom: 6px;
+    text-align: center;
   }
   .footer__nav .menu-footer-container .menu-item:not(:first-child) {
+    margin-right: 32px;
     margin-left: 0;
+  }
+  .footer__nav .menu-footer-container .menu-item:last-child {
+    margin-right: 0;
   }
   .footer__nav .menu-footer-container .menu-item a {
     font-size: 12px;
@@ -1204,6 +1212,7 @@ textarea {
   }
   .footer__companyInfo {
     flex-direction: column;
+    margin: 24px auto 40px;
   }
   .footer__companyAddress {
     margin-top: 4px;

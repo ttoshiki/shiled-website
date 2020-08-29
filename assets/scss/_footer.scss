@@ -1,4 +1,4 @@
-@import "_variables";
+ふっt@import "_variables";
 
 .footer {
   width: 100%;
@@ -255,16 +255,26 @@
       .menu-footer-container {
         padding: 0 20px;
         .menu {
-          flex-direction: column;
+          flex-wrap: wrap;
         }
 
         .menu-item {
           padding-bottom: 8px;
           margin: 4px 0;
-          border-bottom: 1px solid rgba(4, 40, 126, 0.15);
+
+          &:first-child {
+            width: 100%;
+            margin-bottom: 6px;
+            text-align: center;
+          }
 
           &:not(:first-child) {
+            margin-right: 32px;
             margin-left: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
           }
 
           a {
@@ -282,6 +292,7 @@
 
     &__companyInfo {
       flex-direction: column;
+      margin: 24px auto 40px;
     }
 
     &__companyAddress {
