@@ -43,6 +43,10 @@ get_header();
 							</article>
 						<!-- 投稿が無い場合の処理 -->
 					<?php endif; ?>
+					<a href="<?php echo home_url('/download/') ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/banner.jpg" alt="" class="single__banner">
+					</a>
+					<?php related_posts(); ?>
 				</div>
 				<aside class="l-aside">
 					<?php get_sidebar(); ?>
