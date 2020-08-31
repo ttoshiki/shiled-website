@@ -12,6 +12,11 @@
 
   &__article {
     display: flex;
+    img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
+    }
   }
 
   &__meta {
@@ -56,6 +61,11 @@
         width: 100%;
         height: auto;
         margin: 0 auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
       }
     }
 

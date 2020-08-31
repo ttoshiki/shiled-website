@@ -31,7 +31,7 @@ get_header();
 									<a href="<?php the_permalink(); ?>" class="">
 										<?php
 											if ( has_post_thumbnail() ) {
-												the_post_thumbnail();
+												the_post_thumbnail('large');
 											} else { ?>
 												<img src="" alt="no-image" width="240" height="240">
 											<?php } ?>

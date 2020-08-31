@@ -431,6 +431,7 @@ textarea {
 
 .l-aside .wpp-thumbnail {
   width: 33.56%;
+  height: 84px;
 }
 
 .widget-title {
@@ -549,6 +550,9 @@ textarea {
   .sidebar-banner {
     display: block;
     margin: 32px auto 48px;
+  }
+  .sidebar-banner.-pc {
+    display: none;
   }
   .widget .cat-item {
     font-size: 13px;
@@ -2747,6 +2751,12 @@ textarea {
   display: flex;
 }
 
+.archive__article img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+}
+
 .archive__meta {
   width: 72%;
   margin-left: 24px;
@@ -2785,6 +2795,10 @@ textarea {
     width: 100%;
     height: auto;
     margin: 0 auto;
+  }
+  .archive__article img {
+    width: 100%;
+    height: auto;
   }
   .archive__meta {
     width: 100%;
