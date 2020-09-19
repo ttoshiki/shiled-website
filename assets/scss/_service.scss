@@ -40,6 +40,16 @@
     font-size: 17px;
     line-height: 1.88;
     color: $black;
+    letter-spacing: 1px;
+
+    &.-primary {
+      color: #3983c8;
+    }
+  }
+
+  &__leadLink {
+    color: #3983c8;
+    text-decoration: underline;
   }
 
   &__feature {
@@ -430,7 +440,7 @@
 
   &__coronaFlow {
     max-width: $--content-width-md;
-    margin: 100px auto 60px;
+    margin: 100px auto 80px;
     counter-reset: flow-num 0;
   }
 
@@ -538,6 +548,82 @@
     position: relative;
     width: 31%;
     margin: 0 0 34px;
+  }
+
+  &__pcr {
+    position: relative;
+    width: 620px;
+    margin: 72px auto 0;
+    overflow: hidden;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__pcrLink {
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      width: 140px;
+      height: 1px;
+      content: "";
+      background-color: $white;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  &__pcrImage {
+    img {
+      vertical-align: bottom;
+      transition: all 1.5s;
+    }
+  }
+
+  &__pcrText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 600;
+    color: $white;
+    transform: translate(-50%, -50%);
+  }
+
+  &__pcrParagraph {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.3;
+    letter-spacing: 4px;
+  }
+
+  &__pcrSpan {
+    display: block;
+    margin: 6px 0 0;
+    letter-spacing: 3px;
+  }
+
+  &__pcrArrowIcon {
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+    width: 56px;
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+      brightness(107%) contrast(101%);
   }
 
   &__contactLink {
@@ -1037,6 +1123,35 @@
     &__coronaCasePlaceFigure {
       width: 48%;
       margin: 0 0 20px;
+    }
+
+    &__pcr {
+      width: 100%;
+      margin: 24px auto 0;
+    }
+
+    &__pcrParagraph {
+      font-size: 22px;
+    }
+
+    &__pcrLink {
+      &::before,
+      &::after {
+        width: 40px;
+      }
+    }
+
+    &__pcrText {
+      width: 100%;
+    }
+
+    &__pcrSpan {
+      font-size: 13px;
+    }
+
+    &__pcrArrowIcon {
+      right: 0;
+      width: 40px;
     }
 
     &__contactLink {

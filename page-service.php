@@ -33,6 +33,10 @@ get_header();
             <p class="service__leadParagraph">
               私たちのサービスは、皆様のオフィスサイズや共有スペースなど、日常で気になるところや普段目に止まらないところまでチェックし、除菌清掃・抗菌コーティングを行います。
             </p>
+            <p class="service__leadParagraph -primary">
+              弊社では従業員の皆様の安全・安心のため、<br class="-pc">
+              PCR検査サービスもご提供しております。<a href="<?php echo home_url('/service-pcr/'); ?>" class="service__leadLink">詳しくはこちら。</a>
+            </p>
           </div>
         </div>
       </section>
@@ -262,6 +266,18 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/case09.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/case09.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/case09@2x.jpg 2x" alt="お手洗い">
             <figcaption class="service__coronaCasePhotoCaption">お手洗い</figcaption>
           </figure>
+        </div>
+        <div class="service__pcr fadein">
+          <div class="service__pcrImage">
+            <a href="<?php echo home_url('/service-pcr/'); ?>" class="service__pcrLink">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/pcr.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/pcr@2x.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/pcr@2x.jpg 2x" alt="PCR検査サービスについて">
+              <div class="service__pcrText">
+                <p class="service__pcrParagraph">PCR検査<br>サービスについて</p>
+                <span class="service__pcrSpan roboto">PCR TEST SERVICE</span>
+              </div>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_arrow-right.png" alt="" class="service__pcrArrowIcon">
+            </a>
+          </div>
         </div>
       </section>
       <section class="service__contactLink">

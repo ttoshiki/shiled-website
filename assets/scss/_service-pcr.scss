@@ -1,0 +1,248 @@
+@import "_variables";
+
+.servicePcr {
+  &__system {
+    margin: 88px auto;
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 30px;
+    color: $--color-primary;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+
+  &__systemParagraph {
+    margin: 24px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  &__systemDoubleCol {
+    display: flex;
+    align-items: center;
+    width: $--content-width-md;
+    margin: 48px auto 0;
+  }
+
+  &__list {
+    margin: 0 0 0 80px;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2.3;
+
+    &::before {
+      position: absolute;
+      top: 11px;
+      left: -26px;
+      width: 18px;
+      height: 14px;
+      content: "";
+      background-image: url(assets/img/icons/icon_check-simple.png);
+      background-size: cover;
+    }
+  }
+
+  &__flow {
+    padding: 100px 0;
+    background-color: $--color-primary-tint-very-light;
+  }
+
+  &__flowInner {
+    width: $--content-width-md;
+    margin: 0 auto;
+  }
+
+  &__flowWrapper {
+    padding: 64px 48px;
+    margin: 88px 0 0;
+    background-color: $white;
+    box-shadow: 0px 0px 6.57px 2.43px rgba(0, 0, 0, 0.05);
+  }
+
+  &__flowList {
+    counter-reset: flow-num 0;
+  }
+
+  &__flowItem {
+    display: flex;
+
+    &:not(:last-child) {
+      margin: 0 0 102px;
+
+      .servicePcr__flowNumber {
+        &::after {
+          position: absolute;
+          bottom: -64px;
+          width: 0;
+          height: 0;
+          content: "";
+          border-color: #58afff transparent transparent transparent;
+          border-style: solid;
+          border-width: 18px 14px 0 14px;
+        }
+      }
+    }
+
+    &:first-child {
+      margin: 0 0 24px;
+    }
+
+    &:nth-child(2) {
+      align-items: center;
+    }
+  }
+
+  &__flowNumber {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 268px;
+    min-width: 268px;
+    height: 268px;
+    min-height: 268px;
+    font-size: 25px;
+    font-weight: 600;
+    color: $--color-primary;
+    letter-spacing: 4px;
+    border: 2px solid $--color-primary-tint;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+
+    &::before {
+      display: inline-block;
+      margin: -20px 0 10px;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      color: #4c8fcd;
+      letter-spacing: 2px;
+      content: "FLOW " counter(flow-num);
+      counter-increment: flow-num 1;
+    }
+  }
+
+  &__flowText {
+    margin: 0 0 0 48px;
+  }
+
+  &__paragraph {
+    margin: 20px 0 0;
+    font-size: 15px;
+    line-height: 1.6;
+
+    &.-lineHeightBg {
+      line-height: 2;
+    }
+
+    &.-caution {
+      padding-left: 1em;
+      margin: 2px 0 0;
+      text-indent: -1em;
+    }
+
+    &.-first {
+      margin-top: 0;
+    }
+  }
+
+  &__mail {
+    color: $--color-primary-tint;
+  }
+
+  &__button {
+    position: relative;
+    display: inline-block;
+    padding: 24px 102px 24px 40px;
+    margin: 24px 0 8px;
+    color: $white;
+    letter-spacing: 2px;
+    background-color: $--color-primary-tint;
+    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      width: 32px;
+      height: 24px;
+      content: "";
+      background-image: url(assets/img/icons/icon_arrow-right.png);
+      filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+        brightness(107%) contrast(101%);
+      background-size: cover;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      background-color: #70abe2;
+      border-color: #70abe2;
+    }
+  }
+}
+
+@include mq(mobile) {
+  .servicePcr {
+    &__system {
+      padding: 0 20px;
+      margin: 48px auto;
+    }
+
+    &__heading {
+      font-size: 22px;
+    }
+
+    &__systemParagraph {
+      margin: 16px 0 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    &__systemDoubleCol {
+      flex-direction: column;
+      width: 100%;
+      margin: 24px 0 0;
+
+      img {
+        width: 80%;
+      }
+    }
+
+    &__list {
+      margin: 40px 0 0 24px;
+    }
+
+    &__item {
+      font-size: 14px;
+
+      &::before {
+        top: 9px;
+        width: 16px;
+        height: 13px;
+      }
+    }
+
+    &__flow {
+      padding: 48px 0;
+    }
+
+    &__flowInner {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    &__flowWrapper {
+      margin: 48px 0;
+    }
+  }
+}

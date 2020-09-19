@@ -173,7 +173,7 @@ function shield_scripts()
         wp_enqueue_script('single-product-script', get_template_directory_uri() . '/assets/js/single-product.js', array(), '', false);
     }
 
-    if (is_front_page()) {
+    if (is_front_page() || is_page('service-pcr')) {
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/revealers_three.js', array(), '', true);
     } elseif (is_page('company')) {
         wp_enqueue_script('company-script', get_template_directory_uri() . '/assets/js/revealers_four.js', array(), '', true);
