@@ -2329,7 +2329,7 @@ textarea {
   position: absolute;
   top: 50%;
   z-index: 10;
-  width: 140px;
+  width: 148px;
   height: 1px;
   content: "";
   background-color: #ffffff;
@@ -2952,6 +2952,10 @@ textarea {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
+.servicePcr__flowNumber.-sp {
+  display: none;
+}
+
 .servicePcr__flowNumber::before {
   display: inline-block;
   margin: -20px 0 10px;
@@ -3061,7 +3065,85 @@ textarea {
     padding: 0 20px;
   }
   .servicePcr__flowWrapper {
-    margin: 48px 0;
+    padding: 24px 16px;
+    margin: 24px 0;
+  }
+  .servicePcr__flowItem {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicePcr__flowItem:not(:last-child) .servicePcr__flowNumber::after {
+    border: none;
+  }
+  .servicePcr__flowItem:not(:last-child)::after {
+    position: absolute;
+    bottom: -56px;
+    width: 0;
+    height: 0;
+    content: "";
+    border-color: #58afff transparent transparent transparent;
+    border-style: solid;
+    border-width: 18px 14px 0 14px;
+  }
+  .servicePcr__flowItem:first-child {
+    margin: 0 0 100px;
+  }
+  .servicePcr__flowText {
+    margin: 14px 0 0;
+  }
+  .servicePcr__flowNumber {
+    width: 96px;
+    min-width: auto;
+    height: 96px;
+    min-height: auto;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.4;
+    color: #3983c8;
+    text-align: center;
+    text-indent: 4px;
+    letter-spacing: 2px;
+  }
+  .servicePcr__flowNumber.-sp {
+    display: flex;
+  }
+  .servicePcr__flowNumber.-pc {
+    display: none;
+  }
+  .servicePcr__flowNumber::before {
+    content: none;
+  }
+  .servicePcr__flowNumber::after {
+    content: none;
+  }
+  .servicePcr__paragraph {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .servicePcr__paragraph.-lineHeightBg {
+    line-height: 1.7;
+  }
+  .servicePcr__paragraph.-caution {
+    padding-left: 0;
+    text-indent: 0;
+  }
+  .servicePcr__flowNumHeadline {
+    margin-top: 10px;
+  }
+  .servicePcr__flowHeading {
+    margin: 24px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #04287e;
+    letter-spacing: 4px;
+  }
+  .servicePcr__button {
+    padding: 20px 80px 20px 32px;
+    margin: 24px 0 0;
+  }
+  .servicePcr__button::after {
+    right: 24px;
   }
 }
 

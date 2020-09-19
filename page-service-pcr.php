@@ -43,7 +43,9 @@ get_header();
           <div class="servicePcr__flowWrapper">
             <ol class="servicePcr__flowList">
               <li class="servicePcr__flowItem">
-                <span class="servicePcr__flowNumber">PCR検査申込</span>
+                <span class="servicePcr__flowNumber -pc">PCR検査申込</span>
+                <span class="servicePcr__flowNumber -sp"><span class="servicePcr__flowNumHeadline">FLOW</span>1</span>
+                <span class="servicePcr__flowHeading -sp">PCR検査申込</span>
                 <div class="servicePcr__flowText">
                   <p class="servicePcr__paragraph -first">検査ご希望の法人様は<a href="mailto:info@andshield.jp" class="servicePcr__mail">info@andshield.jp</a>(株式会社テラ)までお申込書をメール送付ください。<br>詳しくは担当者よりご案内いたします。</p>
                   <a href="<?php echo get_template_directory_uri(); ?>/download/SHIELDPCR_kensamoushikomisho.xlsx" download="SHIELDPCR_kensamoushikomisho.xlsx" class="servicePcr__button">申込書 ダウンロード</a>
@@ -55,7 +57,9 @@ get_header();
                 </div>
               </li>
               <li class="servicePcr__flowItem">
-                <span class="servicePcr__flowNumber">PCR検査</span>
+                <span class="servicePcr__flowNumber -pc">PCR検査</span>
+                <span class="servicePcr__flowNumber -sp"><span class="servicePcr__flowNumHeadline">FLOW</span>2</span>
+                <span class="servicePcr__flowHeading -sp">PCR検査</span>
                 <div class="servicePcr__flowText">
                   <p class="servicePcr__paragraph -lineHeightBg -first">
                     法人様にて各自容器を使用して唾液を自己採取。<br>
@@ -66,7 +70,9 @@ get_header();
                 </div>
               </li>
               <li class="servicePcr__flowItem">
-                <span class="servicePcr__flowNumber">PCR検査後</span>
+                <span class="servicePcr__flowNumber -pc">PCR検査後</span>
+                <span class="servicePcr__flowNumber -sp"><span class="servicePcr__flowNumHeadline">FLOW</span>3</span>
+                <span class="servicePcr__flowHeading -sp">PCR検査後</span>
                 <div class="servicePcr__flowText">
                   <p class="servicePcr__paragraph -first">
                     陽性の方のPCR検査への誘導は、貴社産業医様に相談したうえで、保健所にご相談下さい<br>
