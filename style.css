@@ -3141,6 +3141,7 @@ textarea {
   .servicePcr__button {
     padding: 20px 80px 20px 32px;
     margin: 24px 0 0;
+    font-size: 3.75vw;
   }
   .servicePcr__button::after {
     right: 24px;
