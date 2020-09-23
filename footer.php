@@ -12,7 +12,7 @@
 ?>
 
 	<footer class="footer">
-		<?php if ((!is_page('service'))): ?>
+		<?php if ((!is_page('service')) && (!is_page('service-pcr'))): ?>
 			<div class="footer__links">
 				<div class="footer__linksBlock">
 					<div class="footer__linksBlockInner">

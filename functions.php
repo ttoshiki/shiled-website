@@ -173,7 +173,7 @@ function shield_scripts()
         wp_enqueue_script('single-product-script', get_template_directory_uri() . '/assets/js/single-product.js', array(), '', false);
     }
 
-    if (is_front_page() || is_page('service-pcr')) {
+    if (is_front_page()) {
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/revealers_three.js', array(), '', true);
     } elseif (is_page('company')) {
         wp_enqueue_script('company-script', get_template_directory_uri() . '/assets/js/revealers_four.js', array(), '', true);
@@ -181,6 +181,8 @@ function shield_scripts()
         wp_enqueue_script('reveals-one-script', get_template_directory_uri() . '/assets/js/revealers_one.js', array(), '', true);
     } elseif (is_page('service')) {
         wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/revealers_ten.js', array(), '', true);
+    } elseif (is_page('service-pcr')) {
+        wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/revealers_three-firstWhite.js', array(), '', true);
     }
 }
 add_action('wp_enqueue_scripts', 'shield_scripts');
