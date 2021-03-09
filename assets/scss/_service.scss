@@ -1,17 +1,22 @@
 @import "_variables";
 
 .service {
-  &__lead {
-    max-width: $--content-width-md;
-    margin: 100px auto 0;
-  }
-
-  &__leadHeading {
+  &__heading {
     margin: 0;
     font-size: 30px;
+    font-weight: 600;
     color: $--color-primary;
     text-align: center;
     letter-spacing: 4px;
+
+    &.contact {
+      color: $white;
+    }
+  }
+
+  &__lead {
+    max-width: $--content-width-md;
+    margin: 100px auto 0;
   }
 
   &__leadContents {
@@ -52,24 +57,66 @@
     text-decoration: underline;
   }
 
+  &__price {
+    padding-top: 80px;
+    margin: 108px auto 0;
+    background-color: $--color-primary-tint-very-light;
+  }
+
+  &__priceContents {
+    display: flex;
+    max-width: $--content-width-md;
+    margin: 48px auto 0;
+  }
+
+  &__pricePicture {
+    width: 37.8%;
+  }
+
+  &__priceTable {
+    width: 60%;
+    margin-left: 48px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+
+    thead {
+      color: $white;
+      background-color: $--color-primary;
+      border: 1px solid $--color-primary;
+
+      th {
+        padding: 16px 0;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 14px 0;
+        background-color: $white;
+        border: 1px solid $--color-primary;
+
+        &:first-of-type {
+          color: $--color-primary;
+          text-align: center;
+        }
+
+        &:nth-of-type(2) {
+          padding-left: 24px;
+        }
+      }
+    }
+  }
+
   &__feature {
-    padding: 88px 0 100px;
-    margin: 114px 0 0;
-    counter-reset: feature-num 0;
+    padding: 96px 0 100px;
+    counter-reset: merit-num 0;
     background-color: $--color-primary-tint-very-light;
   }
 
   &__featureInner {
     max-width: $--content-width-md;
     margin: 0 auto;
-  }
-
-  &__featureHeading {
-    margin: 0;
-    font-size: 30px;
-    color: $--color-primary;
-    text-align: center;
-    letter-spacing: 4px;
   }
 
   &__featurePoints {
@@ -150,6 +197,66 @@
     letter-spacing: 1px;
   }
 
+  &__execution {
+    margin: 88px auto 0;
+  }
+
+  &__foldWrapper {
+    display: flex;
+    margin: 48px auto 0;
+  }
+
+  &__foldPicture {
+    width: 50%;
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+
+  &__foldContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: $--color-primary-tint-very-light;
+  }
+
+  &__foldParagraph {
+    margin: 32px 0 0;
+    font-size: 17px;
+    line-height: 1.88;
+    text-align: center;
+  }
+
+  &__foldButton {
+    position: relative;
+    padding: 24px 12px;
+    margin: 48px auto 0;
+    font-size: 14px;
+    color: $--color-primary;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 1px solid $--color-primary;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      width: 22px;
+      height: 30px;
+      content: "";
+      background-image: url(assets/img/icons/icon_arrow-right.png);
+      background-size: cover;
+      transform: translateX(-50%) rotate(270deg);
+    }
+  }
+
   &__flow {
     padding: 88px 0 100px;
     background-color: #eeeeee;
@@ -158,14 +265,6 @@
   &__flowInner {
     max-width: $--content-width-md;
     margin: 0 auto;
-  }
-
-  &__flowHeading {
-    margin: 0;
-    font-size: 30px;
-    color: $--color-primary;
-    text-align: center;
-    letter-spacing: 4px;
   }
 
   &__flowSteps {
@@ -222,14 +321,7 @@
   &__coatingFeature {
     max-width: $--content-width-md;
     margin: 100px auto 0;
-  }
-
-  &__coatingFeatureHeading {
-    margin: 0;
-    font-size: 30px;
-    color: $--color-primary;
-    text-align: center;
-    letter-spacing: 4px;
+    counter-reset: feature-num 0;
   }
 
   &__coatingFeatures {
@@ -292,14 +384,6 @@
     margin: 100px auto;
   }
 
-  &__nanoCoatHeading {
-    margin: 0;
-    font-size: 30px;
-    color: $--color-primary;
-    text-align: center;
-    letter-spacing: 4px;
-  }
-
   &__nanoCoatWrapper {
     max-width: $--content-width-md;
     padding: 12px 12px 24px;
@@ -344,14 +428,6 @@
   &__verificationInner {
     max-width: $--content-width-md;
     margin: 0 auto;
-  }
-
-  &__verificationHeading {
-    margin: 0;
-    font-size: 30px;
-    color: $--color-primary;
-    text-align: center;
-    letter-spacing: 4px;
   }
 
   &__verificationTestCase {
@@ -438,21 +514,18 @@
     max-width: 50%;
   }
 
+  &__achievement {
+    max-width: $--content-width-md;
+    margin: 88px auto 0;
+  }
+
   &__coronaFlow {
     max-width: $--content-width-md;
     margin: 100px auto 80px;
     counter-reset: flow-num 0;
   }
 
-  &__coronaFlowHeading {
-    margin: 0;
-    font-size: 30px;
-    color: $--color-primary;
-    text-align: center;
-    letter-spacing: 4px;
-  }
-
-  &__coronaFlowParagraph {
+  &__headingParagraph {
     margin: 24px 0 0;
     font-size: 20px;
     font-weight: 600;
@@ -461,7 +534,7 @@
     letter-spacing: 2px;
 
     &.-place {
-      margin: 12px 0 0;
+      margin: 16px 0 0;
     }
   }
 
@@ -518,16 +591,6 @@
     margin: 56px 0 0;
   }
 
-  &__coronaCaseFigure {
-    position: relative;
-    width: 48%;
-    margin: 0 0 40px;
-
-    &:nth-child(2n) {
-      margin-left: 44px;
-    }
-  }
-
   &__coronaCasePhotoCaption {
     position: absolute;
     top: 16px;
@@ -537,23 +600,309 @@
     letter-spacing: 3px;
   }
 
-  &__coronaCasePlace {
+  &__achievementPlace {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 48px 0 0;
   }
 
-  &__coronaCasePlaceFigure {
+  &__achievementFigure {
     position: relative;
     width: 31%;
     margin: 0 0 34px;
   }
 
+  &__aboutNanoCoat {
+    max-width: $--content-width-md;
+    margin: 88px auto 0;
+  }
+
+  &__aboutNanoCoatContents {
+    padding: 32px;
+    margin: 40px auto 0;
+    background-color: $--color-primary-tint-very-light;
+  }
+
+  &__aboutNanoCoatParagraph {
+    margin: 8px 0 0;
+    font-size: 15px;
+    line-height: 2.33;
+    letter-spacing: 0.5px;
+  }
+
+  &__aboutNanoCoatHeading {
+    margin: 40px auto 0;
+    font-size: 18px;
+    color: $--color-primary;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  &__aboutNanoCoatInner {
+    padding: 24px 24px 24px 40px;
+    margin: 40px auto 0;
+    background-color: $white;
+  }
+
+  &__aboutNanoCoatSubHeading {
+    margin: 0;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  &__aboutNanoCoatIllust {
+    display: flex;
+    margin-top: 24px;
+  }
+
+  &__aboutNanoCoatList {
+    width: 53.4%;
+    margin: 0;
+  }
+
+  &__aboutNanoCoatItem {
+    padding: 8px 0;
+    font-size: 15px;
+    line-height: 1.66;
+    text-align: center;
+    border: 1px solid $--color-primary-tint;
+
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+
+    strong {
+      display: block;
+    }
+  }
+
+  &__aboutNanoCoatPicture {
+    display: flex;
+    align-items: flex-end;
+    width: 52%;
+    margin-left: 24px;
+  }
+
+  &__nanoCoatCase {
+    padding: 100px 0;
+    margin: 100px auto 0;
+    background-color: $--color-primary-tint-very-light;
+  }
+
+  &__nanoCoatCaseBlock {
+    position: relative;
+    max-width: $--content-width-md;
+    padding: 16px 48px 60px;
+    margin: 64px auto 0;
+    background-color: $white;
+    box-shadow: 0px 0px 6.57px 2.43px rgba(0, 0, 0, 0.05);
+
+    &:first-of-type {
+      margin: 0 auto;
+    }
+
+    &.-verification {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__nanoCoatCaseLabel {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    padding: 25px 22.5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-indent: 5px;
+    letter-spacing: 5px;
+    content: "";
+    background-color: #3983c8;
+  }
+
+  &__newLine {
+    display: block;
+    line-height: 1;
+  }
+
+  &__nanoCoatCaseHeading {
+    margin-left: 100px;
+    font-size: 20px;
+    color: $--color-primary;
+    letter-spacing: 2px;
+  }
+
+  &__nanoCoatCaseContents {
+    display: flex;
+    margin-top: 32px;
+  }
+
+  &__nanoCoatCaseContentsInner {
+    &.-store {
+      width: 80.4%;
+    }
+  }
+
+  &__nanoCoatCaseSubHeading {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    color: $--color-primary-tint;
+  }
+
+  &__nanoCoatCaseSmallHeading {
+    margin: 0;
+    font-weight: 400;
+
+    &:not(:first-of-type) {
+      margin-top: 48px;
+    }
+  }
+
+  &__nanoCoatCaseList {
+    margin: 0 auto;
+  }
+
+  &__nanoCoatCaseItem {
+    display: inline-block;
+    margin: 12px 4% 0 0;
+
+    &::before {
+      content: "・";
+    }
+  }
+
+  &__nanoCoatCaseSpan {
+    display: block;
+    margin-top: 12px;
+  }
+
+  &__nanoCoatCasePicture {
+    &.-large {
+      img {
+        vertical-align: bottom;
+      }
+    }
+
+    &.-measureMachine {
+      img {
+        max-height: 240px;
+      }
+    }
+
+    &.-measure {
+      margin-left: 100px;
+
+      img {
+        max-height: 212px;
+      }
+    }
+
+    &.-before {
+      display: block;
+      margin-top: 16px;
+    }
+  }
+
+  &__nanoCoatCasePictures {
+    &.-case {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 16px;
+      margin-top: 16px;
+    }
+
+    &.-store {
+      display: flex;
+      align-items: center;
+      margin-top: -32px;
+    }
+  }
+
+  &__nanoCoatCaseInner {
+    margin: 72px auto 0;
+  }
+
+  &__nanoCoatCaseUpper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nanoCoatCaseListBlock {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0;
+  }
+
+  &__nanoCoatCaseItemBlock {
+    width: 30%;
+    padding: 12px 32px 24px;
+    box-shadow: 0px 0px 6.57px 2.43px rgba(0, 0, 0, 0.05);
+  }
+
+  &__nanoCoatCaseItemHeading {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: $--color-primary-tint;
+    text-align: center;
+  }
+
+  &__nanoCoatCaseItemSpan {
+    display: block;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $--color-primary-tint;
+    text-align: center;
+
+    &.-before {
+      &::after {
+        display: block;
+        width: 0;
+        height: 0;
+        margin: 10px auto 16px;
+        content: "";
+        border-color: $--color-primary-tint transparent transparent transparent;
+        border-style: solid;
+        border-width: 24px 32px 0 32px;
+      }
+    }
+  }
+
+  &__nanoCoatCaseLabels {
+    display: flex;
+    margin-top: 48px;
+  }
+
+  &__nanoCoatCaseFlowLabel {
+    width: 50%;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: $white;
+    text-align: center;
+    letter-spacing: 2px;
+
+    &:first-of-type {
+      background-color: $--color-primary-tint;
+    }
+
+    &:nth-of-type(2) {
+      background-color: $--color-primary;
+    }
+  }
+
+  &__nanoCoatVerificationPicture {
+    display: block;
+    margin-top: 24px;
+  }
+
   &__pcr {
     position: relative;
     width: 620px;
-    margin: 72px auto 0;
+    margin: 100px auto;
     overflow: hidden;
     text-align: center;
 
@@ -564,6 +913,46 @@
         transform: scale(1.1);
       }
     }
+  }
+
+  &__merit {
+    max-width: $--content-width-md;
+    margin: 100px auto 0;
+    counter-reset: merit-num 0;
+  }
+
+  &__meritItem {
+    position: relative;
+    width: 31%;
+    padding: 0 32px 40px;
+    box-shadow: 0px 0px 6.57px 2.43px rgba(0, 0, 0, 0.05);
+
+    &::before {
+      position: absolute;
+      top: -38px;
+      left: 50%;
+      font-family: "Roboto", sans-serif;
+      font-size: 50px;
+      color: #4c8fcd;
+      text-indent: 6px;
+      letter-spacing: 6px;
+      content: counter(merit-num, decimal-leading-zero);
+      counter-increment: merit-num 1;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__meritSubHeading {
+    margin-top: 48px;
+    font-size: 20px;
+    color: $--color-primary;
+    text-align: center;
+  }
+
+  &__meritParagraph {
+    margin-bottom: 0;
+    line-height: 2.14;
+    text-align: justify;
   }
 
   &__pcrLink {
@@ -749,8 +1138,7 @@
       margin: 60px 0 0;
     }
 
-    &__leadHeading {
-      padding: 0 20px;
+    &__heading {
       font-size: 22px;
       letter-spacing: 3px;
     }
@@ -785,11 +1173,6 @@
 
     &__featureInner {
       padding: 0 20px;
-    }
-
-    &__featureHeading {
-      font-size: 22px;
-      letter-spacing: 3px;
     }
 
     &__featurePoints {
@@ -852,11 +1235,6 @@
       padding: 0 20px;
     }
 
-    &__flowHeading {
-      font-size: 22px;
-      letter-spacing: 3px;
-    }
-
     &__flowSteps {
       flex-direction: column;
       margin: 40px 0 0;
@@ -882,11 +1260,6 @@
     &__coatingFeature {
       padding: 0 20px;
       margin: 60px 0 0;
-    }
-
-    &__coatingFeatureHeading {
-      font-size: 22px;
-      letter-spacing: 3px;
     }
 
     &__coatingFeatures {
@@ -934,8 +1307,6 @@
 
     &__nanoCoatHeading {
       padding: 0 20px;
-      font-size: 22px;
-      letter-spacing: 3px;
     }
 
     &__nanoCoatWrapper {
@@ -1048,11 +1419,6 @@
       margin: 60px 0 48px;
     }
 
-    &__coronaFlowHeading {
-      font-size: 22px;
-      letter-spacing: 3px;
-    }
-
     &__coronaFlowParagraph {
       margin: 16px 0 0;
       font-size: 15px;
@@ -1156,11 +1522,6 @@
 
     &__contactLink {
       padding: 60px 20px;
-    }
-
-    &__contactLinkHeading {
-      font-size: 22px;
-      letter-spacing: 3px;
     }
 
     &__contactLinkParagraph {
