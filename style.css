@@ -316,7 +316,13 @@ textarea {
 #effect_07,
 #effect_08,
 #effect_09,
-#effect_10 {
+#effect_10,
+#effect_11,
+#effect_12,
+#effect_13,
+#effect_14,
+#effect_15,
+#effect_16 {
   display: inline-block;
 }
 
@@ -1750,7 +1756,7 @@ textarea {
 .service__featurePoint {
   position: relative;
   width: 48.2%;
-  padding: 16px 28px 24px 28px;
+  padding: 16px 24px 24px;
   margin-bottom: 40px;
   background-color: #ffffff;
   box-shadow: 0px 0px 7.8px 2.2px rgba(0, 0, 0, 0.15);
@@ -1761,11 +1767,12 @@ textarea {
   font-size: 20px;
   line-height: 1.75;
   color: #04287e;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 .service__featurePointParagraph {
   margin: 20px 0 0;
   font-size: 15px;
+  line-height: 2;
 }
 .service__featurePhotos {
   display: flex;
@@ -1790,7 +1797,6 @@ textarea {
 }
 .service__foldWrapper {
   display: flex;
-  margin: 48px auto 0;
 }
 .service__foldPicture {
   width: 50%;
@@ -1825,7 +1831,18 @@ textarea {
 .service__foldButton:hover {
   cursor: pointer;
 }
-.service__foldButton::before {
+.service__foldButton.-close::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 22px;
+  height: 30px;
+  content: "";
+  background-image: url(assets/img/icons/icon_arrow-right.png);
+  background-size: cover;
+  transform: translateX(-50%) rotate(90deg);
+}
+.service__foldButton.-open::before {
   position: absolute;
   top: -18px;
   left: 50%;
@@ -1835,6 +1852,22 @@ textarea {
   background-image: url(assets/img/icons/icon_arrow-right.png);
   background-size: cover;
   transform: translateX(-50%) rotate(270deg);
+}
+.service__foldedBlock {
+  display: none;
+  opacity: 0;
+}
+.service__foldedBlock.-open {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 1s ease 1 normal;
+}
+.service__foldedBlock.-open .fadein {
+  opacity: 0;
+}
+.service__foldedBlock.-open .fadein.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 .service__flow {
   padding: 88px 0 100px;
@@ -2056,7 +2089,7 @@ textarea {
 }
 .service__achievement {
   max-width: 1100px;
-  margin: 88px auto 0;
+  margin: 88px auto 64px;
 }
 .service__coronaFlow {
   max-width: 1100px;
@@ -2073,6 +2106,9 @@ textarea {
 }
 .service__headingParagraph.-place {
   margin: 16px 0 0;
+}
+.service__headingParagraph.-foldBefore {
+  margin-bottom: 48px;
 }
 .service__coronaFlowList {
   display: flex;
@@ -2202,7 +2238,7 @@ textarea {
 }
 .service__nanoCoatCase {
   padding: 100px 0;
-  margin: 100px auto 0;
+  margin: 88px auto 0;
   background-color: #d6eefa;
 }
 .service__nanoCoatCaseBlock {
@@ -2559,6 +2595,20 @@ textarea {
   color: #ffffff;
 }
 
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 480px) {
   .service__lead {
     margin: 60px 0 0;
