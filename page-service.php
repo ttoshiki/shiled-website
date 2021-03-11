@@ -47,7 +47,7 @@ get_header();
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/price_image.webp" type="image/webp">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/price_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/price_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/img/service/price_image@2x.jpg 2x" alt="">
           </picture>
-          <table class="service__priceTable">
+          <table class="priceTable -service">
             <thead>
               <tr>
                 <th colspan="2">中型オフィス ／ 小型店舗</th>

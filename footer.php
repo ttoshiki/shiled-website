@@ -52,7 +52,7 @@
 		<div class="footer__companyCopyrightWrapper">
 			<small class="footer__companyCopyright">© &SHIELD All Rights Reserved</small>
 		</div>
-		<?php if (!is_singular('product')): ?>
+		<?php if (!is_singular('product') && !is_page('price')): ?>
 			<aside class="fixedMenu">
 				<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble@2x.png 2x" alt="吹き出し" class="fixedMenu__icon">
