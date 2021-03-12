@@ -185,6 +185,7 @@ function shield_scripts()
     } elseif (is_page('service-pcr')) {
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/revealers_three-firstWhite.js', array(), '', true);
     } elseif(is_page('price')) {
+        wp_enqueue_script('price-reveal-script', get_template_directory_uri() . '/assets/js/revealers_six.js', array(), '', true);
         wp_register_style('swiper-style', get_template_directory_uri() . '/assets/css/lib/swiper/swiper-bundle.min.css', array(), '1.0', 'all');
         wp_enqueue_style('swiper-style');
         wp_enqueue_script('swiper-script', get_template_directory_uri() . '/assets/js/lib/swiper/swiper-bundle.min.js', array(), '', false);

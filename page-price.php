@@ -24,13 +24,13 @@ get_header();
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/mv.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/img/service/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
         </picture>
       </section>
-      <section class="price__lead fadein">
+      <section class="price__lead">
         <div class="price__leadContents">
-          <picture class="price__leadPicture">
+          <picture class="price__leadPicture fadein">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/price/price_01.webp" type="image/webp">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/price_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/price_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/img/service/price_01@2x.jpg 2x" alt="" class="l-mainVisualBg">
           </picture>
-          <div class="price__leadText">
+          <div class="price__leadText fadein">
             <h2 class="price__heading"><span id="effect_02">施工料金について</span></h2>
             <p class="price__leadParagraph">
               私たちは、お客様のオフィス、事業所、<br>設備や施設の規模や特徴に合わせ<br>最適な料金をご提示させていただいております。
@@ -55,7 +55,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/info_02.jpg" alt="" class="service__infoImage">
               </picture>
             </div>
-            <div class="price__tableWrapper">
+            <div class="price__tableWrapper fadein">
               <h3 class="price__tableHeading">料金表</h3>
               <table class="priceTable -price">
                 <thead>
@@ -95,8 +95,8 @@ get_header();
         </div>
       </section>
       <section class="price__scale">
-        <h2 class="price__heading -center">各種規模に対応しております。<br>料金についてはお問合わせください</h2>
-        <div role="table" class="price__scaleTable">
+        <h2 class="price__heading -center fadein">各種規模に対応しております。<br>料金についてはお問合わせください</h2>
+        <div role="table" class="price__scaleTable fadein">
           <div role="rowgroup" class="price__scaleRowGroup">
             <div role="row" class="price__scaleRow">規模別目安</div>
             <div role="row" class="price__scaleRow">
@@ -152,8 +152,8 @@ get_header();
         </div>
       </section>
       <section class="price__case">
-        <h2 class="price__heading -center">導入事例</h2>
-        <div class="swiper-container">
+        <h2 class="price__heading -center"><span id="effect_04">導入事例</span></h2>
+        <div class="swiper-container fadein">
           <div class="price__caseSliderButtons">
             <span class="price__caseSliderButton -next"></span>
             <span class="price__caseSliderButton -prev"></span>
@@ -191,23 +191,23 @@ get_header();
         </div>
       </section>
       <section class="price__after">
-        <h2 class="price__heading -center">施工後の対策</h2>
-        <p class="price__headingParagraph">施工後も、お客様の空間の安心安全を目指すため、<br>衛生対策できる商品を揃えております。</p>
-        <ul class="price__sectionLinksList">
+        <h2 class="price__heading -center"><span id="effect_05">施工後の対策</span></h2>
+        <p class="price__headingParagraph fadein">施工後も、お客様の空間の安心安全を目指すため、<br>衛生対策できる商品を揃えております。</p>
+        <ul class="price__sectionLinksList fadein">
           <li class="price__sectionLinksItem">
-            <a href="">空気感染対策</a>
+            <a href="#air">空気感染対策</a>
           </li>
           <li class="price__sectionLinksItem">
-            <a href="">入口対策</a>
+            <a href="#entrance">入口対策</a>
           </li>
           <li class="price__sectionLinksItem">
-            <a href="">接触感染対策</a>
+            <a href="#contact">接触感染対策</a>
           </li>
           <li class="price__sectionLinksItem">
-            <a href="">飛沫感染対策</a>
+            <a href="#splash">飛沫感染対策</a>
           </li>
           <li class="price__sectionLinksItem">
-            <a href="">その他</a>
+            <a href="#other">その他</a>
           </li>
         </ul>
         <?php
@@ -219,8 +219,8 @@ get_header();
             'operator' => 'NOT IN'
           );
         ?>
-        <h3 class="price__subHeading">空気感染対策</h3>
-        <div class="price__afterSliderWrapper">
+        <h3 id="air" class="price__subHeading fadein">空気感染対策</h3>
+        <div class="price__afterSliderWrapper fadein">
           <span class="price__afterSliderButton -air -prev"></span>
           <span class="price__afterSliderButton -air -next"></span>
           <div id="swiper-air-container" class="price__afterSliderContainer">
@@ -249,8 +249,8 @@ get_header();
             <?php endif; wp_reset_postdata(); ?>
           </div>
         </div>
-        <h3 class="price__subHeading">入口対策</h3>
-        <div class="price__afterSliderWrapper">
+        <h3 id="entrance" class="price__subHeading fadein">入口対策</h3>
+        <div class="price__afterSliderWrapper fadein">
           <span class="price__afterSliderButton -entrance -prev"></span>
           <span class="price__afterSliderButton -entrance -next"></span>
           <div id="swiper-entrance-container" class="price__afterSliderContainer">
@@ -279,8 +279,8 @@ get_header();
             </div>
           </div>
         </div>
-        <h3 class="price__subHeading">接触感染対策</h3>
-        <div class="price__afterSliderWrapper">
+        <h3 id="contact" class="price__subHeading fadein">接触感染対策</h3>
+        <div class="price__afterSliderWrapper fadein">
           <span class="price__afterSliderButton -contact -prev"></span>
           <span class="price__afterSliderButton -contact -next"></span>
           <div id="swiper-contact-container" class="price__afterSliderContainer">
@@ -309,8 +309,8 @@ get_header();
             </div>
           </div>
         </div>
-        <h3 class="price__subHeading">飛沫感染対策</h3>
-        <div class="price__afterSliderWrapper">
+        <h3 id="splash" class="price__subHeading fadein">飛沫感染対策</h3>
+        <div class="price__afterSliderWrapper fadein">
           <span class="price__afterSliderButton -splash -prev"></span>
           <span class="price__afterSliderButton -splash -next"></span>
           <div id="swiper-splash-container" class="price__afterSliderContainer">
@@ -339,8 +339,8 @@ get_header();
             </div>
           </div>
         </div>
-        <h3 class="price__subHeading">その他</h3>
-        <div class="price__afterSliderWrapper">
+        <h3 id="other" class="price__subHeading fadein">その他</h3>
+        <div class="price__afterSliderWrapper fadein">
           <span class="price__afterSliderButton -other -prev"></span>
           <span class="price__afterSliderButton -other -next"></span>
           <div id="swiper-other-container" class="price__afterSliderContainer">
@@ -370,15 +370,15 @@ get_header();
           </div>
         </div>
       </section>
-      <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
       <script>
         hbspt.forms.create({
           portalId: "9363833",
           formId: "321ddd9e-8aee-4501-8f18-600de918b064"
         });
-      </script> -->
+      </script>
       <section class="service__contactLink">
-        <h2 class="service__heading contact"><span id="effect_16">お問い合わせはこちら</span></h2>
+        <h2 class="service__heading contact"><span id="effect_06">お問い合わせはこちら</span></h2>
         <p class="service__contactLinkParagraph">ご不明点やお見積もりなど、担当者がお客様のご相談を承ります。<br>お気軽にお問い合わせくださいませ。</p>
         <div class="service__contactLinkButtons">
           <a href="<?php echo home_url('/contact/') ?>" class="service__contactLinkButton -primary">お問い合わせ</a>

@@ -183,8 +183,8 @@ get_header();
         </ol>
       </section>
       <section class="service__coatingFeature">
-        <h2 class="service__heading"><span id="effect_07">&SHIELD抗菌コーティングの特徴</span></h2>
-        <p class="service__headingParagraph fadein">光触媒コーティングで長期間に渡り「安心・快適な空間作り」に貢献いたします。</p>
+        <h2 class="service__heading"><span id="effect_07">&SHIELD<br class="-sp">抗菌コーティングの特徴</span></h2>
+        <p class="service__headingParagraph fadein">光触媒コーティングで長期間に渡り<br class="-sp">「安心・快適な空間作り」に<br class="-sp">貢献いたします。</p>
         <div class="service__coatingFeatures">
           <div class="service__coatingFeatureWrapper fadein">
             <h3 class="service__coatingFeatureSubHeading">複合効果で快適に</h3>
@@ -212,9 +212,9 @@ get_header();
         </div>
       </section>
       <section class="service__execution">
-        <h2 class="service__heading"><span id="effect_08">持続性の高い「&SHIELD抗菌コーティング施工」</span></h2>
+        <h2 class="service__heading"><span id="effect_08">持続性の高い「&SHIELD<br class="-sp">抗菌コーティング施工」</span></h2>
         <p class="service__headingParagraph -foldBefore fadein">
-          私たち &SHIELDはお客様の施工規模、利用動線、活動人数に合わせ最適な<br>
+          私たち &SHIELDはお客様の施工規模、利用動線、活動人数に合わせ最適な<br class="-pc">
           抗菌コーティング剤「メディカルナノコート」または「ナノゾーン」をご提案いたします。
         </p>
         <div class="service__foldWrapper">
@@ -225,7 +225,7 @@ get_header();
           <div class="service__foldContents">
             <div class="service__executionContents">
               <div class="service__heading"><span id="effect_09">メディカルナノコート</span></div>
-              <p class="service__foldParagraph">壁面等に塗布することで、細菌・ウイルスを破壊し、<br>カビの発生を抑制する特殊被膜ナノコーティング剤。</p>
+              <p class="service__foldParagraph">壁面等に塗布することで、細菌・ウイルスを破壊し、<br class="-pc">カビの発生を抑制する特殊被膜ナノコーティング剤。</p>
             </div>
             <button class="service__executionButton service__foldButton -close">OPEN</button>
           </div>
@@ -337,11 +337,11 @@ get_header();
         </section>
       </div>
       <section class="service__nanozoneCoat">
-        <div class="service__foldWrapper">
+        <div class="service__foldWrapper -nanozoneCoat">
           <div class="service__foldContents">
             <h2 class="service__heading"><span id="effect_13">nanozoneCOAT</span></h2>
             <p class="service__foldParagraph fadein">
-              自己結合性酸化チタン分散液（＝ナノゾーンソリューション）<br>
+              自己結合性酸化チタン分散液（＝ナノゾーンソリューション）<br class="-pc">
               を塗布する光触媒コーティング施工です。
             </p>
             <button class="service__nanozoneCoatButton service__foldButton -close">OPEN</button>
@@ -373,7 +373,7 @@ get_header();
                     </li>
                     <li class="service__aboutNanoCoatItem">
                       バインダー（接着剤）がなく、粒子が露出しているため
-                      <strong>わずかな光（可視光線）で、<br>すべての酸化チタン粒子が効果を発揮</strong>
+                      <strong>わずかな光（可視光線）で、<br class="-pc">すべての酸化チタン粒子が効果を発揮</strong>
                     </li>
                   </ul>
                   <picture class="service__aboutNanoCoatPicture">
@@ -456,42 +456,60 @@ get_header();
                   <ul class="service__nanoCoatCaseListBlock">
                     <li class="service__nanoCoatCaseItemBlock">
                       <h3 class="service__nanoCoatCaseItemHeading">カウンター</h3>
-                      <picture class="service__nanoCoatCasePicture -before">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before01.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before01.jpg" alt="">
-                      </picture>
-                      <span class="service__nanoCoatCaseItemSpan -before">施工前測定　6,360(RLU)</span>
-                      <picture class="service__nanoCoatCasePicture">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after01.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after01.jpg" alt="">
-                      </picture>
-                      <span class="service__nanoCoatCaseItemSpan">施工後測定　1,235(RLU)</span>
+                      <div class="service__nanoCoatCaseItemBeforeAfter">
+                        <figure>
+                          <picture class="service__nanoCoatCasePicture -before">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before01.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before01.jpg" alt="">
+                          </picture>
+                          <figcaption class="service__nanoCoatCaseItemSpan -before"><span class="service__nanoCoatCaseItemLabel">施工前測定</span>6,360(RLU)</figcaption>
+                        </figure>
+                        <figure>
+                          <picture class="service__nanoCoatCasePicture">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after01.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after01.jpg" alt="">
+                          </picture>
+                          <figcaption class="service__nanoCoatCaseItemSpan"><span class="service__nanoCoatCaseItemLabel">施工後測定</span>1,235(RLU)</figcaption>
+                        </figure>
+                      </div>
                     </li>
                     <li class="service__nanoCoatCaseItemBlock">
                       <h3 class="service__nanoCoatCaseItemHeading">発券機・タッチパネル</h3>
-                      <picture class="service__nanoCoatCasePicture -before">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before02.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before02.jpg" alt="">
-                      </picture>
-                      <span class="service__nanoCoatCaseItemSpan -before">施工前測定　17,291(RLU)</span>
-                      <picture class="service__nanoCoatCasePicture">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after02.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after02.jpg" alt="">
-                      </picture>
-                      <span class="service__nanoCoatCaseItemSpan">施工後測定　671(RLU)</span>
+                      <div class="service__nanoCoatCaseItemBeforeAfter">
+                        <figure>
+                          <picture class="service__nanoCoatCasePicture -before">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before02.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before02.jpg" alt="">
+                          </picture>
+                          <figcaption class="service__nanoCoatCaseItemSpan -before"><span class="service__nanoCoatCaseItemLabel">施工前測定</span>17,291(RLU)</figcaption>
+                        </figure>
+                        <figure>
+                          <picture class="service__nanoCoatCasePicture">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after02.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after02.jpg" alt="">
+                          </picture>
+                          <figcaption class="service__nanoCoatCaseItemSpan"><span class="service__nanoCoatCaseItemLabel">施工後測定</span>671(RLU)</figcaption>
+                        </figure>
+                      </div>
                     </li>
                     <li class="service__nanoCoatCaseItemBlock">
                       <h3 class="service__nanoCoatCaseItemHeading">発券機・タッチパネル</h3>
-                      <picture class="service__nanoCoatCasePicture -before">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before03.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before03.jpg" alt="">
-                      </picture>
-                      <span class="service__nanoCoatCaseItemSpan -before">施工前測定　11,504(RLU)</span>
-                      <picture class="service__nanoCoatCasePicture">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after03.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after03.jpg" alt="">
-                      </picture>
-                      <span class="service__nanoCoatCaseItemSpan">施工後測定　1,035(RLU)</span>
+                      <div class="service__nanoCoatCaseItemBeforeAfter">
+                        <figure>
+                          <picture class="service__nanoCoatCasePicture -before">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before03.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_before03.jpg" alt="">
+                          </picture>
+                          <figcaption class="service__nanoCoatCaseItemSpan -before"><span class="service__nanoCoatCaseItemLabel">施工前測定</span>11,504(RLU)</figcaption>
+                        </figure>
+                        <figure>
+                          <picture class="service__nanoCoatCasePicture">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after03.webp" type="image/webp">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_after03.jpg" alt="">
+                          </picture>
+                          <figcaption class="service__nanoCoatCaseItemSpan"><span class="service__nanoCoatCaseItemLabel">施工後測定</span>1,035(RLU)</figcaption>
+                        </figure>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -501,24 +519,27 @@ get_header();
               <span class="service__nanoCoatCaseLabel">効果<span class="service__newLine">検証</span></span>
               <div class="service__nanoCoatVerificationContents">
                 <h3 class="service__nanoCoatCaseHeading">接触機会の多いドアノブを測定し、効果検証を実施</h3>
-                <div class="service__nanoCoatCaseLabels">
-                  <span class="service__nanoCoatCaseFlowLabel">除菌効果の検証</span>
-                  <span class="service__nanoCoatCaseFlowLabel">抗菌効果の立証</span>
+                <div class="service__nanoCoatVerificationContentsInner">
+                  <div class="service__nanoCoatCaseLabels">
+                    <span class="service__nanoCoatCaseFlowLabel">除菌効果の検証</span>
+                    <span class="service__nanoCoatCaseFlowLabel">抗菌効果の立証</span>
+                  </div>
+                  <picture class="service__nanoCoatVerificationPicture">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification-sp.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification-sp.png" media="(max-width: 768px)">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification.png 1x, <?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification@2x.png 2x" alt="">
+                  </picture>
                 </div>
-                </div>
-                <picture class="service__nanoCoatVerificationPicture">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification.png 1x, <?php echo get_template_directory_uri(); ?>/assets/img/service/nanozone_coat_verification@2x.png 2x" alt="">
-                </picture>
               </div>
             </div>
           </div>
         </section>
       </div>
       <section class="service__merit">
-        <h2 class="service__heading"><span id="effect_15">除菌清掃&抗菌コートのメリット</span></h2>
+        <h2 class="service__heading"><span id="effect_15">除菌清掃&抗菌コートの<br class="-sp">メリット</span></h2>
         <p class="service__headingParagraph fadein">光触媒コーティングで長期間に渡り「安心・快適な空間作り」に貢献いたします。</p>
-        <div class="service__coatingFeatures">
+        <div class="service__coatingFeatures -merit">
           <div class="service__meritItem fadein">
             <h3 class="service__meritSubHeading">安心・安全な環境づくり</h3>
             <p class="service__meritParagraph">除菌清掃・抗菌コーティングをすることで、今存在する細菌やウイルスを不活化し、接触感染リスクを軽減することが可能です。消臭・防カビ効果もございます。貴社の従業員様やお客様のご不安を軽減し、安心な環境作りに貢献いたします。</p>

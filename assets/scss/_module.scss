@@ -238,6 +238,12 @@
   }
 }
 
+.hbspt-form {
+  width: 96%;
+  max-width: $--content-width-md;
+  margin: 0 auto 80px;
+}
+
 /*＝＝＝＝＝＝＝＝＝＝＝
     フェードイン
 ＝＝＝＝＝＝＝＝＝＝＝＝*/
@@ -377,6 +383,32 @@
   .widget {
     select {
       font-size: 16px;
+    }
+  }
+
+  .priceTable {
+    font-size: 14px;
+    letter-spacing: 0;
+
+    thead {
+      th {
+        padding: 12px 0;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 10px 0;
+
+        &:nth-of-type(2) {
+          padding: 6px 12px;
+        }
+      }
+    }
+
+    &.-service {
+      width: 100%;
+      margin: 24px 0 0;
     }
   }
 }
