@@ -210,14 +210,23 @@ get_header();
             <a href="">その他</a>
           </li>
         </ul>
+        <?php
+          $slide_posts_per_page = 10;
+          $notInTerms = array(
+            'taxonomy' => 'product_category',
+            'field' => 'slug',
+            'terms' => 'hoge',
+            'operator' => 'NOT IN'
+          );
+        ?>
         <h3 class="price__subHeading">空気感染対策</h3>
         <div class="price__afterSliderWrapper">
-          <span class="price__afterSliderButton -air -next"></span>
           <span class="price__afterSliderButton -air -prev"></span>
+          <span class="price__afterSliderButton -air -next"></span>
           <div id="swiper-air-container" class="price__afterSliderContainer">
             <div class="swiper-wrapper">
               <?php $args = array(
-                  'posts_per_page'   => 10,
+                  'posts_per_page'   => $slide_posts_per_page,
                   'post_type' => 'product',
                   'tax_query' => array(
                     array(
@@ -226,44 +235,138 @@ get_header();
                       'terms' => 'air',
                       'operator' => 'IN'
                     ),
-                    // array(
-                    //   'taxonomy' => 'product_category',
-                    //   'field' => 'slug',
-                    //   'terms' => 'air',
-                    //   'operator' => 'NOT IN'
-                    // )
+                    $notInTerms
                   )
                 );
                 $my_query = new WP_Query($args);
                 if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
               ?>
-              <div class="swiper-slide">
-                <a href="<?php the_permalink(); ?>">
-                  <?php if (has_post_thumbnail()) { the_post_thumbnail('medium'); } ?>
-                </a>
-                <div class="price__productMeta">
-                  <div>
-                    <h3 class="price__postTitle -product">
-                      <a href="<?php the_permalink(); ?>">
-                        <?php the_title(); ?>
-                      </a>
-                    </h3>
-                    <?php if (get_field('list-price')): ?>
-                      <span class="price__productPrice">
-                        <?php the_field('list-price'); ?>
-                      </span>
-                    <?php endif; ?>
-                  </div>
-                  <div class="price__worksMetaFooter -product">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_arrow-right.png" alt="" class="price__worksMetaArrow">
-                  </div>
-                </div>
-              </div>
+              <?php get_template_part('template-parts/loop-slider') ?>
               <?php endwhile; ?>
             </div>
             <?php else: ?>
-              <p>準備中</p>
+              <?php get_template_part('template-parts/slider-null') ?>
             <?php endif; wp_reset_postdata(); ?>
+          </div>
+        </div>
+        <h3 class="price__subHeading">入口対策</h3>
+        <div class="price__afterSliderWrapper">
+          <span class="price__afterSliderButton -entrance -prev"></span>
+          <span class="price__afterSliderButton -entrance -next"></span>
+          <div id="swiper-entrance-container" class="price__afterSliderContainer">
+            <div class="swiper-wrapper">
+              <?php $args = array(
+                  'posts_per_page'   => $slide_posts_per_page,
+                  'post_type' => 'product',
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => 'product_category',
+                      'field' => 'slug',
+                      'terms' => 'entrance',
+                      'operator' => 'IN'
+                    ),
+                    $notInTerms
+                  )
+                );
+                $my_query = new WP_Query($args);
+                if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+              ?>
+              <?php get_template_part('template-parts/loop-slider') ?>
+              <?php endwhile; ?>
+              <?php else: ?>
+                <?php get_template_part('template-parts/slider-null') ?>
+              <?php endif; wp_reset_postdata(); ?>
+            </div>
+          </div>
+        </div>
+        <h3 class="price__subHeading">接触感染対策</h3>
+        <div class="price__afterSliderWrapper">
+          <span class="price__afterSliderButton -contact -prev"></span>
+          <span class="price__afterSliderButton -contact -next"></span>
+          <div id="swiper-contact-container" class="price__afterSliderContainer">
+            <div class="swiper-wrapper">
+              <?php $args = array(
+                  'posts_per_page'   => $slide_posts_per_page,
+                  'post_type' => 'product',
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => 'product_category',
+                      'field' => 'slug',
+                      'terms' => 'contact',
+                      'operator' => 'IN'
+                    ),
+                    $notInTerms
+                  )
+                );
+                $my_query = new WP_Query($args);
+                if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+              ?>
+              <?php get_template_part('template-parts/loop-slider') ?>
+              <?php endwhile; ?>
+              <?php else: ?>
+                <?php get_template_part('template-parts/slider-null') ?>
+              <?php endif; wp_reset_postdata(); ?>
+            </div>
+          </div>
+        </div>
+        <h3 class="price__subHeading">飛沫感染対策</h3>
+        <div class="price__afterSliderWrapper">
+          <span class="price__afterSliderButton -splash -prev"></span>
+          <span class="price__afterSliderButton -splash -next"></span>
+          <div id="swiper-splash-container" class="price__afterSliderContainer">
+            <div class="swiper-wrapper">
+              <?php $args = array(
+                  'posts_per_page'   => $slide_posts_per_page,
+                  'post_type' => 'product',
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => 'product_category',
+                      'field' => 'slug',
+                      'terms' => 'splash',
+                      'operator' => 'IN'
+                    ),
+                    $notInTerms
+                  )
+                );
+                $my_query = new WP_Query($args);
+                if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+              ?>
+              <?php get_template_part('template-parts/loop-slider') ?>
+              <?php endwhile; ?>
+              <?php else: ?>
+                <?php get_template_part('template-parts/slider-null') ?>
+              <?php endif; wp_reset_postdata(); ?>
+            </div>
+          </div>
+        </div>
+        <h3 class="price__subHeading">その他</h3>
+        <div class="price__afterSliderWrapper">
+          <span class="price__afterSliderButton -other -prev"></span>
+          <span class="price__afterSliderButton -other -next"></span>
+          <div id="swiper-other-container" class="price__afterSliderContainer">
+            <div class="swiper-wrapper">
+              <?php $args = array(
+                  'posts_per_page'   => $slide_posts_per_page,
+                  'post_type' => 'product',
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => 'product_category',
+                      'field' => 'slug',
+                      'terms' => 'other',
+                      'operator' => 'IN'
+                    ),
+                    $notInTerms
+                  )
+                );
+                $my_query = new WP_Query($args);
+                if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
+              ?>
+              <?php get_template_part('template-parts/loop-slider') ?>
+              <?php endwhile; ?>
+              <?php else: ?>
+                <?php get_template_part('template-parts/slider-null') ?>
+              <?php endif; wp_reset_postdata(); ?>
+            </div>
           </div>
         </div>
       </section>

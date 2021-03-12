@@ -401,16 +401,6 @@
     }
 
     &.-prev {
-      right: 9%;
-
-      &::before {
-        width: 22px;
-        height: 30px;
-        background-image: url(assets/img/icons/icon_arrow-right-tint.png);
-      }
-    }
-
-    &.-next {
       left: 9%;
 
       &::before {
@@ -421,6 +411,21 @@
         background-image: url(assets/img/icons/icon_arrow-left-tint.png);
         transform: translate(-50%, -50%);
       }
+    }
+
+    &.-next {
+      right: 9%;
+
+      &::before {
+        width: 22px;
+        height: 30px;
+        background-image: url(assets/img/icons/icon_arrow-right-tint.png);
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0;
+      transition: opacity 0.2s;
     }
   }
 
@@ -440,6 +445,13 @@
       padding-bottom: 4px;
       background-color: $white;
       box-shadow: 0px 0px 6.57px 2.43px rgba(0, 0, 0, 0.05);
+
+      &.-null {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 20.4vw;
+      }
     }
 
     .swiper-wrapper {
