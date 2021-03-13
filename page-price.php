@@ -257,10 +257,10 @@ get_header();
               ?>
               <?php get_template_part('template-parts/loop-slider') ?>
               <?php endwhile; ?>
+              <?php else: ?>
+                <?php get_template_part('template-parts/slider-null') ?>
+              <?php endif; wp_reset_postdata(); ?>
             </div>
-            <?php else: ?>
-              <?php get_template_part('template-parts/slider-null') ?>
-            <?php endif; wp_reset_postdata(); ?>
             <div class="swiper-air-pagination price__sliderPagination"></div>
           </div>
         </div>

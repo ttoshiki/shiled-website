@@ -8,8 +8,8 @@ const sliderSpSpaceBetween = 24
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   navigation: {
-    nextEl: '.service__caseSliderButton.-next',
-    prevEl: '.service__caseSliderButton.-prev',
+    nextEl: '.price__caseSliderButton.-next',
+    prevEl: '.price__caseSliderButton.-prev',
   },
   slidesPerView: sliderSpPerView,
   spaceBetween: sliderSpSpaceBetween,
