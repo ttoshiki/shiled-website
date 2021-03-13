@@ -95,7 +95,7 @@ get_header();
         </div>
       </section>
       <section class="price__scale">
-        <h2 class="price__heading -center fadein">各種規模に対応しております。<br>料金についてはお問合わせください</h2>
+        <h2 class="price__heading -center -scale fadein">各種規模に対応しております。<br>料金についてはお問合わせください</h2>
         <div role="table" class="price__scaleTable fadein">
           <div role="rowgroup" class="price__scaleRowGroup">
             <div role="row" class="price__scaleRow">規模別目安</div>
@@ -107,14 +107,14 @@ get_header();
               </picture>
             </div>
             <div role="row" class="price__scaleRow">
-              <span role="columnheader" class="price__sacleTableColumnHeader">中型オフィス／小型店舗</span>
+              <span role="columnheader" class="price__sacleTableColumnHeader">中型オフィス<span class="-pc">／</span><br class="-sp">小型店舗</span>
               <picture class="price__scalePicture -medium">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/price/scale_02.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/scale_02.png" alt="" class="service__scaleImage">
               </picture>
             </div>
             <div role="row" class="price__scaleRow">
-              <span role="columnheader" class="price__sacleTableColumnHeader">大型オフィス／大型店舗</span>
+              <span role="columnheader" class="price__sacleTableColumnHeader">大型オフィス<span class="-pc">／</span><br class="-sp">大型店舗</span>
               <picture class="price__scalePicture -large">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/price/scale_03.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/scale_03.png" alt="" class="service__scaleImage">
@@ -131,22 +131,26 @@ get_header();
           <div role="rowgroup" class="price__scaleRowGroup">
             <div role="row" class="price__scaleRow">面積目安</div>
             <div role="row" class="price__scaleRow">150㎡</div>
-            <div role="row" class="price__scaleRow">151〜700㎡</div>
-            <div role="row" class="price__scaleRow">701〜1500㎡</div>
+            <div role="row" class="price__scaleRow">151<span class="price__tilde">〜</span>700㎡</div>
+            <div role="row" class="price__scaleRow">701<span class="price__tilde">〜</span>1500㎡</div>
             <div role="row" class="price__scaleRow">1501㎡〜</div>
           </div>
           <div role="rowgroup" class="price__scaleRowGroup">
             <div role="row" class="price__scaleRow">施工人数目安</div>
             <div role="row" class="price__scaleRow">1人</div>
-            <div role="row" class="price__scaleRow">2〜3人</div>
-            <div role="row" class="price__scaleRow">4〜６人</div>
+            <div role="row" class="price__scaleRow">
+              <span>2<span class="-sp price__unit">人</span></span><span class="price__tilde">〜</span>3人
+            </div>
+            <div role="row" class="price__scaleRow">
+              <span>4<span class="-sp price__unit">人</span></span><span class="price__tilde">〜</span>６人
+            </div>
             <div role="row" class="price__scaleRow">7人以上</div>
           </div>
           <div role="rowgroup" class="price__scaleRowGroup">
             <div role="row" class="price__scaleRow">施工時間目安</div>
             <div role="row" class="price__scaleRow">〜2時間</div>
-            <div role="row" class="price__scaleRow">2〜３時間</div>
-            <div role="row" class="price__scaleRow">3,4時間〜</div>
+            <div role="row" class="price__scaleRow"><span>2<span class="-sp price__unit">時間</span></span><span class="price__tilde">〜</span>3時間</div>
+            <div role="row" class="price__scaleRow">3,4時間<span class="-pc">〜</span></div>
             <div role="row" class="price__scaleRow">お見積もり</div>
           </div>
         </div>
@@ -185,6 +189,7 @@ get_header();
 						</div>
 						<?php endwhile; endif; wp_reset_postdata(); ?>
 					</div>
+          <div class="swiper-pagination price__sliderPagination"></div>
 				</div>
         <div class="price__linksButton">
           <a href="<?php echo home_url('/category/news/case/') ?>" class="c-btn"><span class="c-btn__text">全ての導入事例を見る</span></a>
@@ -192,7 +197,7 @@ get_header();
       </section>
       <section class="price__after">
         <h2 class="price__heading -center"><span id="effect_05">施工後の対策</span></h2>
-        <p class="price__headingParagraph fadein">施工後も、お客様の空間の安心安全を目指すため、<br>衛生対策できる商品を揃えております。</p>
+        <p class="price__headingParagraph fadein">施工後も、お客様の空間の安心安全を<br class="-sp">目指すため、<br class="-pc">衛生対策できる商品を揃えております。</p>
         <ul class="price__sectionLinksList fadein">
           <li class="price__sectionLinksItem">
             <a href="#air">空気感染対策</a>
@@ -247,6 +252,7 @@ get_header();
             <?php else: ?>
               <?php get_template_part('template-parts/slider-null') ?>
             <?php endif; wp_reset_postdata(); ?>
+            <div class="swiper-air-pagination price__sliderPagination"></div>
           </div>
         </div>
         <h3 id="entrance" class="price__subHeading fadein">入口対策</h3>
@@ -277,6 +283,7 @@ get_header();
                 <?php get_template_part('template-parts/slider-null') ?>
               <?php endif; wp_reset_postdata(); ?>
             </div>
+            <div class="swiper-entrance-pagination price__sliderPagination"></div>
           </div>
         </div>
         <h3 id="contact" class="price__subHeading fadein">接触感染対策</h3>
@@ -307,6 +314,7 @@ get_header();
                 <?php get_template_part('template-parts/slider-null') ?>
               <?php endif; wp_reset_postdata(); ?>
             </div>
+            <div class="swiper-contact-pagination price__sliderPagination"></div>
           </div>
         </div>
         <h3 id="splash" class="price__subHeading fadein">飛沫感染対策</h3>
@@ -338,6 +346,7 @@ get_header();
               <?php endif; wp_reset_postdata(); ?>
             </div>
           </div>
+          <div class="swiper-splash-pagination price__sliderPagination"></div>
         </div>
         <h3 id="other" class="price__subHeading fadein">その他</h3>
         <div class="price__afterSliderWrapper fadein">
@@ -367,6 +376,7 @@ get_header();
                 <?php get_template_part('template-parts/slider-null') ?>
               <?php endif; wp_reset_postdata(); ?>
             </div>
+            <div class="swiper-other-pagination price__sliderPagination"></div>
           </div>
         </div>
       </section>

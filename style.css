@@ -307,6 +307,17 @@ textarea {
   margin: 0 auto 80px;
 }
 
+.site-main .swiper-pagination-bullet {
+  background-color: rgba(4, 40, 126, 0.3);
+}
+.site-main .swiper-pagination-bullet-active {
+  background-color: #04287e;
+}
+.site-main .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+  text-align: center;
+}
+
 /*＝＝＝＝＝＝＝＝＝＝＝
     フェードイン
 ＝＝＝＝＝＝＝＝＝＝＝＝*/
@@ -449,6 +460,15 @@ textarea {
   .priceTable.-service {
     width: 100%;
     margin: 24px 0 0;
+  }
+  .priceTable.-price {
+    width: 100%;
+  }
+
+  .hbspt-form {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 64px;
   }
 }
 .l-mainVisual {
@@ -4510,7 +4530,7 @@ textarea {
   letter-spacing: 1px;
 }
 .price__scale {
-  width: 1100px;
+  max-width: 1100px;
   padding: 80px 0;
   margin: 0 auto;
 }
@@ -4559,6 +4579,10 @@ textarea {
   background-color: rgba(4, 40, 126, 0.85);
 }
 .price__scaleRowGroup:first-child .price__scaleRow:first-child {
+  justify-content: center;
+}
+.price__scaleRowGroup:not(:first-child) .price__scaleRow {
+  flex-direction: row;
   justify-content: center;
 }
 .price__scalePicture {
@@ -4822,4 +4846,212 @@ textarea {
   margin-top: 6px;
   font-size: 14px;
   text-align: center;
+}
+.price__productPrice.-sp {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .price__heading {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+  .price__heading.-scale {
+    font-size: 17px;
+  }
+  .price__lead {
+    margin: 60px auto 0;
+  }
+  .price__leadContents {
+    flex-direction: column;
+  }
+  .price__leadPicture {
+    width: 89.2%;
+  }
+  .price__leadPicture img {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+  }
+  .price__leadText {
+    margin: 16px auto 0;
+  }
+  .price__leadParagraph {
+    font-size: 13px;
+  }
+  .price__leadParagraph:not(:first-of-type) {
+    margin-top: 16px;
+  }
+  .price__info {
+    padding-bottom: 60px;
+    margin: 60px auto 0;
+  }
+  .price__infoInner {
+    padding: 60px 20px 0;
+  }
+  .price__infoPictures {
+    margin-top: 40px;
+  }
+  .price__infoPicture:not(:first-of-type) {
+    margin-left: 24px;
+  }
+  .price__tableWrapper {
+    padding: 24px 20px;
+    margin: 48px auto 0;
+  }
+  .price__tableHeading {
+    margin: 0 auto 16px;
+    font-size: 18px;
+  }
+  .price__scale {
+    padding: 60px 20px;
+  }
+  .price__scaleTable {
+    display: flex;
+    margin: 48px auto 0;
+  }
+  .price__scaleRowGroup {
+    grid-template-rows: repeat(5, 150px);
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    width: 22%;
+  }
+  .price__scaleRowGroup:nth-child(odd) .price__scaleRow:nth-child(even) {
+    background-color: #cdd4e5;
+  }
+  .price__scaleRowGroup:nth-child(even) .price__scaleRow:nth-child(even) {
+    background-color: #a5b2d0;
+  }
+  .price__scaleRowGroup:first-child {
+    width: 34%;
+  }
+  .price__scaleRowGroup:first-child .price__scaleRow:nth-child(even), .price__scaleRowGroup:first-child .price__scaleRow:nth-child(odd) {
+    background-color: #04287e;
+  }
+  .price__scaleRowGroup:not(:first-child) .price__scaleRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .price__scaleRowGroup:not(:first-child) .price__scaleRow:first-child {
+    writing-mode: vertical-rl;
+  }
+  .price__scaleRow {
+    padding: 12px 4px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .price__tilde {
+    display: flex;
+    align-items: center;
+    margin: -2px 0;
+    font-size: 10px;
+    line-height: 1;
+    writing-mode: vertical-rl;
+  }
+  .price__unit {
+    display: inline;
+  }
+  .price__caseSliderButtons {
+    display: none;
+  }
+  .price__case {
+    padding: 48px 0 60px;
+  }
+  .price__case .swiper-container {
+    margin-top: 24px;
+  }
+  .price__case .wp-post-image {
+    height: 33.6vw;
+  }
+  .price__postTitle {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .price__postTitle.-product {
+    padding: 0 8px;
+  }
+  .price__worksMeta {
+    height: max(8vw, 120px);
+    padding: 0 12px;
+  }
+  .price__priceTime {
+    font-size: 13px;
+  }
+  .price__worksMetaArrow {
+    width: 14%;
+  }
+  .price__linksButton {
+    margin: 48px auto 0;
+  }
+  .price__after {
+    margin: 60px auto 0;
+  }
+  .price__headingParagraph {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+  .price__sectionLinksList {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 48px auto 0;
+  }
+  .price__sectionLinksItem {
+    width: 47%;
+    margin-bottom: 16px;
+  }
+  .price__sectionLinksItem:not(:first-child) {
+    margin-left: 0;
+  }
+  .price__sectionLinksItem:nth-child(even) {
+    margin-left: 6%;
+  }
+  .price__sectionLinksItem a {
+    padding: 0 0 12px 32px;
+  }
+  .price__subHeading {
+    margin: 48px auto 0 font-size 18px;
+    letter-spacing: 2px;
+  }
+  .price__afterSliderButton {
+    display: none;
+  }
+  .price__afterSliderContainer {
+    width: 100%;
+    overflow: initial;
+  }
+  .price__afterSliderContainer .wp-post-image {
+    height: 33.6vw;
+  }
+  .price__afterSliderWrapper {
+    margin: 12px auto 64px;
+    overflow: hidden;
+  }
+  .price__afterSliderWrapper::before {
+    height: 50%;
+  }
+  .price__sliderPagination.swiper-pagination-bullets {
+    position: static;
+    display: block;
+    margin: 24px auto 0;
+    text-align: center;
+  }
+  .price__productPrice.-pc {
+    display: none;
+  }
+  .price__productPrice.-sp {
+    display: block;
+    padding-bottom: 4px;
+    margin-top: 0;
+  }
+  .price__productMeta {
+    height: max(8vw, 100px);
+  }
+  .price__worksMetaFooter.-product {
+    justify-content: space-between;
+    padding: 0 0 10px 8px;
+  }
 }

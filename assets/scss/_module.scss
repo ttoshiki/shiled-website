@@ -244,6 +244,21 @@
   margin: 0 auto 80px;
 }
 
+.site-main {
+  .swiper-pagination-bullet {
+    background-color: rgba($color: $--color-primary, $alpha: 0.3);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $--color-primary;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0;
+    text-align: center;
+  }
+}
+
 /*＝＝＝＝＝＝＝＝＝＝＝
     フェードイン
 ＝＝＝＝＝＝＝＝＝＝＝＝*/
@@ -410,5 +425,15 @@
       width: 100%;
       margin: 24px 0 0;
     }
+
+    &.-price {
+      width: 100%;
+    }
+  }
+
+  .hbspt-form {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 64px;
   }
 }
