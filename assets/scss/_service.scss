@@ -1690,8 +1690,9 @@
     }
 
     &__nanoCoatCaseFlowLabel {
-      width: 100%;
+      width: 9vw;
       height: 50%;
+      min-height: min(440px, 106vw);
       padding: 0 8px;
       font-size: 13px;
       writing-mode: vertical-rl;
