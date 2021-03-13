@@ -317,6 +317,10 @@
     margin: 100px auto 0;
   }
 
+  &__sliderPagination.swiper-pagination-bullets {
+    display: none;
+  }
+
   &__headingParagraph {
     font-size: 20px;
     font-weight: 600;
@@ -519,6 +523,7 @@
     }
 
     &__leadParagraph {
+      margin-top: 12px;
       font-size: 13px;
 
       &:not(:first-of-type) {
@@ -536,7 +541,7 @@
     }
 
     &__infoPictures {
-      margin-top: 40px;
+      margin-top: 32px;
     }
 
     &__infoPicture {
@@ -721,7 +726,7 @@
     }
 
     &__afterSliderWrapper {
-      margin: 12px auto 64px;
+      margin: 12px auto 48px;
       overflow: hidden;
 
       &::before {

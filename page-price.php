@@ -21,14 +21,14 @@ get_header();
         <h1 class="l-mainVisualHeading roboto" id="effect_01">PRICE</h1>
         <picture>
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/price/mv.webp" type="image/webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/mv.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/img/service/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/price/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/service/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
         </picture>
       </section>
       <section class="price__lead">
         <div class="price__leadContents">
           <picture class="price__leadPicture fadein">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/price/price_01.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/price_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service/price_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/img/service/price_01@2x.jpg 2x" alt="" class="l-mainVisualBg">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/price/price_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/price/price_01.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/price/price_01@2x.jpg 2x" alt="">
           </picture>
           <div class="price__leadText fadein">
             <h2 class="price__heading"><span id="effect_02">施工料金について</span></h2>
@@ -217,12 +217,21 @@ get_header();
         </ul>
         <?php
           $slide_posts_per_page = 10;
-          $notInTerms = array(
-            'taxonomy' => 'product_category',
-            'field' => 'slug',
-            'terms' => 'hoge',
-            'operator' => 'NOT IN'
-          );
+          $display_terms = array(
+            'relation' => 'OR',
+            array(
+              'taxonomy' => 'display_page',
+              'field' => 'slug',
+              'terms' => 'display_after_construction',
+              'operator' => 'IN',
+            ),
+            array(
+              'taxonomy' => 'display_page',
+              'field' => 'slug',
+              'terms' => array('display_all'),
+              'operator' => 'IN',
+            ),
+          )
         ?>
         <h3 id="air" class="price__subHeading fadein">空気感染対策</h3>
         <div class="price__afterSliderWrapper fadein">
@@ -240,7 +249,7 @@ get_header();
                       'terms' => 'air',
                       'operator' => 'IN'
                     ),
-                    $notInTerms
+                    $display_terms
                   )
                 );
                 $my_query = new WP_Query($args);
@@ -271,7 +280,7 @@ get_header();
                       'terms' => 'entrance',
                       'operator' => 'IN'
                     ),
-                    $notInTerms
+                    $display_terms
                   )
                 );
                 $my_query = new WP_Query($args);
@@ -302,7 +311,7 @@ get_header();
                       'terms' => 'contact',
                       'operator' => 'IN'
                     ),
-                    $notInTerms
+                    $display_terms
                   )
                 );
                 $my_query = new WP_Query($args);
@@ -333,7 +342,7 @@ get_header();
                       'terms' => 'splash',
                       'operator' => 'IN'
                     ),
-                    $notInTerms
+                    $display_terms
                   )
                 );
                 $my_query = new WP_Query($args);
@@ -364,7 +373,7 @@ get_header();
                       'terms' => 'other',
                       'operator' => 'IN'
                     ),
-                    $notInTerms
+                    $display_terms
                   )
                 );
                 $my_query = new WP_Query($args);

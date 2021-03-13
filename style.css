@@ -1920,6 +1920,9 @@ textarea {
   opacity: 1;
   transform: translate(0, 0);
 }
+.service__foldedBlock.-open .block-revealer > .block-revealer__content {
+  opacity: 0;
+}
 .service__flow {
   padding: 88px 0 100px;
   background-color: #eeeeee;
@@ -4137,8 +4140,7 @@ textarea {
     border-bottom: none;
   }
   .singleProduct__details {
-    padding-top: 52px;
-    margin: -12px 0 0;
+    margin: 40px 0 0;
   }
   .singleProduct__details dl {
     margin: 24px 0 0;
@@ -4158,8 +4160,7 @@ textarea {
     margin: 16px 0 24px;
   }
   .singleProduct__points {
-    padding-top: 52px;
-    margin: -12px 0 0;
+    margin: 40px 0 0;
   }
   .singleProduct__faq {
     padding-top: 52px;
@@ -4710,6 +4711,9 @@ textarea {
 .price__after {
   margin: 100px auto 0;
 }
+.price__sliderPagination.swiper-pagination-bullets {
+  display: none;
+}
 .price__headingParagraph {
   font-size: 20px;
   font-weight: 600;
@@ -4877,6 +4881,7 @@ textarea {
     margin: 16px auto 0;
   }
   .price__leadParagraph {
+    margin-top: 12px;
     font-size: 13px;
   }
   .price__leadParagraph:not(:first-of-type) {
@@ -4890,7 +4895,7 @@ textarea {
     padding: 60px 20px 0;
   }
   .price__infoPictures {
-    margin-top: 40px;
+    margin-top: 32px;
   }
   .price__infoPicture:not(:first-of-type) {
     margin-left: 24px;
@@ -5027,7 +5032,7 @@ textarea {
     height: 33.6vw;
   }
   .price__afterSliderWrapper {
-    margin: 12px auto 64px;
+    margin: 12px auto 48px;
     overflow: hidden;
   }
   .price__afterSliderWrapper::before {

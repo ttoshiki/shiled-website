@@ -255,6 +255,10 @@
         opacity: 1;
         transform: translate(0, 0);
       }
+
+      .block-revealer > .block-revealer__content {
+        opacity: 0;
+      }
     }
   }
 

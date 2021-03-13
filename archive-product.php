@@ -25,7 +25,22 @@ get_header();
 				<?php
 					$args = array(
 						'post_type' => 'product',
-						'posts_per_page' => -1
+						'posts_per_page' => -1,
+						'tax_query' => array(
+							'relation' => 'OR',
+							array(
+								'taxonomy' => 'display_page',
+								'field' => 'slug',
+								'terms' => 'display_product_list',
+								'operator' => 'IN',
+							),
+							array(
+								'taxonomy' => 'display_page',
+								'field' => 'slug',
+								'terms' => array('display_all'),
+								'operator' => 'IN',
+							),
+						)
 					);
 					$the_query = new WP_Query($args); if ($the_query->have_posts()):
 				?>
