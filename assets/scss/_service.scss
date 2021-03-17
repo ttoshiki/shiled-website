@@ -1,6 +1,11 @@
 @import "_variables";
 
 .service {
+  &__heading {
+    font-size: 30px;
+    color: $white;
+  }
+
   &__lead {
     max-width: $--content-width-md;
     margin: 100px auto 0;

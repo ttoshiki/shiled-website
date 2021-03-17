@@ -1709,6 +1709,10 @@ textarea {
     flex-direction: column;
   }
 }
+.service__heading {
+  font-size: 30px;
+  color: #ffffff;
+}
 .service__lead {
   max-width: 1100px;
   margin: 100px auto 0;
