@@ -82,6 +82,11 @@
     letter-spacing: 1px;
   }
 
+  &__tableCourse {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
   &__scale {
     max-width: $--content-width-md;
     padding: 80px 0;
@@ -506,10 +511,13 @@
 
     &__leadContents {
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &__leadPicture {
-      width: 89.2%;
+      width: 100%;
+      padding: 0 20px;
+      margin: 0 auto;
 
       img {
         width: 100%;
@@ -519,6 +527,7 @@
     }
 
     &__leadText {
+      width: 89.2%;
       margin: 16px auto 0;
     }
 
@@ -558,6 +567,10 @@
     &__tableHeading {
       margin: 0 auto 16px;
       font-size: 18px;
+    }
+
+    &__tableCourse {
+      margin-right: 0.5em;
     }
 
     &__scale {

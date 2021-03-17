@@ -85,7 +85,7 @@ get_header();
                     <td><strong>500㎡辺り　250,000円〜（500円／㎡〜）</strong></td>
                   </tr>
                   <tr>
-                    <td><strong>A+B　除菌・清掃+除菌コート</strong></td>
+                    <td><strong><span class="price__tableCourse">A+B</span><span>除菌・清掃+除菌コート</span></strong></td>
                     <td><strong>500㎡辺り　500,000円〜（1,000円／㎡〜）</strong></td>
                   </tr>
                 </tbody>
@@ -242,6 +242,7 @@ get_header();
               <?php $args = array(
                   'posts_per_page'   => $slide_posts_per_page,
                   'post_type' => 'product',
+                  'post_status' => 'publish',
                   'tax_query' => array(
                     array(
                       'taxonomy' => 'product_category',
@@ -273,6 +274,7 @@ get_header();
               <?php $args = array(
                   'posts_per_page'   => $slide_posts_per_page,
                   'post_type' => 'product',
+                  'post_status' => 'publish',
                   'tax_query' => array(
                     array(
                       'taxonomy' => 'product_category',
@@ -304,6 +306,7 @@ get_header();
               <?php $args = array(
                   'posts_per_page'   => $slide_posts_per_page,
                   'post_type' => 'product',
+                  'post_status' => 'publish',
                   'tax_query' => array(
                     array(
                       'taxonomy' => 'product_category',
@@ -335,6 +338,7 @@ get_header();
               <?php $args = array(
                   'posts_per_page'   => $slide_posts_per_page,
                   'post_type' => 'product',
+                  'post_status' => 'publish',
                   'tax_query' => array(
                     array(
                       'taxonomy' => 'product_category',
@@ -366,6 +370,7 @@ get_header();
               <?php $args = array(
                   'posts_per_page'   => $slide_posts_per_page,
                   'post_type' => 'product',
+                  'post_status' => 'publish',
                   'tax_query' => array(
                     array(
                       'taxonomy' => 'product_category',

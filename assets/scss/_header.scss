@@ -186,17 +186,11 @@
 
 .fixedMenu {
   position: fixed;
-  top: 120px;
+  top: 36%;
   right: 13px;
   z-index: 100;
-  min-height: 440px;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-
-  &.service {
-    top: 36%;
-    min-height: initial;
-  }
 
   &__link {
     padding: 32px 16px;
@@ -410,7 +404,7 @@
         letter-spacing: 3px;
 
         &:not(:first-child) {
-          margin-top: 9.4vw;
+          margin-top: 9vw;
         }
       }
     }
@@ -451,14 +445,14 @@
     bottom: 0;
     display: flex;
     width: 100%;
-    min-height: auto;
+    min-height: initial;
     writing-mode: horizontal-tb;
 
     &__link {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 50%;
+      width: 100%;
       padding: 18px 0;
       font-size: 12px;
       letter-spacing: 3px;
@@ -470,15 +464,6 @@
 
     &__icon {
       margin: 0 12px 0 0;
-    }
-
-    &.service {
-      top: auto;
-      min-height: initial;
-
-      .fixedMenu__link {
-        width: 100%;
-      }
     }
   }
 

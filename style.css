@@ -452,7 +452,7 @@ textarea {
     padding: 12px 0;
   }
   .priceTable tbody td {
-    padding: 10px 0;
+    padding: 10px 4px;
   }
   .priceTable tbody td:nth-of-type(2) {
     padding: 6px 12px;
@@ -765,16 +765,11 @@ textarea {
 
 .fixedMenu {
   position: fixed;
-  top: 120px;
+  top: 36%;
   right: 13px;
   z-index: 100;
-  min-height: 440px;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-}
-.fixedMenu.service {
-  top: 36%;
-  min-height: initial;
 }
 .fixedMenu__link {
   padding: 32px 16px;
@@ -941,7 +936,7 @@ textarea {
     letter-spacing: 3px;
   }
   .header__hammenuWrapper li:not(:first-child) {
-    margin-top: 9.4vw;
+    margin-top: 9vw;
   }
   .header__hammenuInner {
     margin-top: -124px;
@@ -974,14 +969,14 @@ textarea {
     bottom: 0;
     display: flex;
     width: 100%;
-    min-height: auto;
+    min-height: initial;
     writing-mode: horizontal-tb;
   }
   .fixedMenu__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     padding: 18px 0;
     font-size: 12px;
     letter-spacing: 3px;
@@ -991,13 +986,6 @@ textarea {
   }
   .fixedMenu__icon {
     margin: 0 12px 0 0;
-  }
-  .fixedMenu.service {
-    top: auto;
-    min-height: initial;
-  }
-  .fixedMenu.service .fixedMenu__link {
-    width: 100%;
   }
 
   .custom-logo-link {
@@ -3745,6 +3733,7 @@ textarea {
   }
   .archiveProduct__meta {
     width: 72%;
+    height: auto;
   }
 }
 .single__list {
@@ -4546,6 +4535,10 @@ textarea {
   text-align: center;
   letter-spacing: 1px;
 }
+.price__tableCourse {
+  display: inline-block;
+  margin-right: 1em;
+}
 .price__scale {
   max-width: 1100px;
   padding: 80px 0;
@@ -4884,9 +4877,12 @@ textarea {
   }
   .price__leadContents {
     flex-direction: column;
+    align-items: flex-start;
   }
   .price__leadPicture {
-    width: 89.2%;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
   }
   .price__leadPicture img {
     width: 100%;
@@ -4894,6 +4890,7 @@ textarea {
     object-fit: cover;
   }
   .price__leadText {
+    width: 89.2%;
     margin: 16px auto 0;
   }
   .price__leadParagraph {
@@ -4923,6 +4920,9 @@ textarea {
   .price__tableHeading {
     margin: 0 auto 16px;
     font-size: 18px;
+  }
+  .price__tableCourse {
+    margin-right: 0.5em;
   }
   .price__scale {
     padding: 60px 20px;
