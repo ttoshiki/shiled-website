@@ -4644,6 +4644,7 @@ textarea {
   overflow: hidden;
   font-size: 15px;
   line-height: 1.66;
+  color: #04287e;
   letter-spacing: 1px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -4673,6 +4674,9 @@ textarea {
 }
 .price__worksMetaFooter.-product .price__worksMetaArrow {
   width: 13%;
+}
+.price__worksMetaFooter.-product .price__worksMetaArrow.nolink {
+  display: none;
 }
 .price__postTime {
   color: #3983c8;

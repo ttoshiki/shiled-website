@@ -226,6 +226,7 @@
     overflow: hidden;
     font-size: 15px;
     line-height: 1.66;
+    color: $--color-primary;
     letter-spacing: 1px;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -259,6 +260,10 @@
 
       .price__worksMetaArrow {
         width: 13%;
+
+        &.nolink {
+          display: none;
+        }
       }
     }
   }
