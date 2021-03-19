@@ -22,18 +22,19 @@ get_header();
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/contact/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/contact/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
       </section>
       <div class="contact__inner">
-        <section class="contact__lead">
-          <p class="contact__leadParagraph">
-            お問い合わせフォームからご連絡ください。ご記入されましたら【送信】ボタンをクリックしてください。<br>
-            送信後に確認メールをお送りしています。届かない場合は、お手数ですが <a href="mailto:info@andshield.jp">info@andshield.jp</a> までお問い合わせ内容をお送りください。
-          </p>
-        </section>
         <?php while (have_posts()) : ?>
 				<?php
           the_post();
           the_content();
           endwhile;
         ?>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "9363833",
+            formId: "321ddd9e-8aee-4501-8f18-600de918b064"
+          });
+        </script>
         <div class="contact__privacy">
           <h2 class="contact__privacyHeading">個人情報の取り扱いについて</h2>
           <ul class="contact__privacyList">

@@ -3687,12 +3687,15 @@ textarea {
 }
 .contact__inner {
   max-width: 800px;
-  margin: 100px auto;
+  margin: 60px auto;
 }
 .contact__leadParagraph {
   margin: 0;
   font-size: 15px;
   line-height: 1.8;
+}
+.contact .hbspt-form {
+  margin: 0 auto 64px;
 }
 .contact form {
   margin-top: 72px;
@@ -3806,7 +3809,7 @@ textarea {
 .contact__privacy {
   height: 330px;
   padding: 48px 64px 24px;
-  margin: 54px 0 0;
+  margin-bottom: 100px;
   overflow-y: scroll;
   box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
 }
@@ -3837,7 +3840,10 @@ textarea {
 @media screen and (max-width: 480px) {
   .contact__inner {
     padding: 0 20px;
-    margin: 60px auto 0;
+    margin: 32px auto 48px;
+  }
+  .contact .hbspt-form {
+    margin: 0 auto 48px;
   }
   .contact .wpcf7-list-item {
     margin: 12px 20px 0 0;
@@ -3870,7 +3876,7 @@ textarea {
   .contact__privacy {
     height: 380px;
     padding: 24px 12px 0;
-    margin: 48px 0 60px;
+    margin-bottom: 60px;
   }
   .contact__privacyHeading {
     margin: 0 0 24px;
