@@ -44,8 +44,8 @@
 		</nav>
 		<div class="footer__companyInfo">
 			<div class="footer__companyOverview">
-				<span class="footer__companyName">株式会社テラ &SHIELD事業部</span>
-				<address class="footer__companyAddress">〒221-0832　神奈川県横浜市神奈川区桐畑3-6 TERRAビル</address>
+				<span class="footer__companyName">株式会社AND SHIELD</span>
+				<address class="footer__companyAddress">〒221-0832　神奈川県横浜市神奈川区桐畑3-6</address>
 			</div>
 			<p class="footer__companyText">私たちは新しい公衆衛生の視点でさまざまな角度からモノやコトを創造していきます。あなたの大切な人を守るために。&SHIELDの製品やサービスについてのお問い合わせは、お気軽にご連絡ください。</p>
 		</div>
@@ -57,10 +57,6 @@
 				<a href="<?php echo home_url('/contact/'); ?>" class="fixedMenu__link">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_speech-bubble@2x.png 2x" alt="吹き出し" class="fixedMenu__icon">
 					お問い合わせ
-				</a>
-				<a href="<?php echo home_url('/download/'); ?>" class="fixedMenu__link">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download@2x.png 2x" alt="ダウンロード" class="fixedMenu__icon">
-					資料ダウンロード
 				</a>
 			</aside>
 		<?php endif; ?>

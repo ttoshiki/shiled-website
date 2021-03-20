@@ -195,6 +195,70 @@
   color: #3983c8;
 }
 
+.priceTable {
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-collapse: collapse;
+
+  thead {
+    color: $white;
+    background-color: $--color-primary;
+    border: 1px solid $--color-primary;
+
+    th {
+      padding: 16px 0;
+    }
+  }
+
+  tbody {
+    td {
+      padding: 14px 0;
+      background-color: $white;
+      border: 1px solid $--color-primary;
+
+      &:first-of-type {
+        color: $--color-primary;
+        text-align: center;
+      }
+
+      &:nth-of-type(2) {
+        padding-left: 24px;
+      }
+    }
+  }
+
+  &.-service {
+    width: 60%;
+    margin-left: 48px;
+  }
+
+  &.-price {
+    width: 81%;
+    margin: 0 auto;
+  }
+}
+
+.hbspt-form {
+  width: 96%;
+  max-width: $--content-width-md;
+  margin: 0 auto 80px;
+}
+
+.site-main {
+  .swiper-pagination-bullet {
+    background-color: rgba($color: $--color-primary, $alpha: 0.3);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $--color-primary;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0;
+    text-align: center;
+  }
+}
+
 /*＝＝＝＝＝＝＝＝＝＝＝
     フェードイン
 ＝＝＝＝＝＝＝＝＝＝＝＝*/
@@ -246,7 +310,13 @@
 #effect_07,
 #effect_08,
 #effect_09,
-#effect_10 {
+#effect_10,
+#effect_11,
+#effect_12,
+#effect_13,
+#effect_14,
+#effect_15,
+#effect_16 {
   display: inline-block;
 }
 
@@ -329,5 +399,41 @@
     select {
       font-size: 16px;
     }
+  }
+
+  .priceTable {
+    font-size: 14px;
+    letter-spacing: 0;
+
+    thead {
+      th {
+        padding: 12px 0;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 10px 4px;
+
+        &:nth-of-type(2) {
+          padding: 6px 12px;
+        }
+      }
+    }
+
+    &.-service {
+      width: 100%;
+      margin: 24px 0 0;
+    }
+
+    &.-price {
+      width: 100%;
+    }
+  }
+
+  .hbspt-form {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 64px;
   }
 }

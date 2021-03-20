@@ -38,9 +38,8 @@
 							'theme_location' => 'primary'
 						));
 					?>
-					<a href="<?php echo home_url('/download/'); ?>" class="header__hammenuConversion">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download-tint.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download-tint.png, <?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_download-tint@2x.png 2x" alt="ダウンロード" class="header__hammenuConversionIcon">
-						資料ダウンロード
+					<a href="<?php echo home_url('/contact/'); ?>" class="header__hammenuConversion contact">
+						お問い合わせ
 					</a>
 				</div>
 			</div>

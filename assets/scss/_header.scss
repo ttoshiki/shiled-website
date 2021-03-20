@@ -15,7 +15,7 @@
 
     &.-hasLogo {
       div {
-        left: 780px;
+        left: 820px;
       }
     }
 
@@ -37,7 +37,7 @@
     }
 
     .menu-item {
-      margin: 0 32px;
+      margin: 0 30px;
       letter-spacing: 3px;
     }
   }
@@ -186,10 +186,9 @@
 
 .fixedMenu {
   position: fixed;
-  top: 120px;
+  top: 36%;
   right: 13px;
   z-index: 100;
-  min-height: 440px;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 
@@ -405,7 +404,7 @@
         letter-spacing: 3px;
 
         &:not(:first-child) {
-          margin-top: 9.4vw;
+          margin-top: 9vw;
         }
       }
     }
@@ -423,6 +422,10 @@
       color: $--color-primary-tint;
       letter-spacing: 2px;
       background-color: $white;
+
+      &.contact {
+        padding: 8vw 21vw;
+      }
     }
 
     &__hammenuConversionIcon {
@@ -442,14 +445,14 @@
     bottom: 0;
     display: flex;
     width: 100%;
-    min-height: auto;
+    min-height: initial;
     writing-mode: horizontal-tb;
 
     &__link {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 50%;
+      width: 100%;
       padding: 18px 0;
       font-size: 12px;
       letter-spacing: 3px;
