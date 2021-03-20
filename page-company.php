@@ -23,13 +23,26 @@ get_header();
       </section>
       <section class="company__lead fadein">
         <div class="company__leadInner">
-          <h2 class="company__leadHeading"><span id="effect_02">暮らしに、安堵を。</span></h2>
+          <h2 class="company__leadHeading"><span id="effect_02">この先の、安心と安全を。</span></h2>
           <p class="company__leadParagraph fadein">
-            &SHIELDのミッションは「守る」ことです。<br>
-            私たちのシンボルであるロゴマークは、盾を意味する「SHIELD」と、ミッションである「守る」の漢字からデザインしています。
+            生活様式、働き方、ライフスタイルが<br>
+            どんなに変化しても、人の営みは続いていきます。
+          </p>
           </p>
           <p class="company__leadParagraph fadein">
-            日々の暮らしや企業の役に立つ衛生関連情報やサービスを提供することで、皆様と皆様にとって大切な人を様々なリスクの不安からお守りしたいと考えております。
+            私たちアンドシールドは、<br>
+            変化を迎えたその先へ、全てのお客様に<br>
+            安心で安全を感じる心地よさをつくります。
+          </p>
+          <p class="company__leadParagraph fadein">
+            みんなが集まる喜びを、かざらない日常を、笑顔が当たり前の毎日を。
+          </p>
+          <p class="company__leadParagraph fadein">
+            人と社会を「守る」でつなげて、より豊かにしていく。
+          </p>
+          <p class="company__leadParagraph fadein">
+            暮らしに、安堵を。<br>
+            &SHIELD
           </p>
         </div>
       </section>
