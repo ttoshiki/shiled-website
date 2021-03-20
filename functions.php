@@ -180,8 +180,8 @@ function shield_scripts()
     } elseif (is_page('contact') || is_archive() || is_single()) {
         wp_enqueue_script('reveals-one-script', get_template_directory_uri() . '/assets/js/revealers_one.js', array(), '', true);
     } elseif (is_page('service')) {
-        wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/revealers_ten.js', array(), '', true);
-        wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/single-service.js', array(), '', true);
+        wp_enqueue_script('service-reveal-script', get_template_directory_uri() . '/assets/js/revealers_fifteen.js', array(), '', true);
+        wp_enqueue_script('service-script', get_template_directory_uri() . '/assets/js/service.js', array(), '', true);
     } elseif (is_page('service-pcr')) {
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/revealers_three-firstWhite.js', array(), '', true);
     } elseif(is_page('price')) {
